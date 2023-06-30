@@ -1,0 +1,139 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*===================================
+ * color
+===================================*/
+/*===================================
+ * font
+===================================*/
+h6 {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  color: rgba(153, 153, 153, 0.6);
+  margin-bottom: 5px;
+}
+
+/*===================================
+ * 文字
+===================================*/
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: #021F59;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*===================================
+ * smGird
+===================================*/
+.smGrid {
+  font-size: 12px;
+}
+
+.inner_links {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inner_links a {
+  display: block;
+  width: 40%;
+  margin: 0;
+  text-align: center;
+  padding: 13px 0;
+  border: 1px solid #B9D8CF;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.inner_links a:nth-child(odd) {
+  margin-right: 20px;
+}
+
+/*===================================
+ * internalMedicine
+===================================*/
+.im__title {
+  margin-top: 75px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: #021F59;
+}
+@media screen and (max-width: 767px) {
+  .im__title {
+    font-size: 20px;
+  }
+}
+.im__sub--text {
+  margin: 0 10px;
+}
+.im__icon--container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+.im__icon--container a {
+  max-width: 93px;
+  width: 33%;
+  height: 93px;
+  background: #EFF4F3;
+  border-radius: 20px;
+  margin: 8px 4.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.im__icon--container a:hover {
+  transform: scale(1.3);
+}
+.im__icon--container a .im-icon {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.im__icon--container a .im-icon img {
+  width: 33px;
+  margin-bottom: 8px;
+  margin: 0 auto;
+}
+.im__icon--container a .im-ttl {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+}

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*===================================
+ * color
+===================================*/
+/*===================================
+ * font
+===================================*/
+h6 {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  color: rgba(153, 153, 153, 0.6);
+  margin-bottom: 5px;
+}
+
+/*===================================
+ * 文字
+===================================*/
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: #021F59;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*===================================
+ * smGird
+===================================*/
+.smGrid {
+  font-size: 12px;
+}
+
+#access .inner_links {
+  max-width: 500px;
+  width: 100%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#access .inner_links a {
+  display: block;
+  width: 20%;
+  margin: 15px 10px;
+  text-align: center;
+  padding: 8px 19px;
+  border: 1px solid #b9d8cf;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+#access .inner_links a:hover {
+  background: #021F59;
+  color: #EBF0F2;
+}
+#access .inner_links a:nth-child(odd) {
+  margin-right: 20px;
+}
+
+table.access-train {
+  color: #021F59;
+  width: 100%;
+  font-size: 13px;
+  line-height: 200%;
+}
+table.access-train tr {
+  height: 26px;
+}
+table.access-train th {
+  padding: 0;
+  text-align: left;
+  width: 140px;
+}
+table.access-train td {
+  padding: 0;
+  text-align: left;
+  width: calc(100% - 140px);
+}
+table.access-train ul {
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 200%;
+  color: #021F59;
+}
+table.access-train ul li:before {
+  content: url("/assets/img/access/triangle-right.svg");
+  margin-right: 4px;
+}
+
+.access-info {
+  background: #EBF0F2;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+.access-info__text {
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 200%;
+  color: #5F7092;
+}
+.access-info__text li {
+  display: flex;
+}
+.access-info__text li::before {
+  content: url("/assets/img/access/callout-info.svg");
+  margin-right: 10px;
+}
+
+.access-subTitle {
+  display: flex;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: #021F59;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.access-subTitle::before {
+  display: flex;
+  content: url("/assets/img/access/train.svg");
+  height: 28px;
+  margin-right: 8px;
+}
+.access-subTitle::after {
+  display: flex;
+  content: "";
+  height: 1px;
+  margin-left: 8px;
+  background: url("/assets/img/access/h3-line.svg") repeat-x;
+}
+
+.access-floa__list li {
+  display: flex;
+}
+.access-floa__list li::before {
+  content: "⚫︎";
+  margin-right: 6px;
+  position: relative;
+  top: 10px;
+}
+.access-floa .floa-title {
+  font-size: 16px;
+  font-weight: bold;
+}
