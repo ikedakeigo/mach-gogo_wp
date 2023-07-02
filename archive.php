@@ -13,6 +13,17 @@
     </div>
 
     <div class="container-blog">
+      <div class="archive-head m_description">
+        <div class="archive-lead">カテゴリー名</div>
+        <h1 class="archive-title m_category">
+          <?php the_archive_title(); ?>
+        </h1>
+        <div class="archive-description">
+          <p>
+            <?php the_archive_description(); ?>
+          </p>
+        </div>
+      </div>
       <section id="blog">
         <div class="blog-contents">
           <div class="blog-content">
