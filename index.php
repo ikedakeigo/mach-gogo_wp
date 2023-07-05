@@ -388,10 +388,16 @@
           <h2 class="main_title">お知らせ</h2>
           <div class="border"></div>
           <div class="notice-list">
-            <?php if(have_posts()) : ?>
-              <?php while(have_posts()) : ?>
-                <?php the_post(); ?>
-
+            <?php
+            $args = array(
+              'post_type' => 'news',
+              'posts_per_page' => 4
+            );
+            $news_query = new WP_Query($args);
+            if ($news_query->have_posts()) :
+              while ($news_query->have_posts()) :
+                $news_query->the_post();
+            ?>
                 <div class="notice-item">
                   <a href="<?php the_permalink(); ?>">
                     <div class="notice-date">
@@ -400,11 +406,17 @@
                     <h3><?php the_title(); ?></h3>
                   </a>
                 </div>
-                <?php endwhile; ?>
-            <?php endif ?>
+            <?php
+              endwhile;
+              wp_reset_postdata();
+            endif;
+            ?>
           </div>
+
           <div id="btn_set">
-            <div class="button-wrapper"><a href="#" class="button">すべてみる</a></div>
+            <div class="button-wrapper"><a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="button">すべてみる</a></div>
+            <a href="<?php echo get_post_type_archive_link( 'news' ); ?>">News Archive</a>
+            <a href="<?php echo get_post_type_archive_link( 'post' ); ?>">Blog Archive</a>
           </div>
         </div>
       </section>

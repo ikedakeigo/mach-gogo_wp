@@ -25,6 +25,7 @@ function my_script_init(){
   wp_enqueue_style( 'about-style', get_template_directory_uri() . '/assets/css/about.css', array(), filemtime(get_theme_file_path('/assets/css/about.css')));
   wp_enqueue_style( 'access-style', get_template_directory_uri() . '/assets/css/access.css', array(), filemtime(get_theme_file_path('/assets/css/access.css')));
   wp_enqueue_style( 'blogs-style', get_template_directory_uri() . '/assets/css/blogs.css', array(), filemtime(get_theme_file_path('/assets/css/blogs.css')));
+  wp_enqueue_style( '404-style', get_template_directory_uri() . '/assets/css/404.css', array(), filemtime(get_theme_file_path('/assets/css/404.css')));
 
   // Enqueue other scripts
 wp_enqueue_script("my_script", get_template_directory_uri() . "/assets/js/main.js", array("jquery"), filemtime(get_theme_file_path("/assets/js/main.js")), true);
@@ -82,5 +83,36 @@ function my_archive_title($title){
   return $title;
 };
 add_action('get_the_archive_title', 'my_archive_title');
+
+// カスタム投稿タイプを作成する関数
+function create_news_post_type() {
+  $args = array(
+      'labels' => array(
+          'name' => 'News',
+          'singular_name' => 'News',
+
+          // Other labels...
+      ),
+      'public' => true,
+      'show_in_rest' => true, // これによりGutenbergのブロックエディターが有効化されます
+      'has_archive' => true, // これによりアーカイブページが有効化されます
+      'rewrite' => array('slug' => 'news'), // アーカイブページと個別投稿のURLスラッグを設定します
+      'supports' => array('title', 'editor', 'thumbnail', 'excerpt','custom-fields'),
+      'taxonomies' => array('category', 'post_tag'),
+      // Other settings...
+  );
+  register_post_type('news', $args);
+}
+
+add_action('init', 'create_news_post_type');
+
+function post_has_archive( $args, $post_type ) {
+  if ( 'post'  == $post_type ) {
+      $args['rewrite'] = true;
+      $args['has_archive'] = 'news'; // ページ名
+  }
+  return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
 ?>

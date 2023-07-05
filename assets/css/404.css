@@ -1,0 +1,64 @@
+.m_404{
+  margin-top: 200px;
+}
+
+.entry-404 {
+	padding-bottom: 85px;
+	text-align: center;
+}
+
+.entry-404-head {
+	color: #f0cdd0;
+	font-family: "Lato", sans-serif;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 36px;
+}
+
+.entry-404-head span::after {
+	content: " ";
+}
+
+.entry-404-lead {
+	color: #808080;
+	font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 24px;
+}
+
+.entry-404-lead .m_sp {
+	display: none;
+}
+
+.entry-404-content {
+	color: #808080;
+}
+
+.entry-404-btn {
+	margin-top: 58px;
+}
+
+.entry-404-btn .btn {
+	background: #ebebeb;
+	color: #8d8d8d;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  min-width: 282px;
+  padding: 17px 20px 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.entry-404-btn .btn:hover {
+	background: #ccc;
+	opacity: 1;
+}
