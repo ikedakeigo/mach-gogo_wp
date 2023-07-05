@@ -7,7 +7,6 @@ Template Name: news
 <?php get_header(); ?>
 
     <main class="main">
-      <div class="container">
         <section id="notice">
           <div class="container inner">
             <h2 class="main_title">お知らせ</h2>
@@ -29,7 +28,6 @@ Template Name: news
             </div>
           </div>
         </section>
-      </div>
     </main>
 
     <?php get_footer(); ?>

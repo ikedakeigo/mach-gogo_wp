@@ -379,7 +379,7 @@
           </div>
           <!--/#accordion-->
           <div id="btn_set">
-            <div class="button-wrapper"><a href="#" class="button">すべてみる</a></div>
+            <div class="button-wrapper"><a href="/faq/" class="button">すべてみる</a></div>
           </div>
         </div>
       </section>
@@ -415,8 +415,6 @@
 
           <div id="btn_set">
             <div class="button-wrapper"><a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="button">すべてみる</a></div>
-            <a href="<?php echo get_post_type_archive_link( 'news' ); ?>">News Archive</a>
-            <a href="<?php echo get_post_type_archive_link( 'post' ); ?>">Blog Archive</a>
           </div>
         </div>
       </section>
@@ -425,54 +423,48 @@
           <h2 class="main_title">お役立ち記事</h2>
           <div class="border"></div>
           <div class="articles-grid">
-            <div class="article-item">
-              <a href="#">
-                <div class="article-image">
-                  <img src="https://placehold.jp/cc9999/993333/150x150.png" alt="テスト投稿" />
+            <?php
+              $args = array(
+                'post_type' => 'post',  // Change this to any custom post type
+                'posts_per_page' => 4
+              );
+              $the_query = new WP_Query( $args );
+            ?>
+
+            <?php if($the_query->have_posts()) : ?>
+              <?php while($the_query->have_posts()) : ?>
+                <?php $the_query->the_post(); ?>
+                <div class="article-item">
+                  <a href="<?php the_permalink(); ?>">
+                    <div class="article-image">
+                      <?php if(has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail(); ?>
+                      <?php else: ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.jpg" alt="no-img">
+                      <?php endif; ?>
+                    </div>
+                    <div class="article-details">
+                      <h6>
+                        <?php the_time('Y.m.d'); ?>
+                        <?php
+                          $category = get_the_category();
+                          if ($category[0]):
+                        ?>
+                        <span class="category">
+                          <?php echo $category[0]->cat_name ?>
+                        </span>
+                        <?php endif; ?>
+                      </h6>
+                      <h4><?php the_title(); ?></h4>
+                    </div>
+                  </a>
                 </div>
-                <div class="article-details">
-                  <h6>2023-04-17 <span class="category"> Uncategorized </span></h6>
-                  <h4>テスト投稿</h4>
-                </div>
-              </a>
-            </div>
-            <div class="article-item">
-              <a href="#">
-                <div class="article-image">
-                  <img src="https://placehold.jp/cc9999/993333/150x150.png" alt="テスト投稿" />
-                </div>
-                <div class="article-details">
-                  <h6>2023-04-17 <span class="category"> Uncategorized </span></h6>
-                  <h4>テスト投稿</h4>
-                </div>
-              </a>
-            </div>
-            <div class="article-item">
-              <a href="#">
-                <div class="article-image">
-                  <img src="https://placehold.jp/cc9999/993333/150x150.png" alt="テスト投稿" />
-                </div>
-                <div class="article-details">
-                  <h6>2023-04-17 <span class="category"> Uncategorized </span></h6>
-                  <h4>テスト投稿</h4>
-                </div>
-              </a>
-            </div>
-            <div class="article-item">
-              <a href="#">
-                <div class="article-image">
-                  <img src="https://placehold.jp/cc9999/993333/150x150.png" alt="テスト投稿" />
-                </div>
-                <div class="article-details">
-                  <h6>2023-04-17 <span class="category"> Uncategorized </span></h6>
-                  <h4>テスト投稿</h4>
-                </div>
-              </a>
-            </div>
-            <!-- More article-items -->
+              <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
           </div>
           <div class="button-wrapper">
-            <a href="#" class="button">すべてみる</a>
+            <a href="/blogs/" class="button">すべてみる</a>
           </div>
         </div>
       </section>
