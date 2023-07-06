@@ -215,6 +215,11 @@ a {
   margin-top: 23px;
   padding: 0 30px;
 }
+.button:hover {
+  background-color: #072A40;
+  color: #fff;
+  border-color: #072A40;
+}
 
 .button-wrapper {
   text-align: center;
@@ -1774,4 +1779,32 @@ a {
   color: #5F7092;
   margin-top: 20px;
   padding-bottom: 120px;
+}
+
+
+/* ページネーション */
+
+.p-pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.page-numbers {
+  display: flex;
+  margin-top: 12px;
+}
+.page-numbers li {
+  display: block;
+}
+
+.page-numbers span {
+  background: #005C42;
+  color: #FFF;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: content-box;
+  line-height: 17px;
 }

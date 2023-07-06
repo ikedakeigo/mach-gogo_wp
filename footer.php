@@ -2,7 +2,7 @@
       <div class="container inner">
         <div class="footer-content">
           <div class="footer-logo">
-            <img src="https://placehold.その部分が凍ててました､jp/cc9999/993333/240x23.png" width="240" height="23" alt="" />
+            <!-- <img src="https://placehold.その部分が凍ててました､jp/cc9999/993333/240x23.png" width="240" height="23" alt="" /> -->
           </div>
           <h6 class="footer-department">内科</h6>
           <div class="footer-info">

@@ -34,7 +34,7 @@
         <?php the_content(); ?>
         <p><a href="#">【予約はこちらから】</a></p>
         <div class="button-wrapper">
-          <a href="#" class="button">お役立ち記事トップへ</a>
+          <a href="/blogs/" class="button">お役立ち記事トップへ</a>
         </div>
       </div>
 
@@ -56,7 +56,7 @@
           <?php
             if(have_posts()) {
               $myposts = get_posts(array(
-                'post_type' => 'post',
+                'post_type' => 'blog',
                 'posts_per_page' => '4',
                 'post__not_in' => array($post->ID),
               ));
@@ -85,9 +85,9 @@
                         </span>
                           <?php endif; ?>
                       </h6>
-                        <h4>
-                          <?php the_title(); ?>
-                        </h4>
+                      <h4>
+                          <?php echo mb_substr($post-> post_title, 0, 16).'...'; ?>
+                      </h4>
                       </div>
                     </a>
                   </div>

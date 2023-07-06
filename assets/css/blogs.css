@@ -63,7 +63,7 @@ p {
   margin-top: 114px;
   display: flex;
   align-items: center;
-  background-image: url(/assets/img/blogs/blog_top.png);
+  /* background-image: url(/assets/img/blogs/blog_top.png); */
   background-size: cover;
   border-radius: 20px;
 }

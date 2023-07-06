@@ -115,6 +115,44 @@ function post_has_archive( $args, $post_type ) {
 }
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
+function create_blog_post_type() {
+  $args = array(
+      'labels' => array(
+          'name' => 'Blog',
+          'singular_name' => 'Blog',
+
+          // Other labels...
+      ),
+      'public' => true,
+      'show_in_rest' => true, // これによりGutenbergのブロックエディターが有効化されます
+      'has_archive' => true, // これによりアーカイブページが有効化されます
+      'rewrite' => array('slug' => 'blog'), // アーカイブページと個別投稿のURLスラッグを設定します
+      'supports' => array('title', 'editor', 'thumbnail', 'excerpt','custom-fields'),
+      'taxonomies' => array('category', 'post_tag'),
+      // Other settings...
+  );
+  register_post_type('blog', $args);
+}
+add_action('init', 'create_blog_post_type');
+
+function blogs_has_archive( $args, $post_type ) {
+  if ( 'blog'  == $post_type ) {
+      $args['rewrite'] = true;
+      $args['has_archive'] = 'blogs'; // ページ名
+  }
+  return $args;
+}
+add_filter( 'register_post_type_args', 'blogs_has_archive', 10, 2 );
+
+// カスタム投稿のアーカイブページ表示件数
+function change_posts_per_page($query) {
+  if ( is_admin() || ! $query->is_main_query() )
+      return;
+  if ( $query->is_post_type_archive('blog') ) { //カスタム投稿タイプを指定
+      $query->set( 'posts_per_page', '3' ); //表示件数を指定
+  }
+}
+add_action( 'pre_get_posts', 'change_posts_per_page' );
 
 
 ?>

@@ -1,19 +1,29 @@
 <?php get_header(); ?>
 
+
+
     <div class="blog-header">
-      <header class="blog_hed">
+      <header class="blog_hed"
+      style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"
+      >
+        <?php if(have_posts())  :?>
+          <?php the_post(); ?>
         <div class="blog_hed__text">
-          <h1 class="blog_hed__title">クリニックで長い待ち時間が発生する4＋1の理由</h1>
+          <h1 class="blog_hed__title">
+            <?php the_title(); ?>
+          </h1>
         </div>
-        <a href="../queue/index.html" class="btn2"
+        <a href="<?php echo get_the_permalink(); ?>" class="btn2"
           >記事を読む
           <div class="arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" /></div>
         </a>
+        <?php endif; ?>
       </header>
     </div>
 
     <div class="container-blog">
-      <div class="archive-head m_description">
+
+      <!-- <div class="archive-head m_description">
         <div class="archive-lead">カテゴリー名</div>
         <h1 class="archive-title m_category">
           <?php the_archive_title(); ?>
@@ -23,7 +33,9 @@
             <?php the_archive_description(); ?>
           </p>
         </div>
-      </div>
+      </div> -->
+
+
       <section id="blog">
         <div class="blog-contents">
           <div class="blog-content">
@@ -52,13 +64,15 @@
                         </span>
                         <?php endif; ?>
                         </h6>
-                        <h4><?php the_title(); ?></h4>
+                        <h4>
+                          <?php echo mb_substr($post-> post_title, 0, 40).'...'; ?>
+                        </h4>
                       </div>
                     </a>
                   </div>
                 <?php endwhile; ?>
               <?php endif; ?>
-
+              <?php wp_reset_postdata(); ?>
             <h2 class="blog-title">新着記事</h2>
             <?php if(have_posts()) : ?>
                 <?php while(have_posts()) : ?>
@@ -84,7 +98,9 @@
                         </span>
                         <?php endif; ?>
                         </h6>
-                        <h4><?php the_title(); ?></h4>
+                        <h4>
+                          <?php echo mb_substr($post-> post_title, 0, 20).'...'; ?>
+                        </h4>
                       </div>
                     </a>
                   </div>
@@ -118,16 +134,19 @@
                         </span>
                         <?php endif; ?>
                         </h6>
-                        <h4><?php the_title(); ?></h4>
+                        <h4>
+                          <?php echo mb_substr($post-> post_title, 0, 16).'...'; ?>
+                        </h4>
                       </div>
                     </a>
                   </div>
                   <?php endwhile; ?>
                 <?php endif; ?>
+
             </div>
-            <section id="btn_set">
-              <div class="btn"><a href="../blog/index.html">すべてみる</a></div>
-            </section>
+            <div id="btn_set">
+            <div class="button-wrapper"><a href="/blog/" class="button">すべてみる</a></div>
+          </div>
           </div>
 
           <?php get_sidebar(); ?>

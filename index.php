@@ -425,7 +425,7 @@
           <div class="articles-grid">
             <?php
               $args = array(
-                'post_type' => 'post',  // Change this to any custom post type
+                'post_type' => 'blog',  // Change this to any custom post type
                 'posts_per_page' => 4
               );
               $the_query = new WP_Query( $args );
