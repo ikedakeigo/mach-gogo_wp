@@ -34,10 +34,10 @@
       <div class="sp-menu__container">
         <a href="index.html" class="sp-nav__logo-link">
           <div class="sp-nav__logo">
-            <img src="https://placehold.jp/240x23.png" width="240" height="23" alt="ロゴの画像" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
           </div>
         </a>
-        
+
         <?php
           wp_nav_menu(
             array(
@@ -72,7 +72,7 @@
           <div class="header-logo">
             <a href="/" class="header-logo__link">
               <div class="top-logo__box">
-                <div><img src="https://placehold.jp/240x23.png" width="240" height="23" alt="ロゴの画像" /></div>
+                <div><img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" /></div>
               </div>
             </a>
             <h5 class="header__address">兵庫県西脇市黒田庄123-5 大国神社前</h5>
