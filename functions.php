@@ -155,4 +155,24 @@ function change_posts_per_page($query) {
 add_action( 'pre_get_posts', 'change_posts_per_page' );
 
 
+// テンプレートを階層化に合わせる
+// page-about.php -> page-about__〇〇.php というファイル名にする
+add_filter('page_template_hierarchy', 'my_page_templates');
+function my_page_templates($templates) {
+    global $wp_query;
+
+    $template = get_page_template_slug();
+    $pagename = $wp_query->query['pagename'];
+
+    if ($pagename && ! $template) {
+        $pagename = str_replace('/', '__', $pagename);
+        $decoded = urldecode($pagename);
+
+        if ($decoded == $pagename) {
+            array_unshift($templates, "page-{$pagename}.php");
+        }
+    }
+
+    return $templates;
+}
 ?>

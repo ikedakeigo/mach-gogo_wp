@@ -137,3 +137,92 @@ p {
   font-weight: bold;
   line-height: 1.2;
 }
+
+/*===================================
+ * blog
+===================================*/
+.blog_body h2 {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: bold;
+  color: #021F59;
+}
+.blog_body h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background: #5F7092;
+  display: block;
+  margin-left: 8px;
+}
+
+/*===================================
+ * im cold
+===================================*/
+.attachment-post-thumbnail {
+  width: 61px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.im-titleIcon {
+  position: relative;
+}
+.im-titleIcon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(/assets/img/about/cold.png) no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.show-more {
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.list_toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.list_toggle a {
+  display: block;
+  width: 40%;
+  margin: 0;
+  text-align: center;
+  padding: 13px 0;
+  border: 1px solid #5F7092;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.list_toggle a.open_link::before {
+  content: "全て見る";
+  display: inline;
+}
+.list_toggle a.close_link::after {
+  content: "閉じる";
+  display: inline;
+}
+
+.page-disabled {
+  pointer-events: none;
+  background: rgba(239, 244, 243, 0.4862745098);
+}
+.page-disabled img {
+  opacity: 0.4;
+}
+.page-disabled p {
+  opacity: 0.4;
+}
+/*# sourceMappingURL=about.css.map */

@@ -75,8 +75,16 @@ p {
   background: #021F59;
   color: #EBF0F2;
 }
+@media screen and (max-width: 767px) {
+  #access .inner_links a {
+    width: 100%;
+  }
+}
 #access .inner_links a:nth-child(odd) {
   margin-right: 20px;
+}
+#access img {
+  width: 100%;
 }
 
 table.access-train {
@@ -107,7 +115,7 @@ table.access-train ul {
   color: #021F59;
 }
 table.access-train ul li:before {
-  content: url("/assets/img/access/triangle-right.svg");
+  content: url("assets/img/access/triangle-right.svg");
   margin-right: 4px;
 }
 
@@ -172,3 +180,4 @@ table.access-train ul li:before {
   font-size: 16px;
   font-weight: bold;
 }
+/*# sourceMappingURL=accsess.css.map */

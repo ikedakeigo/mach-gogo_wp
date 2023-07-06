@@ -105,7 +105,7 @@ Template Name: access
             <div class="border"></div>
           </div>
           <p class="text-center">
-            <img src="/assets/img/access/floor-map.svg" class="floor-map" alt="フロアマップ" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/floor-map.svg" class="floor-map" alt="フロアマップ" />
           </p>
           <div class="access-info">
             <ul class="access-info__text">
@@ -120,21 +120,21 @@ Template Name: access
                 <span class="floa-title">西鉄福岡(天神)駅からの経路</span><br />
                 北改札口を出てソラリアステージ方面へ真っ直ぐ進み、大画面に続く北口階段の左の連絡通路を通り、右手に見えるエスカレーターでひとつ降りたM2階フロアにあります。エスカレーターを降りてすぐ目の前にクリニックが見えます。<br />
                 <span class="smGrid">※ 改札を出て正面(北口階段横)のエスカレーターはM2階へ行けないのでご注意ください。(上りはソラリアステージM3階へ、下りは大画面前へ繋がっています。)</span><br />
-                <img src="/assets/img/access/annai1.jpg" alt="西鉄福岡(天神)駅からの経路" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/annai1.jpg" alt="西鉄福岡(天神)駅からの経路" />
               </p>
             </li>
             <li>
               <p>
                 <span class="floa-title">地下鉄・天神地下街からの経路</span><br />
                 市営地下鉄空港線・七隈線の改札口から天神地下街へ。天神地下街西5番出入口からソラリアステージへ入り、正面にあるエスカレーターでM2階へ上ります。下りのエスカレーター側にUターンすると、クリニックが正面に見えます。<br />
-                <img src="/assets/img/access/annai2.jpg" class="annai-image" alt="西鉄福岡(天神)駅からの経路" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/annai2.jpg" class="annai-image" alt="西鉄福岡(天神)駅からの経路" />
               </p>
             </li>
             <li>
               <p>
                 <span class="floa-title">大画面からの行き方</span><br />
                 バスを降りて、ソラリアステージビルに入ると、大画面(ソラリアステージ広場ビジョン)があります。その裏のエスカレーターを1つ上がったM2階フロアにあります。西鉄定期券売り場の真上です。 お隣には大賀薬局さんや岩田時計店さんがございます。<br />
-                <img src="/assets/img/access/annai3.jpg" class="annai-image" alt="西鉄福岡(天神)駅からの経路" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/annai3.jpg" class="annai-image" alt="西鉄福岡(天神)駅からの経路" />
               </p>
             </li>
             <li>
