@@ -386,6 +386,18 @@ p {
   font-size: 30px;
   font-weight: bold;
 }
+.s-blog__content h3 {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.06em;
+  color: #021F59;
+  text-align: start;
+}
 @media screen and (max-width: 767px) {
   .blog-title {
     font-size: 22px;

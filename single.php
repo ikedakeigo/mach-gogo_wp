@@ -32,7 +32,7 @@
 
       <div class="s-blog__content">
         <?php the_content(); ?>
-        <p><a href="#">【予約はこちらから】</a></p>
+        <p><a href="/reserve-page/">【予約はこちらから】</a></p>
         <div class="button-wrapper">
           <a href="/blogs/" class="button">お役立ち記事トップへ</a>
         </div>

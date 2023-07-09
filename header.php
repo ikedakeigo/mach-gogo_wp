@@ -59,7 +59,7 @@
       <div class="footer__flex">
         <div class="menu-toggle js-spmenu"><img src="<?php echo get_template_directory_uri() ?>/assets/img/menu.png" /></div>
         <div class="page-bottom">
-          <a href="#" class="page-bottom__link">
+          <a href="/reserve-page/" class="page-bottom__link">
             <div class="page-bottom__text">予約枠を確認・予約する</div>
           </a>
         </div>

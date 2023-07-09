@@ -115,7 +115,7 @@ table.access-train ul {
   color: #021F59;
 }
 table.access-train ul li:before {
-  content: url("assets/img/access/triangle-right.svg");
+  content: url("/wp-content/themes/mach-gogo/assets/img/access/triangle-right.svg");
   margin-right: 4px;
 }
 
@@ -137,7 +137,7 @@ table.access-train ul li:before {
   display: flex;
 }
 .access-info__text li::before {
-  content: url("/assets/img/access/callout-info.svg");
+  content: url("/wp-content/themes/mach-gogo/assets/img/access/callout-info.svg");
   margin-right: 10px;
 }
 
@@ -155,7 +155,7 @@ table.access-train ul li:before {
 }
 .access-subTitle::before {
   display: flex;
-  content: url("/assets/img/access/train.svg");
+  content: url("/wp-content/themes/mach-gogo/assets/img/access/train.svg");
   height: 28px;
   margin-right: 8px;
 }
@@ -164,7 +164,7 @@ table.access-train ul li:before {
   content: "";
   height: 1px;
   margin-left: 8px;
-  background: url("/assets/img/access/h3-line.svg") repeat-x;
+  background: url("/wp-content/themes/mach-gogo/assets/img/access/h3-line.svg") repeat-x;
 }
 
 .access-floa__list li {

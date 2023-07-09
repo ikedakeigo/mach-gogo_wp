@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="front-contents">
-          <a href="#" class="front-button2__link2">
+          <a href="/reserve-page/" class="front-button2__link2">
             <div class="front-button2">
               <div class="reservation-text2">・予約する<br />・予約確認</div>
             </div>
