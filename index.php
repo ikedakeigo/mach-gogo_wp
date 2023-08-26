@@ -4,7 +4,7 @@
     <section class="main_mv">
       <div class="container-front2">
         <div class="front-text2">
-          <p class="front-text2__main2">駅なかクリニックで<br class="is-sp" />音速で帰ろう</p>
+          <p class="front-text2__main2">駅なかクリニックで<br class="is-sp" /><ruby class="mh_tRed01">音速<rt>マッハ</rt></ruby>で帰ろう</p>
           <div class="front-text2__secondary2">
             当院は熱がある、お腹が痛い、鼻水など体に不調のある方が、
             <span class="highlight2">忙しい日常の合間</span>

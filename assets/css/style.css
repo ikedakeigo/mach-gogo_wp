@@ -1,5 +1,85 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,17 +89,29 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   scroll-behavior: smooth;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 /*===================================
  * color
 ===================================*/
+
 /*===================================
  * font
 ===================================*/
@@ -41,7 +133,7 @@ p {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -114,7 +206,7 @@ p {
   font-size: 30px;
   line-height: 180%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 @media screen and (max-width: 599px) {
   .main_title {
@@ -128,7 +220,7 @@ p {
   font-size: 26px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 @media screen and (max-width: 767px) {
   .sub_title {
@@ -145,7 +237,7 @@ p {
   font-size: 30px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 @media screen and (max-width: 767px) {
   .p-sub__title {
@@ -156,7 +248,7 @@ p {
 .border {
   width: 20px;
   height: 4px;
-  background: #F8B862;
+  background: #f8b862;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
@@ -173,7 +265,7 @@ p {
 a {
   text-decoration: none;
   transition: all 0.2s;
-  color: #021F59;
+  color: #021f59;
 }
 
 /*===================================
@@ -207,7 +299,7 @@ a {
   border-radius: 60px;
   border-style: solid;
   border-width: 1px;
-  border-color: #072A40;
+  border-color: #072a40;
   transition: all 0.2s;
   line-height: 44px;
   margin-left: auto;
@@ -216,9 +308,9 @@ a {
   padding: 0 30px;
 }
 .button:hover {
-  background-color: #072A40;
+  background-color: #072a40;
   color: #fff;
-  border-color: #072A40;
+  border-color: #072a40;
 }
 
 .button-wrapper {
@@ -265,7 +357,7 @@ a {
   position: fixed;
   top: 215vh;
   width: 100%;
-  background: #FFF;
+  background: #fff;
   height: 120vh;
   transition: 0.2s all ease-in;
   z-index: 20;
@@ -280,7 +372,7 @@ a {
   top: 0;
   height: 1000vh;
   padding-top: 50px;
-  background: #FFF;
+  background: #fff;
   z-index: 20;
 }
 
@@ -296,10 +388,10 @@ a {
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  color: #021F59;
+  color: #021f59;
 }
 .sp-nav__link:hover {
-  color: #021F59;
+  color: #021f59;
 }
 
 .js-close {
@@ -309,7 +401,7 @@ a {
   width: 43px;
   height: 43px;
   border-radius: 50%;
-  background-color: #021F59;
+  background-color: #021f59;
 }
 
 .close__icon img {
@@ -368,14 +460,14 @@ a {
   font-size: 18px;
   text-align: center;
   letter-spacing: 0.16em;
-  color: #EBF0F2;
+  color: #ebf0f2;
   line-height: 84px;
 }
 .page-bottom a {
   text-decoration: none;
 }
 .page-bottom__text {
-  color: #EBF0F2;
+  color: #ebf0f2;
   font-size: 16px;
 }
 
@@ -385,12 +477,12 @@ a {
 #top {
   height: 96px;
   border-bottom: 1px solid;
-  border-color: #EAF2ED;
+  border-color: #eaf2ed;
 }
 @media screen and (min-width: 768px) {
   #top {
     position: fixed;
-    background-color: #EBF0F2;
+    background-color: #ebf0f2;
     width: 100%;
     z-index: 999;
     top: 0;
@@ -402,7 +494,7 @@ a {
   font-size: 13px;
   line-height: 19px;
   letter-spacing: 0.1em;
-  color: #021F59;
+  color: #021f59;
   margin-bottom: 20px;
 }
 
@@ -514,7 +606,7 @@ a {
   font-size: 31px;
   line-height: 158%;
   letter-spacing: 0.02em;
-  color: #021F59;
+  color: #021f59;
   padding-top: 43px;
 }
 @media screen and (max-width: 767px) {
@@ -535,13 +627,13 @@ a {
   font-size: 15px;
   line-height: 191%;
   letter-spacing: 0.03em;
-  color: #021F59;
+  color: #021f59;
   padding-bottom: 40px;
 }
 
 .highlight2 {
-  background-color: #EBF0F2;
-  color: #021F59;
+  background-color: #ebf0f2;
+  color: #021f59;
   line-height: 150%;
   display: inline-block;
   padding: 0 3px;
@@ -564,7 +656,7 @@ a {
     line-height: 157%;
     align-items: center;
     letter-spacing: 0.11em;
-    color: #EBF0F2;
+    color: #ebf0f2;
   }
 }
 .front-button2__link2:hover {
@@ -585,7 +677,7 @@ a {
     word-wrap: break-word;
     align-items: center;
     letter-spacing: 0.11em;
-    color: #EBF0F2;
+    color: #ebf0f2;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -663,7 +755,7 @@ a {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #021F59;
+    color: #021f59;
   }
 }
 .container-front {
@@ -695,7 +787,7 @@ a {
   font-size: 31px;
   line-height: 158%;
   letter-spacing: 0.02em;
-  color: #EBF0F2;
+  color: #ebf0f2;
   padding-top: 43px;
 }
 @media screen and (max-width: 767px) {
@@ -716,13 +808,13 @@ a {
   font-size: 15px;
   line-height: 191%;
   letter-spacing: 0.03em;
-  color: #EBF0F2;
+  color: #ebf0f2;
   padding-bottom: 40px;
 }
 
 .highlight {
-  background-color: #EBF0F2;
-  color: #021F59;
+  background-color: #ebf0f2;
+  color: #021f59;
   line-height: 150%;
   display: inline-block;
   padding: 0 3px;
@@ -742,7 +834,7 @@ a {
     line-height: 157%;
     align-items: center;
     letter-spacing: 0.11em;
-    color: #EBF0F2;
+    color: #ebf0f2;
   }
 }
 .front-button__link:hover {
@@ -763,7 +855,7 @@ a {
     word-wrap: break-word;
     align-items: center;
     letter-spacing: 0.11em;
-    color: #EBF0F2;
+    color: #ebf0f2;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -784,7 +876,7 @@ a {
 ===================================*/
 .covid19-attention {
   font-weight: bold;
-  border: 5px #021F59 solid;
+  border: 5px #021f59 solid;
   padding: 20px 40px;
   padding: 20px 40px;
   margin: 40px 0;
@@ -914,7 +1006,7 @@ a {
   width: 210px;
   height: 210px;
   margin: 17px;
-  background: #021F59;
+  background: #021f59;
   border-radius: 20px;
   margin: 6px;
 }
@@ -961,7 +1053,7 @@ a {
   line-height: 140%;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #EBF0F2;
+  color: #ebf0f2;
   margin-top: 16px;
   height: 32px;
   display: flex;
@@ -1007,6 +1099,9 @@ a {
   padding: 0 25px;
   box-sizing: border-box;
   overflow: hidden;
+
+  /* margin: 0 calc(50% - 50vw);
+	width: 100vw; */
 }
 
 .full-screen {
@@ -1037,7 +1132,7 @@ a {
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   bottom: 40px;
   left: 20px;
 }
@@ -1048,7 +1143,7 @@ a {
   font-size: 12px;
   line-height: 160%;
   letter-spacing: 0.01em;
-  color: #021F59;
+  color: #021f59;
   margin-top: 7px;
   bottom: 20px;
   left: 20px;
@@ -1096,7 +1191,7 @@ a {
 @media screen and (min-width: 768px) {
   .step-number__pc {
     display: block;
-    background: #021F59;
+    background: #021f59;
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -1104,7 +1199,7 @@ a {
     text-align: center;
     font-weight: bold;
     font-size: 14px;
-    color: #EBF0F2;
+    color: #ebf0f2;
     flex: none;
     margin-left: auto;
     margin-right: auto;
@@ -1118,7 +1213,7 @@ a {
   }
 }
 .step-number__sp {
-  background: #021F59;
+  background: #021f59;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -1126,7 +1221,7 @@ a {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
-  color: #EBF0F2;
+  color: #ebf0f2;
   margin-right: 12px;
   flex: none;
   margin-top: 1px;
@@ -1158,7 +1253,7 @@ a {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 @media screen and (min-width: 768px) {
   .step-text {
@@ -1182,7 +1277,7 @@ a {
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-bottom: 13px;
   text-align: center;
 }
@@ -1209,7 +1304,7 @@ a {
   font-size: 12px;
   line-height: 150%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-bottom: 13px;
   text-align: center;
   align-items: center;
@@ -1223,7 +1318,7 @@ a {
   font-size: 10px;
   line-height: 150%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 
 .schedule-day {
@@ -1256,7 +1351,7 @@ a {
   margin-left: 25px;
   line-height: 100%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 .schedule-time__holiday {
   font-size: 22px;
@@ -1278,7 +1373,7 @@ a {
 .schedule-label {
   padding-top: 5px;
   padding-bottom: 5px;
-  background: #EBF0F2;
+  background: #ebf0f2;
   border-radius: 30px;
   display: inline-block;
   text-align: center;
@@ -1329,7 +1424,7 @@ a {
   font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-top: 12px;
 }
 @media screen and (min-width: 768px) {
@@ -1363,14 +1458,14 @@ a {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  color: #021F59;
+  color: #021f59;
   letter-spacing: 0.06em;
   cursor: pointer;
   display: flex;
   line-height: 130%;
 }
 .question-item:hover {
-  color: #021F59;
+  color: #021f59;
   text-decoration: underline;
 }
 .question-item::before {
@@ -1382,7 +1477,7 @@ a {
   height: 2px;
   /*縦線に*/
   transform: rotate(90deg);
-  background: #021F59;
+  background: #021f59;
   transition: all 0.3s ease-in-out;
 }
 .question-item::after {
@@ -1393,7 +1488,7 @@ a {
   /*横線*/
   width: 15px;
   height: 2px;
-  background: #021F59;
+  background: #021f59;
   transition: all 0.2s ease-in-out;
 }
 .question-item.open::before {
@@ -1404,13 +1499,13 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #021F59;
+  background-color: #021f59;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: #EBF0F2;
+  color: #ebf0f2;
   display: inline-block;
   margin-right: 17px;
   flex: none;
@@ -1436,7 +1531,7 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #072A40;
+  background-color: #072a40;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1458,7 +1553,7 @@ a {
   font-size: 13px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 
 /*===================================
@@ -1472,7 +1567,7 @@ a {
   font-size: 26px;
   line-height: 180%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1499,7 +1594,7 @@ a {
 }
 .notice-item a:hover {
   text-decoration: underline;
-  color: #021F59;
+  color: #021f59;
   opacity: 0.9;
 }
 .notice-item h3 {
@@ -1508,7 +1603,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.05em;
-  color: #021F59;
+  color: #021f59;
   word-break: break-all;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -1525,7 +1620,7 @@ a {
 .notice-date {
   width: 54px;
   height: 54px;
-  background-color: #5F7092;
+  background-color: #5f7092;
   border-radius: 5px;
   position: relative;
   flex: none;
@@ -1538,7 +1633,7 @@ a {
   font-weight: bold;
   font-size: x-small;
   letter-spacing: 0.06em;
-  color: #EBF0F2;
+  color: #ebf0f2;
   word-break: normal;
   top: 50%;
   left: 50%;
@@ -1581,7 +1676,7 @@ a {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: #021F59;
+  color: #021f59;
 }
 @media screen and (max-width: 767px) {
   .article-item {
@@ -1613,7 +1708,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.05em;
-  color: #021F59;
+  color: #021f59;
   line-height: 160%;
   display: -webkit-box;
   overflow: hidden;
@@ -1625,7 +1720,7 @@ a {
   font-size: 12px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-left: 10px;
 }
 
@@ -1659,7 +1754,7 @@ a {
  * footer
 ===================================*/
 .footer {
-  background-color: #021F59;
+  background-color: #021f59;
   margin-top: 120px;
 }
 
@@ -1670,7 +1765,7 @@ a {
   font-size: 15px;
   line-height: 180%;
   letter-spacing: 0.06em;
-  color: #EBF0F2;
+  color: #ebf0f2;
 }
 .footer-content p {
   font-style: normal;
@@ -1678,7 +1773,7 @@ a {
   font-size: 15px;
   line-height: 180%;
   letter-spacing: 0.06em;
-  color: #EBF0F2;
+  color: #ebf0f2;
 }
 
 .footer-logo {
@@ -1709,7 +1804,7 @@ a {
   width: 148px;
   height: 37px;
   text-align: center;
-  background-color: #EBF0F2;
+  background-color: #ebf0f2;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1726,12 +1821,12 @@ a {
   font-size: 11px;
   line-height: 150%;
   letter-spacing: 0.06em;
-  color: #EBF0F2;
+  color: #ebf0f2;
   margin-top: 30px;
 }
 .footer-schedule__table {
   width: 345px;
-  color: #EBF0F2;
+  color: #ebf0f2;
 }
 .footer-schedule__table th {
   padding-bottom: 10px;
@@ -1765,7 +1860,7 @@ a {
   font-size: 11px;
   line-height: 100%;
   letter-spacing: 0.06em;
-  color: #EBF0F2;
+  color: #ebf0f2;
   margin-top: 33px;
 }
 
@@ -1776,11 +1871,10 @@ a {
   line-height: 100%;
   text-align: center;
   letter-spacing: 0.15em;
-  color: #5F7092;
+  color: #5f7092;
   margin-top: 20px;
   padding-bottom: 120px;
 }
-
 
 /* ページネーション */
 
@@ -1798,8 +1892,8 @@ a {
 }
 
 .page-numbers span {
-  background: #005C42;
-  color: #FFF;
+  background: #005c42;
+  color: #fff;
   border-radius: 50%;
   width: 17px;
   height: 17px;
