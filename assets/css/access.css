@@ -1,5 +1,85 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,17 +89,35 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   scroll-behavior: smooth;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 /*===================================
+ * colors
+===================================*/
+/*===================================
  * color
 ===================================*/
+.mh_tRed01 {
+  color: #e70012;
+}
+
 /*===================================
  * font
 ===================================*/
@@ -41,7 +139,7 @@ p {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -51,6 +149,36 @@ p {
 ===================================*/
 .smGrid {
   font-size: 12px;
+}
+
+/*===================================
+ * ページネーション
+===================================*/
+.p-pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.page-numbers {
+  display: flex;
+  margin-top: 12px;
+}
+
+.page-numbers li {
+  display: block;
+}
+
+.page-numbers span {
+  background: #005c42;
+  color: #fff;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: content-box;
+  line-height: 17px;
 }
 
 #access .inner_links {
@@ -72,8 +200,8 @@ p {
   margin-bottom: 20px;
 }
 #access .inner_links a:hover {
-  background: #021F59;
-  color: #EBF0F2;
+  background: #021f59;
+  color: #ebf0f2;
 }
 @media screen and (max-width: 767px) {
   #access .inner_links a {
@@ -88,7 +216,7 @@ p {
 }
 
 table.access-train {
-  color: #021F59;
+  color: #021f59;
   width: 100%;
   font-size: 13px;
   line-height: 200%;
@@ -112,7 +240,7 @@ table.access-train ul {
   font-weight: normal;
   font-size: 13px;
   line-height: 200%;
-  color: #021F59;
+  color: #021f59;
 }
 table.access-train ul li:before {
   content: url("/wp-content/themes/mach-gogo/assets/img/access/triangle-right.svg");
@@ -120,7 +248,7 @@ table.access-train ul li:before {
 }
 
 .access-info {
-  background: #EBF0F2;
+  background: #ebf0f2;
   border-radius: 20px;
   padding: 20px;
   margin-top: 30px;
@@ -131,7 +259,7 @@ table.access-train ul li:before {
   font-weight: normal;
   font-size: 13px;
   line-height: 200%;
-  color: #5F7092;
+  color: #5f7092;
 }
 .access-info__text li {
   display: flex;
@@ -148,7 +276,7 @@ table.access-train ul li:before {
   font-size: 24px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-top: 30px;
   margin-bottom: 20px;
   align-items: center;
@@ -180,4 +308,3 @@ table.access-train ul li:before {
   font-size: 16px;
   font-weight: bold;
 }
-/*# sourceMappingURL=accsess.css.map */

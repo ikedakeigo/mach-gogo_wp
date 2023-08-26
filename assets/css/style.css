@@ -109,8 +109,14 @@ ul {
 }
 
 /*===================================
+ * colors
+===================================*/
+/*===================================
  * color
 ===================================*/
+.mh_tRed01 {
+  color: #e70012;
+}
 
 /*===================================
  * font
@@ -143,6 +149,36 @@ p {
 ===================================*/
 .smGrid {
   font-size: 12px;
+}
+
+/*===================================
+ * ページネーション
+===================================*/
+.p-pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.page-numbers {
+  display: flex;
+  margin-top: 12px;
+}
+
+.page-numbers li {
+  display: block;
+}
+
+.page-numbers span {
+  background: #005c42;
+  color: #fff;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: content-box;
+  line-height: 17px;
 }
 
 /*===================================
@@ -309,7 +345,8 @@ a {
 }
 .button:hover {
   background-color: #072a40;
-  color: #fff;
+  color: #ebf0f2;
+  transition: all 0.2s;
   border-color: #072a40;
 }
 
@@ -1099,9 +1136,6 @@ a {
   padding: 0 25px;
   box-sizing: border-box;
   overflow: hidden;
-
-  /* margin: 0 calc(50% - 50vw);
-	width: 100vw; */
 }
 
 .full-screen {
@@ -1537,7 +1571,7 @@ a {
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: #fff;
+  color: #ebf0f2;
   display: inline-block;
   margin-right: 17px;
   flex: none;
@@ -1874,31 +1908,4 @@ a {
   color: #5f7092;
   margin-top: 20px;
   padding-bottom: 120px;
-}
-
-/* ページネーション */
-
-.p-pagination {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.page-numbers {
-  display: flex;
-  margin-top: 12px;
-}
-.page-numbers li {
-  display: block;
-}
-
-.page-numbers span {
-  background: #005c42;
-  color: #fff;
-  border-radius: 50%;
-  width: 17px;
-  height: 17px;
-  text-align: center;
-  font-weight: bold;
-  box-sizing: content-box;
-  line-height: 17px;
 }

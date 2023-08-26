@@ -1,24 +1,105 @@
 //マップ型変数breakpointsを定義
 $breakpoints: (
-//キー 値
-// 'xxs': 'screen and (max-width: 328px)',
-'xs': 'screen and (max-width: 599px)',
-'sm': 'screen and (max-width: 767px)', //767px以下（スマホ）用の表示
-'md': 'screen and (min-width: 768px)', //768px以上（タブレット・PC）用の表示
-'lg': 'screen and (min-width: 1024px)',
+  //キー 値
+  // 'xxs': 'screen and (max-width: 328px)',
+  "xs": "screen and (max-width: 599px)",
+  "sm": "screen and (max-width: 767px)",
+  //767px以下（スマホ）用の表示
+  "md": "screen and (min-width: 768px)",
+  //768px以上（タブレット・PC）用の表示
+  "lg": "screen and (min-width: 1024px)"
 ) !default;
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
 @mixin mq($breakpoint: sp) {
-//map-get(マップ型変数, キー)で値を取得
+  //map-get(マップ型変数, キー)で値を取得
   @media #{map-get($breakpoints, $breakpoint)} {
     //この中をカスタムできる
     @content;
   }
 }
 
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,29 +109,46 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   scroll-behavior: smooth;
 }
 
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 /*===================================
+ * colors
+===================================*/
+$main-color: #021f59;
+$sub-color: #072a40;
+$btn-color: #011640;
+$light-color: #5f7092;
+$white-color: #ebf0f2;
+$red-color: #e70012;
+
+/*===================================
  * color
 ===================================*/
-$main-color: #021F59;
-$sub-color: #072A40;
-$btn-color: #011640;
-$light-color: #5F7092;
-$white-color: #EBF0F2;
-
+.mh_tRed01 {
+  color: $red-color;
+}
 /*===================================
  * font
 ===================================*/
 
-h6{
+h6 {
   font-style: normal;
   font-weight: bold;
   line-height: 150%;
@@ -78,7 +176,7 @@ p {
  * smGird
 ===================================*/
 
-.smGrid{
+.smGrid {
   font-size: 12px;
 }
 

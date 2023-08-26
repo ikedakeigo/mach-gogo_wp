@@ -1,5 +1,85 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,17 +89,34 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   scroll-behavior: smooth;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 /*===================================
+ * colors
+===================================*/
+/*===================================
  * color
 ===================================*/
+.mh_tRed01 {
+  color: #e70012;
+}
 
 /*===================================
  * font
@@ -42,7 +139,7 @@ p {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -52,6 +149,36 @@ p {
 ===================================*/
 .smGrid {
   font-size: 12px;
+}
+
+/*===================================
+ * ページネーション
+===================================*/
+.p-pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.page-numbers {
+  display: flex;
+  margin-top: 12px;
+}
+
+.page-numbers li {
+  display: block;
+}
+
+.page-numbers span {
+  background: #005c42;
+  color: #fff;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: content-box;
+  line-height: 17px;
 }
 
 .blog-header {
@@ -85,7 +212,7 @@ p {
   margin-right: 19px;
   font-style: normal;
   font-weight: bold;
-  color: #EBF0F2;
+  color: #ebf0f2;
 }
 @media screen and (min-width: 1024px) {
   .blog_hed__text {
@@ -120,7 +247,7 @@ p {
   line-height: 45px;
   margin-left: auto;
   margin-right: auto;
-  background: #021F59;
+  background: #021f59;
   color: white;
   margin-top: 300px;
 }
@@ -171,7 +298,7 @@ p {
   text-align: start;
   margin-bottom: 50px;
   font-size: 24px;
-  color: #021F59;
+  color: #021f59;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.06rem;
@@ -190,8 +317,7 @@ p {
 .blog-item__image img {
   width: 235px;
   height: 151px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 @media screen and (max-width: 767px) {
@@ -214,7 +340,7 @@ p {
   font-size: 25px;
   line-height: 160%;
   letter-spacing: 0.06rem;
-  color: #021F59;
+  color: #021f59;
 }
 @media screen and (max-width: 767px) {
   .blog-item__info h4 {
@@ -249,8 +375,7 @@ p {
 .blog-articles__image img {
   width: 106px;
   height: 68px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 7px;
 }
 .blog-articles__info {
@@ -262,7 +387,7 @@ p {
 .blog-articles__info h4 {
   font-size: 18px;
   font-weight: bold;
-  color: #021F59;
+  color: #021f59;
 }
 
 .sidebar-main {
@@ -289,7 +414,7 @@ p {
   font-size: 15px;
   padding-left: 21px;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
   display: block;
 }
 
@@ -307,8 +432,7 @@ p {
 }
 .blogTop-img img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .s-blog__date {
@@ -326,7 +450,7 @@ p {
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 .s-blog__title {
   margin-bottom: 16px;
@@ -335,7 +459,7 @@ p {
   font-size: 26px;
   line-height: 180%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 .s-blog__content {
   font-style: normal;
@@ -343,7 +467,7 @@ p {
   font-size: 15px;
   line-height: 160%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 .s-blog__content ol {
   list-style-type: decimal;
@@ -368,7 +492,7 @@ p {
   border-radius: 100%;
   font-weight: bold;
   color: #FFFFFF;
-  background: #021F59;
+  background: #021f59;
   line-height: 1.4;
   counter-increment: li;
   content: counter(li);
@@ -381,23 +505,11 @@ p {
   font-size: 18px;
   line-height: 180%;
   letter-spacing: 0.06em;
-  color: #021F59;
+  color: #021f59;
 }
 .blog-title {
   font-size: 30px;
   font-weight: bold;
-}
-.s-blog__content h3 {
-  margin-top: 18px;
-  margin-bottom: 18px;
-  margin-bottom: 16px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 180%;
-  letter-spacing: 0.06em;
-  color: #021F59;
-  text-align: start;
 }
 @media screen and (max-width: 767px) {
   .blog-title {
@@ -413,7 +525,7 @@ p {
 }
 
 .archive-lead {
-  color: #021F59;
+  color: #021f59;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -427,7 +539,7 @@ p {
 }
 
 .archive-title.m_category::before {
-  color: #021F59;
+  color: #021f59;
   content: "\f02d";
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 26px;
@@ -436,11 +548,11 @@ p {
 }
 
 .archive-title.m_search span {
-  color: #021F59;
+  color: #021f59;
 }
 
 .archive-title.m_search::before {
-  color: #021F59;
+  color: #021f59;
   content: "\f002";
   font-family: "Font Awesome 5 Free", sans-serif;
   font-size: 26px;
@@ -452,113 +564,15 @@ p {
   font-size: 14px;
   line-height: 1.4;
 }
-/*# sourceMappingURL=blogs.css.map */
-
-/*===================================
- * toc
-===================================*/
-#toc_container {
-	background: #fff;
-	border: 2px solid #021F59;
-	padding: 20px 30px;
-  margin-bottom: 100px;
-}
-
-#toc_container .toc_title {
-	border-bottom: 2px solid #021F59;
-	font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 30px;
-	margin-top: 0;
-	padding-bottom: 6px;
-	text-align: center;
-}
-
-#toc_container ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#toc_container ul a {
-	color: #333;
-	display: inline-block;
-	font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
-	font-weight: 600;
-	position: relative;
-	text-decoration: none;
-}
-
-#toc_container > ul > li {
-	counter-increment: toc;
-	margin-bottom: 20px;
-	margin-top: 0;
-}
-
-#toc_container > ul > li:last-child {
-	margin-bottom: 0;
-}
-
-#toc_container > ul > li > a {
-	padding-left: 36px;
-}
-
-#toc_container > ul > li > a::before {
-	background: #021F59;
-	border-radius: 50%;
-	color: #fff;
-	content: counter(toc);
-	font-family: "Lato", sans-serif;
-	font-weight: 700;
-	height: 26px;
-	left: 0;
-	line-height: 26px;
-	margin-top: -2px;
-	min-width: 26px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-}
-
-#toc_container > ul > li > ul {
-	margin-top: 6px;
-	padding-left: 36px;
-}
-
-#toc_container > ul > li > ul > li {
-	margin-bottom: 2px;
-	margin-top: 0;
-}
-
-#toc_container > ul > li > ul > li:last-child {
-	margin-bottom: 0;
-}
-
-#toc_container > ul > li > ul > li > a {
-	font-weight: 400;
-	padding-left: 10px;
-}
-
-#toc_container > ul > li > ul > li > a::before {
-	background: #021F59;
-	border-radius: 50%;
-	content: "";
-	height: 5px;
-	left: 0;
-	min-width: initial;
-	position: absolute;
-	top: 8px;
-	width: 5px;
-}
 
 /*===================================
  * tag
 ===================================*/
-.entry-tag-items{
+.entry-tag-items {
   padding-top: 24px;
 }
-.entry-tag-items{
+
+.entry-tag-items {
   border-top: 1px solid #e2e2e2;
   display: flex;
   flex-wrap: wrap;
@@ -566,56 +580,55 @@ p {
   margin-top: 20px;
 }
 
-.entry-tag-head{
+.entry-tag-head {
   padding: 6px 15px 0;
 }
 
 .entry-tag-item a {
-	padding: 4px 16px 3px;
+  padding: 4px 16px 3px;
 }
 
-
 .entry-tag-head {
-	background: #808080;
-	border-radius: 3px;
-	color: #fff;
-	font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	margin-right: 15px;
-	padding: 6px 15px 0;
+  background: #808080;
+  border-radius: 3px;
+  color: #ebf0f2;
+  font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  padding: 6px 15px 0;
 }
 
 .entry-tag-head::before {
-	content: "\f02b";
-	font-family: "Font Awesome 5 Free", sans-serif;
-	font-weight: 900;
-	margin-right: 5px;
+  content: "\f02b";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  margin-right: 5px;
 }
 
 .entry-tag-item {
-	margin-bottom: 10px;
-	margin-right: 15px;
+  margin-bottom: 10px;
+  margin-right: 15px;
 }
 
 .entry-tag-item:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .entry-tag-item a {
-	border: 1px solid #e2e2e2;
-	border-radius: 3px;
-	color: #808080;
-	display: block;
-	font-size: 14px;
-	padding: 6px 18px 5px;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  color: #808080;
+  display: block;
+  font-size: 14px;
+  padding: 6px 18px 5px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 
 .entry-tag-item a:hover {
-	background: #808080;
-	border-color: #808080;
-	color: #fff;
+  background: #808080;
+  border-color: #808080;
+  color: #ebf0f2;
 }
