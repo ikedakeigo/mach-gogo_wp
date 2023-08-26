@@ -1,0 +1,198 @@
+@use 'base' as *;
+
+
+.medicalContentAll{
+
+}
+
+.inner_links{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & a{
+      display: block;
+      width: 40%;
+      margin: 0;
+      text-align: center;
+      padding: 13px 0;
+      border: 1px solid #B9D8CF;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+
+    & a:nth-child(odd){
+      margin-right: 20px;
+    }
+}
+
+
+/*===================================
+ * internalMedicine
+===================================*/
+
+.internalMedicine{
+
+}
+
+
+.im {
+  &__title{
+    margin-top: 75px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    color: $main-color;
+    @include mq(sm){
+      font-size: 20px;
+    }
+  }
+
+  &__sub{
+
+    &--text{
+      margin: 0 10px;
+    }
+  }
+
+  &__icon {
+
+    &--container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 35px;
+
+      & a{
+        max-width: 93px;
+        width: 33%;
+        height: 93px;
+        background: #EFF4F3;
+        border-radius: 20px;
+        margin: 8px 4.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+
+        &:hover{
+          transform: scale(1.3);
+        }
+
+        & .im-icon {
+          height: 100%;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: center;
+
+          & img {
+            width: 33px;
+            margin-bottom: 8px;
+            margin: 0 auto;
+          }
+        }
+
+        & .im-ttl{
+          text-align: center;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 1.2;
+        }
+      }
+
+    }
+  }
+}
+
+
+/*===================================
+ * blog
+===================================*/
+.blog_body h2 {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: bold;
+  color: #021F59;
+}
+.blog_body h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background: #5F7092;
+  display: block;
+  margin-left: 8px;
+}
+/*===================================
+ * im cold
+===================================*/
+.attachment-post-thumbnail {
+  width: 61px;
+  height: auto;
+  margin-right: 10px;
+}
+.im-titleIcon {
+  position: relative;
+}
+.im-titleIcon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(/wp-content/themes/mach-gogo/assets/img/about/cold.png) no-repeat center center;
+  background-size: contain;
+  margin-right: 10px;
+}
+.show-more {
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+.list_toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.list_toggle a {
+  display: block;
+  width: 40%;
+  margin: 0;
+  text-align: center;
+  padding: 13px 0;
+  border: 1px solid #5F7092;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.list_toggle a.open_link::before {
+  content: "全て見る";
+  display: inline;
+}
+.list_toggle a.close_link::after {
+  content: "閉じる";
+  display: inline;
+}
+.page-disabled {
+  pointer-events: none;
+  background: rgba(239, 244, 243, 0.4862745098);
+}
+.page-disabled img {
+  opacity: 0.4;
+}
+.page-disabled p {
+  opacity: 0.4;
+}
