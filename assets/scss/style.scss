@@ -1,51 +1,50 @@
-@use 'base' as *;
+@use "base" as *;
 
 /*===================================
  * 共通
 ===================================*/
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.is-pc{
+.is-pc {
   display: none;
-  @include mq(md){
+  @include mq(md) {
     display: block;
   }
 }
-.is-sp{
+.is-sp {
   display: block;
-  @include mq(md){
+  @include mq(md) {
     display: none;
   }
 }
 
-.anchorarea{
+.anchorarea {
   position: relative;
 }
 
-.lp_anchor{
+.lp_anchor {
   position: absolute;
   top: -101px;
 }
 
-.container{
+.container {
   margin-left: 20px;
   margin-right: 20px;
   max-width: 1120px;
-  @include mq(md){
+  @include mq(md) {
     width: 698px;
     margin: 0 auto;
   }
-  @include mq(sm){
+  @include mq(sm) {
     width: 80%;
     margin: 0 auto;
   }
-
 }
 
-.main_title{
+.main_title {
   margin-top: 120px;
   margin-bottom: 16px;
   text-align: center;
@@ -55,69 +54,68 @@
   line-height: 180%;
   letter-spacing: 0.06em;
   color: $main-color;
-  @include mq(xs){
+  @include mq(xs) {
     margin-top: 50px;
   }
 }
 
-.sub_title{
+.sub_title {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 160%;
   letter-spacing: 0.06em;
   color: $main-color;
-  @include mq(sm){
+  @include mq(sm) {
     font-size: 20px;
   }
 }
 
-.p-sub__title{
+.p-sub__title {
   margin-top: 75px;
-    margin-bottom: 16px;
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 160%;
-    letter-spacing: 0.06em;
-    color: $main-color;
-    @include mq(sm){
-      font-size: 20px;
-    }
+  margin-bottom: 16px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: $main-color;
+  @include mq(sm) {
+    font-size: 20px;
+  }
 }
 
-.border{
+.border {
   width: 20px;
   height: 4px;
-  background: #F8B862;
+  background: #f8b862;
   border-radius: 8px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 36px;
 }
 
-.section{
+.section {
   max-width: 100%;
   margin: 0 auto;
   padding: 0px 0;
   overflow: hidden;
 }
 
-a{
+a {
   text-decoration: none;
   transition: all 0.2s;
   color: $main-color;
 }
 
-
 /*===================================
  * margin padding
 ===================================*/
-.mt_0{
+.mt_0 {
   margin-top: 0px;
 }
-.mt_24{
+.mt_24 {
   margin-top: 24px;
 }
 
@@ -125,12 +123,12 @@ a{
  * btn_set
 ===================================*/
 
-#btn_set{
+#btn_set {
   text-align: center;
   margin-top: 30px;
 }
 
-.button{
+.button {
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -143,7 +141,7 @@ a{
   border-style: solid;
   border-width: 1px;
   border-color: $sub-color;
-  transition: all .2s;
+  transition: all 0.2s;
   line-height: 44px;
   margin-left: auto;
   margin-right: auto;
@@ -151,15 +149,15 @@ a{
 
   padding: 0 30px;
 
-  &:hover{
+  &:hover {
     background-color: $sub-color;
     color: $white-color;
-    transition: all .2s;
+    transition: all 0.2s;
     border-color: #072a40;
   }
 }
 
-.button-wrapper{
+.button-wrapper {
   text-align: center;
 }
 
@@ -167,23 +165,22 @@ a{
  * リンクボタン
 ===================================*/
 
-.ma_out01{
-  & span{
-    &::after{
-    content: url("/assets/img/ico_newwindow_01.png");
-    margin-left: 2px;
-  }
-
+.ma_out01 {
+  & span {
+    &::after {
+      content: url("/assets/img/ico_newwindow_01.png");
+      margin-left: 2px;
+    }
   }
 }
 
-.ma_listMark01{
+.ma_listMark01 {
   position: relative;
   display: block;
   padding-left: 15px;
   font-size: 13px;
   font-weight: bold;
-  &::before{
+  &::before {
     content: url("/assets/img/ico_arrow_right02.png");
     top: 0.9em;
     left: 0;
@@ -194,11 +191,10 @@ a{
   }
 }
 
-
 /*===================================
  * sp-menu
 ===================================*/
-.fixed{
+.fixed {
   position: fixed;
   overflow: hidden;
   width: 100%;
@@ -206,16 +202,16 @@ a{
   left: 0;
 }
 
-.sp-menu{
+.sp-menu {
   position: fixed;
   top: 215vh;
   width: 100%;
-  background: #FFF;
+  background: #fff;
   height: 120vh;
-  transition: .2s all ease-in;
+  transition: 0.2s all ease-in;
   z-index: 20;
   text-align: center;
-  &__container{
+  &__container {
     position: relative;
     height: 100vh;
   }
@@ -225,31 +221,26 @@ a{
     top: 0;
     height: 1000vh;
     padding-top: 50px;
-    background: #FFF;
+    background: #fff;
     z-index: 20;
   }
 }
 
-
-
-.sp-nav{
-
-  &__logo{
+.sp-nav {
+  &__logo {
     margin-bottom: 55px;
-    &__link{
-
+    &__link {
     }
   }
 
-  &__list{
-
+  &__list {
   }
 
-  &__item{
+  &__item {
     margin-bottom: 22px;
   }
 
-  &__link{
+  &__link {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -257,13 +248,13 @@ a{
     letter-spacing: 0.05em;
     color: $main-color;
 
-    &:hover{
+    &:hover {
       color: $main-color;
     }
   }
 }
 
-.js-close{
+.js-close {
   position: absolute;
   left: 20px;
   bottom: 200px;
@@ -273,8 +264,8 @@ a{
   background-color: $main-color;
 }
 
-.close__icon{
-  & img{
+.close__icon {
+  & img {
     position: absolute;
     top: 13px;
     left: 13px;
@@ -285,8 +276,7 @@ a{
  * sp footer-box
 ===================================*/
 
-
-.footer-box{
+.footer-box {
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -294,17 +284,17 @@ a{
   z-index: 10;
 }
 
-.footer__flex{
+.footer__flex {
   display: flex;
   width: 100%;
   filter: drop-shadow(0px -4px 15px rgba(0, 0, 0, 0.08));
 
-  @include mq(lg){
+  @include mq(lg) {
     display: none;
   }
 }
 
-.menu-toggle{
+.menu-toggle {
   position: relative;
   height: 84px;
   width: 70px;
@@ -324,7 +314,7 @@ a{
   }
 }
 
-.page-bottom{
+.page-bottom {
   width: 100%;
   height: 84px;
   background-color: $btn-color;
@@ -336,31 +326,31 @@ a{
   color: $white-color;
   line-height: 84px;
 
-  & a{
+  & a {
     text-decoration: none;
   }
 
-  &__link{
-
+  &__link {
   }
 
-  &__text{
+  &__text {
     color: $white-color;
     font-size: 16px;
   }
 }
 
-
 /*===================================
  * top
 ===================================*/
 
-#top{
-  height: 96px;
-  border-bottom: 1px solid;
-  border-color: #EAF2ED;
+.main {
+  overflow: hidden;
+}
 
-  @include mq(md){
+#top {
+  padding: 20px 0;
+
+  @include mq(md) {
     position: fixed;
     background-color: $white-color;
     width: 100%;
@@ -368,23 +358,22 @@ a{
     top: 0;
   }
 
-  & h5{
+  & h5 {
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 19px;
     letter-spacing: 0.1em;
     color: $main-color;
-    margin-bottom: 20px;
   }
 }
 
-.container-header__nav{
+.container-header__nav {
   margin-left: 50px;
-  @include mq(sm){
+  @include mq(sm) {
     margin-left: 30px;
   }
-  @include mq(md){
+  @include mq(md) {
     width: 1000px;
     margin-right: auto;
   }
@@ -393,16 +382,13 @@ a{
 /*===================================
  * slick-slider
 ===================================*/
-// .slick-next{
-//   z-index: 100;
-// }
-.slick-slider{
+.slick-slider {
   position: relative;
-  @include mq(lg){
+  @include mq(lg) {
     margin-top: 100px;
   }
-  @include mq(sm){
-    width: 90%;
+  @include mq(sm) {
+    // width: 90%;
   }
 }
 
@@ -410,18 +396,17 @@ a{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
-.mv_slideHight{
-  height: 700px !important;  /* 高さはお好みで設定してください */
-  @include mq(sm){
+.mv_slideHight {
+  height: 700px !important; /* 高さはお好みで設定してください */
+  @include mq(sm) {
     height: 400px !important;
   }
 }
 
 .slick-slide {
-  @include mq(lg){
+  @include mq(lg) {
     margin: 20px;
   }
 }
@@ -429,37 +414,36 @@ a{
 .slick-slide img {
   width: 100%;
 }
-.container-front2{
+
+.slick-dots {
+  display: none !important;
+}
+
+.container-front2 {
   position: absolute;
-  // width: 30%;
   top: 50%;
   left: 50%;
   transform: translate(-20%, -50%);
   z-index: 10;
 
-  @include mq(sm){
-    // width: 60%;
-    top: 40%;
+  @include mq(sm) {
+    top: 45%;
+  }
+  @include mq(xs){
     transform: translate(-50%, -50%);
   }
 }
 
-
-.front-contents{
+.front-contents {
   margin-top: 30px;
 }
 
-.container-front2{
+.container-front2 {
   margin-left: 15px;
   margin-right: 15px;
 
-  @include mq(sm){
-    margin-left: 34px;
-    margin-right: 35px;
-  }
-
-  @include mq(lg){
-    width: 830px;
+  @include mq(lg) {
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     // display: flex;
@@ -470,11 +454,11 @@ a{
   }
 }
 
-.front-text2{
+.front-text2 {
   background-color: #ffff;
   padding-left: 20px;
   padding-right: 20px;
-  &__main2{
+  &__main2 {
     font-style: normal;
     font-weight: bold;
     font-size: 31px;
@@ -483,18 +467,18 @@ a{
     color: $main-color;
     padding-top: 43px;
 
-    @include mq(sm){
+    @include mq(sm) {
       width: 285px;
     }
 
-    @include mq(md){
+    @include mq(md) {
       width: 390px;
       font-size: 42px;
       padding-top: 90px;
     }
   }
 
-  &__secondary2{
+  &__secondary2 {
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -505,7 +489,7 @@ a{
   }
 }
 
-.highlight2{
+.highlight2 {
   background-color: $white-color;
   color: $main-color;
   line-height: 150%;
@@ -514,9 +498,9 @@ a{
   margin: 0 5px 0 0;
 }
 
-.front-button2{
+.front-button2 {
   margin-left: auto;
-  @include mq(lg){
+  @include mq(lg) {
     display: block;
     width: 270px;
     height: 140px;
@@ -531,20 +515,17 @@ a{
     color: $white-color;
   }
 
-  &__link2{
-
-    &:hover{
+  &__link2 {
+    &:hover {
       text-decoration: none;
     }
-
   }
-
 }
 
-.reservation-text2{
+.reservation-text2 {
   display: none;
 
-  @include mq(lg){
+  @include mq(lg) {
     display: block;
     font-style: normal;
     font-weight: bold;
@@ -559,84 +540,76 @@ a{
     margin-right: auto;
     padding-top: 30px;
 
-    &::after{
-    content: '';
-    display: inline-block;
-    background-image: url("/assets/img/arrow.svg");
-    background-size: contain;
-    width: 18px;
-    height: 18px;
-    margin-left: 10px;
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url("/assets/img/arrow.svg");
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+      margin-left: 10px;
     }
   }
 }
-
-
 
 /*===================================
  * header
 ===================================*/
 
-#top{
-  height: 100px;
-}
+// #top {
+//   height: 100px;
+// }
 
-.header{
+.header {
   margin-top: 96px;
   background-image: url("/assets/img/mach_mv.png");
   background-size: cover;
-  @include mq(md){
+  @include mq(md) {
     background-image: url("/assets/img/mach_mv.png");
     background-size: cover;
     height: 396px;
   }
-  @include mq(sm){
+  @include mq(sm) {
     margin-top: 0;
   }
 }
 
-.header__flex{
-  @include mq(md){
+.header__flex {
+  @include mq(md) {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 }
 
-.header-logo{
-
-  &__link{
-
+.header-logo {
+  &__link {
   }
 }
 
-.top-logo__box{
+.top-logo__box {
   padding-top: 24px;
 }
 
-.header__address{
-
-  @include mq(sm){
+.header__address {
+  @include mq(sm) {
     text-align: start;
   }
-
 }
 
-.header-navigation{
-
+.header-navigation {
 }
 
-.header-nav{
-
-  &__list{
+.header-nav {
+  &__list {
     display: none;
-    @include mq(lg){
+    @include mq(lg) {
       display: flex;
     }
   }
 
-  &__item{
-    @include mq(md){
+  &__item {
+    @include mq(md) {
       margin-left: 25px;
 
       & a {
@@ -648,25 +621,23 @@ a{
         letter-spacing: 0.06em;
         color: $main-color;
       }
-
     }
   }
 
-  &__link{
-
+  &__link {
   }
 }
 
-.container-front{
+.container-front {
   margin-left: 15px;
   margin-right: 15px;
 
-  @include mq(sm){
+  @include mq(sm) {
     margin-left: 34px;
     margin-right: 35px;
   }
 
-  @include mq(lg){
+  @include mq(lg) {
     width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -678,9 +649,8 @@ a{
   }
 }
 
-.front-text{
-
-  &__main{
+.front-text {
+  &__main {
     font-style: normal;
     font-weight: bold;
     font-size: 31px;
@@ -689,18 +659,18 @@ a{
     color: $white-color;
     padding-top: 43px;
 
-    @include mq(sm){
+    @include mq(sm) {
       width: 285px;
     }
 
-    @include mq(md){
+    @include mq(md) {
       width: 390px;
       font-size: 42px;
       padding-top: 90px;
     }
   }
 
-  &__secondary{
+  &__secondary {
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
@@ -711,7 +681,7 @@ a{
   }
 }
 
-.highlight{
+.highlight {
   background-color: $white-color;
   color: $main-color;
   line-height: 150%;
@@ -720,9 +690,8 @@ a{
   margin: 0 5px 0 0;
 }
 
-.front-button{
-
-  @include mq(lg){
+.front-button {
+  @include mq(lg) {
     display: block;
     width: 270px;
     height: 140px;
@@ -737,20 +706,17 @@ a{
     color: $white-color;
   }
 
-  &__link{
-
-    &:hover{
+  &__link {
+    &:hover {
       text-decoration: none;
     }
-
   }
-
 }
 
-.reservation-text{
+.reservation-text {
   display: none;
 
-  @include mq(lg){
+  @include mq(lg) {
     display: block;
     font-style: normal;
     font-weight: bold;
@@ -765,34 +731,32 @@ a{
     margin-right: auto;
     padding-top: 30px;
 
-    &::after{
-    content: '';
-    display: inline-block;
-    background-image: url("https://placehold.jp/8/cc9999/993333/10x10.png");
-    background-size: contain;
-    width: 18px;
-    height: 18px;
-    margin-left: 10px;
+    &::after {
+      content: "";
+      display: inline-block;
+      background-image: url("https://placehold.jp/8/cc9999/993333/10x10.png");
+      background-size: contain;
+      width: 18px;
+      height: 18px;
+      margin-left: 10px;
     }
   }
 }
-
 
 /*===================================
  * covid19
 ===================================*/
 
-.covid19-attention{
-
+.covid19-attention {
   font-weight: bold;
   border: 5px $main-color solid;
   padding: 20px 40px;
-  padding:  20px 40px;
+  padding: 20px 40px;
   margin: 40px 0;
   height: auto;
 }
 
-.attention-title{
+.attention-title {
   text-align: center;
   font-size: 26px;
   line-height: 1.7;
@@ -800,7 +764,7 @@ a{
   font-weight: bold;
 }
 
-.attention-text{
+.attention-text {
   text-align: center;
   font-size: 16px;
   margin-top: 24px;
@@ -808,23 +772,22 @@ a{
   word-wrap: break-word;
 }
 
-.covid19-reservation-link{
+.covid19-reservation-link {
   text-decoration: underline;
 
-  &:hover{
+  &:hover {
     opacity: 0.5;
   }
 }
 
-#reservation{
-
+#reservation {
 }
 
-.reservation-box{
+.reservation-box {
   width: 100%;
 }
 
-.background-image{
+.background-image {
   width: 100%;
   width: 660px;
   height: 95px;
@@ -832,13 +795,13 @@ a{
   margin-left: auto;
   margin-right: auto;
 
-  @include mq(sm){
+  @include mq(sm) {
     margin-left: auto;
     margin-right: auto;
     width: 59vw;
   }
 
-  @include mq(xs){
+  @include mq(xs) {
     width: 85vw;
   }
 
@@ -847,44 +810,42 @@ a{
   }
 }
 
-.background-image-cell{
-
+.background-image-cell {
 }
 
-.status{
-
-  & img{
+.status {
+  & img {
     position: absolute;
     top: 55px;
     left: 30px;
     width: 107px;
     height: 98px;
-    @include mq(sm){
+    @include mq(sm) {
       top: 50%;
       left: 10%;
       transform: translate(-40%, -50%);
       width: 10.84vw;
     }
-    @include mq(xs){
+    @include mq(xs) {
       width: 15.84vw;
     }
   }
 
-  &:nth-child(2) img{
+  &:nth-child(2) img {
     left: 190px;
-    @include mq(sm){
+    @include mq(sm) {
       left: 35%;
     }
   }
-  &:nth-child(3) img{
+  &:nth-child(3) img {
     left: 363px;
-    @include mq(sm){
+    @include mq(sm) {
       left: 61%;
     }
   }
-  &:nth-child(4) img{
+  &:nth-child(4) img {
     left: 525px;
-    @include mq(sm){
+    @include mq(sm) {
       left: 85%;
     }
   }
@@ -894,29 +855,28 @@ a{
  * medical
 ===================================*/
 
-#medical{
-  & .main_title{
+#medical {
+  & .main_title {
     padding-top: 85px;
-    @include mq(sm){
+    @include mq(sm) {
       padding-top: 0;
     }
   }
   & .container {
-    @include mq(sm){
+    @include mq(sm) {
       width: 100%;
     }
   }
 }
 
-.medical-content{
-
-  &__flex{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.medical-content {
+  &__flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  &__item{
+  &__item {
     position: relative;
     width: 210px;
     height: 210px;
@@ -925,12 +885,12 @@ a{
     border-radius: 20px;
     margin: 6px;
 
-    &:hover{
+    &:hover {
       opacity: 0.9;
       transition: all 0.2s;
     }
 
-    & a{
+    & a {
       position: absolute;
       width: 100%;
       height: 138px;
@@ -941,15 +901,14 @@ a{
       -ms-transform: translate(-50%, -50%);
     }
 
-    @include mq(sm){
+    @include mq(sm) {
       width: 158px;
       height: 158px;
     }
   }
 }
 
-.item-content{
-
+.item-content {
   position: absolute;
   width: 100%;
   left: 50%;
@@ -958,28 +917,28 @@ a{
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 
-  &__img{
+  &__img {
     width: 72px;
     height: 72px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  &__text{
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 140%;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: $white-color;
-  margin-top: 16px;
-  height: 32px;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white-color;
+    margin-top: 16px;
+    height: 32px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -987,41 +946,51 @@ a{
  * value
 ===================================*/
 
-#value{
-
+#value {
 }
 
-.value-container{
+.value-container {
   width: 100%;
   margin: 0 auto;
-  @include mq(md){
+  @include mq(md) {
     width: 698px;
   }
 }
 
-.value-item{
+.value-item {
   display: flex;
   align-items: center;
   justify-content: start;
   margin-bottom: 20px;
-    &__img{
-      & img{
-        margin-right: 41px;
-      }
+  &__img {
+    & img {
+      margin-right: 41px;
     }
+  }
 
-    &__text{
-      width: 100%;
-      word-wrap: break-word;
-    }
+  &__text {
+    width: 100%;
+    word-wrap: break-word;
+  }
 }
 
 /*===================================
  * features
 ===================================*/
+.feature-slide{
+  margin: 0 10px;
+}
+#features {
+  // .section{
+  //   margin: 0 calc(50% - 50vw); //inner要素か抜ける
+	//   width: 100vw;
+  // }
+}
 
-#features{
-
+.slide-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider-area {
@@ -1033,9 +1002,18 @@ a{
 }
 
 .full-screen {
-  width: 100%;
+  // width: 100%;
+  width: 620px;
   position: relative;
   overflow: hidden;
+
+  & .slick-list {
+    overflow: visible;
+    width: 650px;
+    @include mq(sm){
+      width: 290px;
+    }
+  }
 }
 
 .slider {
@@ -1046,7 +1024,6 @@ a{
   width: 100%;
   position: relative;
 }
-
 
 .slide img {
   width: 100%;
@@ -1080,29 +1057,26 @@ a{
   left: 20px;
 }
 
-
-
 /*===================================
  * medical
 ===================================*/
 
-
-.medical-steps{
-  @include mq(md){
+.medical-steps {
+  @include mq(md) {
     display: flex;
     justify-content: center;
   }
 }
 
-.medical-step{
+.medical-step {
   display: flex;
   justify-content: start;
   margin-bottom: 43px;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-right: 20px;
   }
 
-  @include mq(md){
+  @include mq(md) {
     display: block;
     justify-content: center;
     width: 215px;
@@ -1110,22 +1084,20 @@ a{
     margin: 9px;
     object-fit: cover;
   }
-
 }
 
-.step-number{
-
-  &__pc{
+.step-number {
+  &__pc {
     display: none;
-    @include mq(sm){
-      &-box .img{
+    @include mq(sm) {
+      &-box .img {
         margin-right: 17px;
         object-fit: cover;
-        border-radius: 2vh
+        border-radius: 2vh;
       }
     }
 
-    @include mq(md){
+    @include mq(md) {
       display: block;
       background: $main-color;
       width: 26px;
@@ -1142,15 +1114,15 @@ a{
       margin-bottom: 9px;
     }
 
-    @include mq(lg){
-      &-box .img{
+    @include mq(lg) {
+      &-box .img {
         height: 173px;
         width: 215px;
       }
     }
   }
 
-  &__sp{
+  &__sp {
     background: $main-color;
     width: 26px;
     height: 26px;
@@ -1164,26 +1136,26 @@ a{
     flex: none;
     margin-top: 1px;
 
-    @include mq(md){
+    @include mq(md) {
       display: none;
     }
   }
 }
 
-.step-content{
+.step-content {
   margin-left: 17px;
-  @include mq(md){
+  @include mq(md) {
     margin-left: 0;
   }
 }
 
-.step-title{
-  @include mq(sm){
+.step-title {
+  @include mq(sm) {
     display: flex;
   }
 }
 
-.step-text{
+.step-text {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1191,7 +1163,7 @@ a{
   letter-spacing: 0.06em;
   color: $main-color;
 
-  @include mq(md){
+  @include mq(md) {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -1200,7 +1172,7 @@ a{
   }
 }
 
-.step-desc{
+.step-desc {
   text-align: left;
 }
 
@@ -1208,11 +1180,10 @@ a{
  * business_hours
 ===================================*/
 
-#business_hours{
-
+#business_hours {
 }
 
-.schedule{
+.schedule {
   font-weight: bold;
   font-size: 12px;
   line-height: 150%;
@@ -1221,20 +1192,20 @@ a{
   margin-bottom: 13px;
   text-align: center;
 
-  @include mq(sm){
+  @include mq(sm) {
     width: 328px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @include mq(md){
+  @include mq(md) {
     width: 655px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.schedule-row{
+.schedule-row {
   display: flex;
   justify-content: center;
   font-style: normal;
@@ -1247,7 +1218,7 @@ a{
   text-align: center;
   align-items: center;
 
-  & h5{
+  & h5 {
     letter-spacing: 0.06em;
   }
 
@@ -1261,29 +1232,28 @@ a{
   }
 }
 
-.schedule-day{
+.schedule-day {
   font-size: 22px;
   font-weight: bold;
   margin-right: 18px;
   display: inline-block;
   margin-top: 9px;
 
-  @include mq(sm){
+  @include mq(sm) {
     font-size: 15px;
     margin-right: 0;
     margin-top: 0;
   }
 
-  @include mq(md){
+  @include mq(md) {
     margin-right: 0px;
     margin-left: 20px;
     letter-spacing: 0.4rem;
     margin-top: 13.5px;
   }
-
 }
 
-.schedule-time{
+.schedule-time {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -1292,22 +1262,22 @@ a{
   letter-spacing: 0.06em;
   color: $main-color;
 
-  &__holiday{
+  &__holiday {
     font-size: 22px;
     margin-top: 15px;
     margin-left: 15px;
-    @include mq(sm){
+    @include mq(sm) {
       font-size: 15px;
       margin-left: 0;
     }
   }
 
-  @include mq(sm){
+  @include mq(sm) {
     font-size: 28px;
   }
 }
 
-.schedule-label{
+.schedule-label {
   padding-top: 5px;
   padding-bottom: 5px;
   background: $white-color;
@@ -1321,7 +1291,7 @@ a{
 
   margin-left: 10px;
 
-  @include mq(sm){
+  @include mq(sm) {
     font-size: 12px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1329,34 +1299,31 @@ a{
   }
 }
 
-.features-list{
+.features-list {
   display: flex;
   justify-content: space-around;
   margin-top: 45px;
 
-  @include mq(md){
+  @include mq(md) {
     width: 655px;
-    margin:  45px auto;
+    margin: 45px auto;
   }
-
 }
 
-.feature-item{
+.feature-item {
   vertical-align: middle;
 }
 
-.feature-icon{
+.feature-icon {
   text-align: center;
-  @include mq(md){
+  @include mq(md) {
     width: 170px;
     // height: 170px;
   }
-
 }
 
-.feature-text{
-
-  & h5{
+.feature-text {
+  & h5 {
     text-align: center;
     font-style: normal;
     font-weight: bold;
@@ -1366,7 +1333,7 @@ a{
     color: $main-color;
     margin-top: 12px;
 
-    @include mq(md){
+    @include mq(md) {
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -1374,7 +1341,6 @@ a{
       letter-spacing: 0.06em;
       margin-top: 14px;
     }
-
   }
 }
 
@@ -1382,15 +1348,13 @@ a{
  * question
 ===================================*/
 
-#question{
-
+#question {
 }
 
-#accordion{
-
+#accordion {
 }
 
-.accordion-container{
+.accordion-container {
   position: relative;
   width: 100%;
   border-top: none;
@@ -1400,11 +1364,10 @@ a{
   margin: 0 auto;
 }
 
-.js-accordion-title{
-
+.js-accordion-title {
 }
 
-.question-item{
+.question-item {
   display: block;
   position: relative;
   margin: 0;
@@ -1418,12 +1381,12 @@ a{
   display: flex;
   line-height: 130%;
 
-  &:hover{
+  &:hover {
     color: $main-color;
     text-decoration: underline;
   }
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1433,10 +1396,10 @@ a{
     /*縦線に*/
     transform: rotate(90deg);
     background: $main-color;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -1445,18 +1408,17 @@ a{
     width: 15px;
     height: 2px;
     background: $main-color;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
-  &.open{
-    &::before{
+  &.open {
+    &::before {
       transform: rotate(180deg);
     }
   }
-
 }
 
-.question-icon{
+.question-icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1472,26 +1434,25 @@ a{
   flex: none;
 }
 
-.question-title{
+.question-title {
   margin-top: 3px;
   line-height: 160%;
 }
 
-.answer-content{
-
+.answer-content {
 }
 
-.answer-box{
+.answer-box {
   display: flex;
   margin-bottom: 37px;
 
-  @include mq(md){
+  @include mq(md) {
     width: 655px;
     margin: 0 auto;
   }
 }
 
-.answer-icon{
+.answer-icon {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -1507,11 +1468,11 @@ a{
   flex: none;
 }
 
-.answer-text{
+.answer-text {
   width: 80%;
 }
 
-.a_tex{
+.a_tex {
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -1520,16 +1481,14 @@ a{
   color: $main-color;
 }
 
-
 /*===================================
  * notice
 ===================================*/
 
-#notice{
-
+#notice {
 }
 
-.notice-title{
+.notice-title {
   margin-top: 40px;
   margin-bottom: 16px;
   font-style: normal;
@@ -1540,28 +1499,27 @@ a{
   color: $main-color;
 }
 
-.notice-list{
-  @include mq(lg){
+.notice-list {
+  @include mq(lg) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
   }
 
-  @include mq(sm){
+  @include mq(sm) {
     display: block;
   }
 }
 
-.notice-item{
-
+.notice-item {
   width: calc(50% - 15px);
 
   & a {
     display: flex;
     margin-bottom: 20px;
     align-items: center;
-    &:hover{
+    &:hover {
       text-decoration: underline;
       color: $main-color;
       opacity: 0.9;
@@ -1583,12 +1541,12 @@ a{
     text-align: start;
   }
 
-  @include mq(sm){
+  @include mq(sm) {
     width: 100%;
   }
 }
 
-.notice-date{
+.notice-date {
   width: 54px;
   height: 54px;
   background-color: $light-color;
@@ -1598,7 +1556,7 @@ a{
   z-index: -1;
 }
 
-.date-text{
+.date-text {
   position: absolute;
   font-style: normal;
   font-weight: bold;
@@ -1622,12 +1580,11 @@ a{
  * articles
 ===================================*/
 
-#articles{
-
+#articles {
 }
 
-.articles-grid{
-  @include mq(lg){
+.articles-grid {
+  @include mq(lg) {
     display: flex;
     flex-wrap: wrap;
     width: 698px;
@@ -1636,16 +1593,16 @@ a{
     justify-content: space-between;
   }
 
-  @include mq(sm){
+  @include mq(sm) {
     display: block;
     width: 100%;
   }
 }
 
-.article-item{
+.article-item {
   margin-bottom: 30px;
   width: calc(50% - 15px);
-  & a{
+  & a {
     display: flex;
     width: 100%;
     height: 100%;
@@ -1653,12 +1610,12 @@ a{
     color: $main-color;
   }
 
-  @include mq(sm){
+  @include mq(sm) {
     width: 100%;
   }
 }
 
-.article-image{
+.article-image {
   & img {
     width: 106px;
     height: 85px;
@@ -1667,10 +1624,10 @@ a{
   }
 }
 
-.article-details{
+.article-details {
   margin-left: 16px;
 
-  & h6{
+  & h6 {
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -1692,7 +1649,7 @@ a{
   }
 }
 
-.category{
+.category {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1702,22 +1659,20 @@ a{
   margin-left: 10px;
 }
 
-
 /*===================================
  * move_section
 ===================================*/
 
-#move_section{
-
+#move_section {
 }
 
-.video-section{
+.video-section {
   margin-top: 41px;
   position: relative;
   padding-bottom: 20vh;
   overflow: hidden;
 
-  & iframe{
+  & iframe {
     position: absolute;
     top: -0.5%;
     right: -0.4%;
@@ -1725,12 +1680,12 @@ a{
     height: 101%;
   }
 
-  @include mq(xs){
+  @include mq(xs) {
     padding-bottom: 10vh;
   }
 }
 
-.move-container{
+.move-container {
   text-align: center;
 }
 
@@ -1738,13 +1693,12 @@ a{
  * footer
 ===================================*/
 
-.footer{
+.footer {
   background-color: $main-color;
   margin-top: 120px;
 }
 
-.footer-content{
-
+.footer-content {
   & h6 {
     font-style: normal;
     margin-bottom: 22px;
@@ -1765,31 +1719,30 @@ a{
   }
 }
 
-.footer-logo{
+.footer-logo {
   display: flex;
   padding-top: 56px;
   margin-bottom: 8px;
 }
 
-.footer-department{
-
+.footer-department {
 }
 
-.footer-info{
+.footer-info {
   display: flex;
-  @include mq(sm){
+  @include mq(sm) {
     display: block;
   }
 }
 
-.footer-address{
+.footer-address {
   width: 350px;
-  @include mq(xs){
+  @include mq(xs) {
     width: 100%;
   }
 }
 
-.footer-map-link{
+.footer-map-link {
   width: 148px;
   height: 37px;
   text-align: center;
@@ -1804,8 +1757,7 @@ a{
   border-radius: 2px;
 }
 
-.footer-schedule{
-
+.footer-schedule {
   & p {
     font-style: normal;
     font-weight: bold;
@@ -1815,7 +1767,7 @@ a{
     color: $white-color;
     margin-top: 30px;
   }
-  &__table{
+  &__table {
     width: 345px;
     color: $white-color;
     & th {
@@ -1823,35 +1775,34 @@ a{
       padding-right: 10px;
       text-align: center;
     }
-    @include mq(xs){
+    @include mq(xs) {
       width: 100%;
     }
   }
 
-  &__day{
+  &__day {
     text-align: left;
     font-size: 18px;
   }
 
-  &__time{
+  &__time {
     text-align: left;
     font-size: 15px;
   }
 
-  &__closed{
+  &__closed {
     font-size: 15px;
   }
 }
 
-.footer-closed-day{
-
+.footer-closed-day {
 }
 
-.footer-break{
+.footer-break {
   margin-left: 42px;
 }
 
-.footer-remarks{
+.footer-remarks {
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
@@ -1861,8 +1812,7 @@ a{
   margin-top: 33px;
 }
 
-
-.copyright{
+.copyright {
   font-style: normal;
   font-weight: normal;
   font-size: 10px;

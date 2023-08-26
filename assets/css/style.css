@@ -511,10 +511,12 @@ a {
 /*===================================
  * top
 ===================================*/
+.main {
+  overflow: hidden;
+}
+
 #top {
-  height: 96px;
-  border-bottom: 1px solid;
-  border-color: #eaf2ed;
+  padding: 20px 0;
 }
 @media screen and (min-width: 768px) {
   #top {
@@ -532,7 +534,6 @@ a {
   line-height: 19px;
   letter-spacing: 0.1em;
   color: #021f59;
-  margin-bottom: 20px;
 }
 
 .container-header__nav {
@@ -561,12 +562,6 @@ a {
     margin-top: 100px;
   }
 }
-@media screen and (max-width: 767px) {
-  .slick-slider {
-    width: 90%;
-  }
-}
-
 .slick-slide {
   background-size: cover;
   background-repeat: no-repeat;
@@ -592,6 +587,10 @@ a {
   width: 100%;
 }
 
+.slick-dots {
+  display: none !important;
+}
+
 .container-front2 {
   position: absolute;
   top: 50%;
@@ -601,7 +600,11 @@ a {
 }
 @media screen and (max-width: 767px) {
   .container-front2 {
-    top: 40%;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .container-front2 {
     transform: translate(-50%, -50%);
   }
 }
@@ -614,15 +617,9 @@ a {
   margin-left: 15px;
   margin-right: 15px;
 }
-@media screen and (max-width: 767px) {
-  .container-front2 {
-    margin-left: 34px;
-    margin-right: 35px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .container-front2 {
-    width: 830px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -733,10 +730,6 @@ a {
 /*===================================
  * header
 ===================================*/
-#top {
-  height: 100px;
-}
-
 .header {
   margin-top: 96px;
   background-image: url("/assets/img/mach_mv.png");
@@ -1130,6 +1123,16 @@ a {
 /*===================================
  * features
 ===================================*/
+.feature-slide {
+  margin: 0 10px;
+}
+
+.slide-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .slider-area {
   width: 100%;
   margin: 0 auto;
@@ -1139,9 +1142,18 @@ a {
 }
 
 .full-screen {
-  width: 100%;
+  width: 620px;
   position: relative;
   overflow: hidden;
+}
+.full-screen .slick-list {
+  overflow: visible;
+  width: 650px;
+}
+@media screen and (max-width: 767px) {
+  .full-screen .slick-list {
+    width: 290px;
+  }
 }
 
 .slider {

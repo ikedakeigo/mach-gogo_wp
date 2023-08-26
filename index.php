@@ -164,29 +164,29 @@
         </div>
       </section>
       <section id="features">
-        <div class="container inner">
+        <div class="inner">
           <h2 class="main_title">当院の特徴</h2>
           <div class="border"></div>
           <div class="section">
             <div class="slider-area">
               <div class="full-screen slider">
-                <div class="slide">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_01.png" alt="125naroom" />
+                <div class="slide feature-slide">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_01.jpg" alt="125naroom" />
                   <div class="slide-title">小さいけれど安らぐ</div>
                   <div class="slide-description">アフターコロナに相応しく、対人接触の少ない待合室</div>
                 </div>
-                <div class="slide">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_02.png" alt="125naroom" />
+                <div class="slide feature-slide">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_02.jpg" alt="125naroom" />
                   <div class="slide-title">忙しい、オフィスワーカーの方向け</div>
                   <div class="slide-description">カンタン予約や事前問診など、時間のムダを省くしくみ</div>
                 </div>
-                <div class="slide">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_03.png" alt="125naroom" />
+                <div class="slide feature-slide">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_03.jpg" alt="125naroom" />
                   <div class="slide-title">通院のハードルが低い</div>
                   <div class="slide-description">駅直結のビル内にあって通いやすく、24時間予約できる</div>
                 </div>
-                <div class="slide">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_04.png" alt="125naroom" />
+                <div class="slide feature-slide">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_04.jpg" alt="125naroom" />
                   <div class="slide-title">行きたい時間に、行ける</div>
                   <div class="slide-description">ランチタイムにも行ける。土日祝OK。夜も20時まで</div>
                 </div>
