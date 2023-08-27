@@ -369,7 +369,7 @@
 .archive-head {
   padding: 28px 0 0;
   margin-top: 120px;
-  @include mq(sm){
+  @include mq(sm) {
     margin-top: 0;
   }
 }
@@ -478,4 +478,134 @@
   background: #808080;
   border-color: #808080;
   color: $white-color;
+}
+/*===================================
+ *
+===================================*/
+#toc_container {
+  background: #fff;
+  border: 2px solid #d81f32;
+  margin-top: 64px;
+  padding: 20px 30px;
+}
+
+#toc_container .toc_title {
+  border-bottom: 2px solid #d81f32;
+  font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+#toc_container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#toc_container ul a {
+  color: #333;
+  display: inline-block;
+  font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+}
+
+#toc_container > ul > li {
+  counter-increment: toc;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#toc_container > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+#toc_container > ul > li > a {
+  padding-left: 36px;
+}
+
+#toc_container > ul > li > a::before {
+  background: #d81f32;
+  border-radius: 50%;
+  color: #fff;
+  content: counter(toc);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  height: 26px;
+  left: 0;
+  line-height: 26px;
+  margin-top: -2px;
+  min-width: 26px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+#toc_container > ul > li > ul {
+  margin-top: 6px;
+  padding-left: 36px;
+}
+
+#toc_container > ul > li > ul > li {
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+#toc_container > ul > li > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+#toc_container > ul > li > ul > li > a {
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+#toc_container > ul > li > ul > li > a::before {
+  background: #d81f32;
+  border-radius: 50%;
+  content: "";
+  height: 5px;
+  left: 0;
+  min-width: initial;
+  position: absolute;
+  top: 8px;
+  width: 5px;
+}
+
+.entry-body h3 {
+	border-bottom: 3px solid #d81f32;
+	font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.4;
+	margin-bottom: 24px;
+	margin-top: 84px;
+	padding-bottom: 14px;
+}
+
+/*===================================
+ * ボタン
+===================================*/
+.btn {
+	-webkit-appearance: none;
+	background-color: #01b3a7;
+	background-image: none;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+	padding: 17px 20px 14px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
 }

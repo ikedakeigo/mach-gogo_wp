@@ -228,7 +228,7 @@
                 <div class="button-wrapper">
                   <a href="/blog/" class="button">すべてみる</a>
                 </div>
-            </div>
+              </div>
             <?php endif; ?>
           </div>
 

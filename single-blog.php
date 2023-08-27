@@ -30,11 +30,11 @@
         <?php endwhile ; ?>
       <?php endif; ?>
 
-      <div class="s-blog__content">
+      <div class="s-blog__content entry-body">
         <?php the_content(); ?>
-        <p><a href="#">【予約はこちらから】</a></p>
+        <p><a href="/reserve-page/" class="btn">【予約はこちらから】</a></p>
         <div class="button-wrapper">
-          <a href="#" class="button">お役立ち記事トップへ</a>
+          <a href="/blogs/" class="button">お役立ち記事トップへ</a>
         </div>
       </div>
 
@@ -56,7 +56,7 @@
           <?php
             if(have_posts()) {
               $myposts = get_posts(array(
-                'post_type' => 'post',
+                'post_type' => 'blog',
                 'posts_per_page' => '4',
                 'post__not_in' => array($post->ID),
               ));
@@ -97,6 +97,11 @@
           ?>
           </div>
 
+          <div id="btn_set">
+            <div class="button-wrapper">
+              <a href="/blog/" class="button">すべてみる</a>
+            </div>
+          </div>
 
         </div>
       </section>

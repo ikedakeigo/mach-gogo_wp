@@ -12,9 +12,11 @@ Template Name: blog
         <div class="border"></div>
         <div class="articles-grid">
           <?php
+          $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array(
               'post_type' => 'blog',  // Change this to any custom post type
-              'posts_per_page' => 10
+              'posts_per_page' => 10,
+              'paged' => $paged ,
             );
             $the_query = new WP_Query( $args );
           ?>
@@ -63,7 +65,8 @@ Template Name: blog
               'mid_size' => 1,
               'prev_next' => true,
               'prev_text' => '<i class="fas fa-angle-left"></i>',
-              'next_text' => '<i class="fas fa-angle-right"></i>'
+              'next_text' => '<i class="fas fa-angle-right"></i>',
+              'total' => $the_query->max_num_pages,  // こちらを追加
             )
             );
           ?>

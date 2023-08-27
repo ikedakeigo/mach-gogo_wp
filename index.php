@@ -70,7 +70,7 @@
           <div class="border"></div>
           <div class="medical-content__flex">
             <div class="medical-content__item">
-              <a href="#">
+              <a href="/about/naika/">
                 <div class="item-content">
                   <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/internal@2x.png" width="72" height="72" alt="" /></div>
                   <div class="item-content__text">一般内科<br />（風邪・花粉症など）</div>
@@ -86,7 +86,7 @@
               </a>
             </div>
             <div class="medical-content__item">
-              <a href="#">
+              <a href="/about/gynecology/">
                 <div class="item-content">
                   <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/fim.png" width="72" height="72" alt="" /></div>
                   <div class="item-content__text">月経・妊娠・オリモノ</div>
@@ -110,10 +110,10 @@
               </a>
             </div>
             <div class="medical-content__item">
-              <a href="#">
+              <a href="/about/medicine">
                 <div class="item-content">
                   <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/ec.png" width="72" height="72" alt="" /></div>
-                  <div class="item-content__text">アフターピル</div>
+                  <div class="item-content__text">処方薬</div>
                 </div>
               </a>
             </div>
