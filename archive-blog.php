@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php if (is_post_type_archive('blog')) : ?>
 <div class="container-blog">
-  <?php if(is_category() && get_the_archive_title()) :?>
+  <?php if(is_category()) :?>
 
     <div class="archive-head m_description">
       <div class="archive-lead">カテゴリー名</div>
@@ -41,7 +41,7 @@
       <section id="blog">
         <div class="blog-contents">
           <div class="blog-content">
-          <?php if(!is_archive() ||  is_category())   : ?>
+          <?php if(is_category()) : ?>
             <?php
               // カテゴリーページの場合のみのクエリ
               $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

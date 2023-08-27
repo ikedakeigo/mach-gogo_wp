@@ -1,28 +1,28 @@
-@use 'base' as *;
+@use "base" as *;
 
-.blog-header{
+.blog-header {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  @include mq(sm){
+  @include mq(sm) {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
-.blog_hed{
+.blog_hed {
   margin-top: 114px;
   display: flex;
   align-items: center;
   background-image: url(/assets/img/blogs/blog_top.png);
   background-size: cover;
   border-radius: 20px;
-  @include mq(sm){
+  @include mq(sm) {
     margin-top: 20px;
     display: block;
   }
 
-  &__text{
+  &__text {
     margin-left: 19px;
     margin-right: 19px;
     font-style: normal;
@@ -30,21 +30,21 @@
     // line-height: 160%;
     color: $white-color;
 
-    @include mq(lg){
-      width:  650px;
+    @include mq(lg) {
+      width: 650px;
     }
-    @include mq(sm){
+    @include mq(sm) {
       // width: 100%;
     }
   }
 
-  &__title{
+  &__title {
     font-size: 40px;
     letter-spacing: 0.06em;
     padding-top: 240px;
     text-align: start;
     padding-left: 20px;
-    @include mq(sm){
+    @include mq(sm) {
       width: 290px;
       padding-top: 120px;
       font-size: 21px;
@@ -68,46 +68,44 @@
     background: $main-color;
     color: #ffff;
     margin-top: 300px;
-    @include mq(sm){
+    @include mq(sm) {
       margin-top: 13px;
     }
-    & .arrow img{
+    & .arrow img {
       position: absolute;
       top: 50%;
       right: 10px;
       transform: translateY(-50%);
     }
   }
-
 }
 
-.container-blog{
-  max-width: 1000px;
-  margin: 0 auto;
-  @include mq(sm){
-    margin-left: 20px;
-    margin-right: 20px;
+.container-blog {
+  @include mq(lg) {
+    max-width: 1000px;
+    margin: 0 auto;
   }
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.blog-contents{
+.blog-contents {
   display: flex;
-  width: 1000px;
-  @include mq(sm){
+
+  @include mq(sm) {
     width: 100%;
     display: block;
   }
 }
 
-.blog-content{
+.blog-content {
   width: 60%;
-  @include mq(sm){
+  @include mq(sm) {
     width: 100%;
   }
 }
 
-
-.blog-title{
+.blog-title {
   text-align: start;
   margin-bottom: 50px;
   font-size: 24px;
@@ -116,90 +114,82 @@
   font-weight: bold;
   letter-spacing: 0.06rem;
   margin-top: 70px;
-  &__top{
+  &__top {
     margin-top: 84px;
   }
 }
 
-
-.blog-item{
-  &:not(:last-child){
+.blog-item {
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
-  & a{
+  & a {
     display: flex;
   }
   &__image {
-
-    & img{
+    & img {
       width: 235px;
       height: 151px;
       object-fit: cover;
       border-radius: 10px;
-      @include mq(sm){
+      @include mq(sm) {
         width: 106px;
         height: 85px;
-        border-radius: 7px
+        border-radius: 7px;
       }
     }
   }
 
-  &__info{
+  &__info {
     width: 100%;
     margin-left: 16px;
-    & h6{
+    & h6 {
       font-size: 15px;
     }
 
-    & h4{
+    & h4 {
       font-style: normal;
       font-weight: bold;
       font-size: 25px;
       line-height: 160%;
       letter-spacing: 0.06rem;
       color: $main-color;
-      @include mq(sm){
+      @include mq(sm) {
         font-size: 18px;
       }
     }
 
-    & .category{
-
+    & .category {
     }
   }
 }
 
-.article_page{
-
+.article_page {
 }
 
-
-
-
-.blog-articles{
+.blog-articles {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @include mq(sm){
+  @include mq(sm) {
     display: block;
   }
-  &__box{
+  &__box {
     width: calc(50% - 15px);
-    @include mq(sm){
+    @include mq(sm) {
       width: 100%;
     }
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
-    & a{
+    & a {
       display: flex;
     }
   }
 
-  &__image{
-
-    & img{
+  &__image {
+    & img {
       width: 106px;
       height: 68px;
       object-fit: cover;
@@ -207,14 +197,14 @@
     }
   }
 
-  &__info{
+  &__info {
     margin-left: 16px;
 
-    & h6{
+    & h6 {
       font-size: 15px;
     }
 
-    & h4{
+    & h4 {
       font-size: 18px;
       font-weight: bold;
       color: $main-color;
@@ -222,24 +212,22 @@
   }
 }
 
-
-.sidebar-main{
-
+.sidebar-main {
   margin-left: 105px;
   margin-bottom: 0;
-  @include mq(sm){
+  @include mq(sm) {
     margin-left: 0;
   }
 }
 
-.category_tag{
+.category_tag {
   width: 100%;
   height: 62px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border-radius: 30px;
   margin-bottom: 10px;
 
-  & a{
+  & a {
     font-style: normal;
     font-weight: bold;
     line-height: 62px;
@@ -251,18 +239,17 @@
   }
 }
 
-.sidebar-box{
+.sidebar-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-
 /*===================================
  * blog
 ===================================*/
 
-.blogTop-img{
+.blogTop-img {
   margin-top: 100px;
   & img {
     width: 100%;
@@ -270,9 +257,8 @@
   }
 }
 
-.s-blog{
-
-  &__date{
+.s-blog {
+  &__date {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -282,7 +268,7 @@
     margin-bottom: 25px;
   }
 
-  &__category{
+  &__category {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -291,17 +277,17 @@
     color: $main-color;
   }
 
-  &__title{
+  &__title {
     margin-bottom: 16px;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 180%;
     letter-spacing: 0.06em;
-    color: $main-color
+    color: $main-color;
   }
 
-  &__content{
+  &__content {
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -314,17 +300,17 @@
       counter-reset: li;
     }
 
-    & ol > li:not(:last-child){
+    & ol > li:not(:last-child) {
       margin-bottom: 35px;
     }
 
-    & ol > li{
+    & ol > li {
       position: relative;
       padding-left: 36px;
       list-style: none;
       line-height: 1.6;
       margin-bottom: 20px;
-      &::before{
+      &::before {
         position: absolute;
         top: 4px;
         left: 0;
@@ -332,7 +318,7 @@
         margin-left: 5px;
         border-radius: 100%;
         font-weight: bold;
-        color: #FFFFFF;
+        color: #ffffff;
         background: $main-color;
         line-height: 1.4;
         counter-increment: li;
@@ -341,7 +327,7 @@
     }
   }
 
-  &__boxTitle{
+  &__boxTitle {
     margin-top: 50px;
     margin-bottom: 20px;
     font-style: normal;
@@ -352,148 +338,144 @@
     color: $main-color;
   }
 
-  &__heading{
-
+  &__heading {
   }
 }
 
-.blog-date{
-
+.blog-date {
 }
 
-.blog-category{
-
+.blog-category {
 }
 
 .blog-title {
   font-size: 30px;
   font-weight: bold;
-  @include mq(sm){
+  @include mq(sm) {
     font-size: 22px;
   }
 }
 
-.blog-content{
-
+.blog-content {
 }
 
-.blog-heading{
-
+.blog-heading {
 }
-
 
 /*===================================
  * category
 ===================================*/
 
 .archive-head {
-	padding: 28px 0 0;
+  padding: 28px 0 0;
   margin-top: 120px;
+  @include mq(sm){
+    margin-top: 0;
+  }
 }
 
 .archive-head.m_description {
-	// margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .archive-lead {
-	color: $main-color;
-	font-family: "Lato", sans-serif;
-	font-size: 14px;
-	font-weight: 700;
-	margin-bottom: 6px;
+  color: $main-color;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .archive-title {
-	font-size: 26px;
-	font-weight: 600;
-	margin-bottom: 18px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 18px;
 }
 
 .archive-title.m_category::before {
-	color: $main-color;
-	content: "\f02d";
-	font-family: "Font Awesome 5 Free", sans-serif;
-	font-size: 26px;
-	font-weight: 900;
-	margin-right: 8px;
+  color: $main-color;
+  content: "\f02d";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  margin-right: 8px;
 }
 
 .archive-title.m_search span {
-	color: $main-color;
+  color: $main-color;
 }
 
 .archive-title.m_search::before {
-	color: $main-color;
-	content: "\f002";
-	font-family: "Font Awesome 5 Free", sans-serif;
-	font-size: 26px;
-	font-weight: 900;
-	margin-right: 8px;
+  color: $main-color;
+  content: "\f002";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  margin-right: 8px;
 }
 
 .archive-description {
-	font-size: 14px;
-	line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.4;
 }
-
 
 /*===================================
  * tag
 ===================================*/
-.entry-tag-items{
+.entry-tag-items {
   padding-top: 24px;
 }
-.entry-tag-items{
+.entry-tag-items {
   border-top: 1px solid #e2e2e2;
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0;
   margin-top: 20px;
 }
-.entry-tag-head{
+.entry-tag-head {
   padding: 6px 15px 0;
 }
 .entry-tag-item a {
-	padding: 4px 16px 3px;
+  padding: 4px 16px 3px;
 }
 
 .entry-tag-head {
-	background: #808080;
-	border-radius: 3px;
-	color: $white-color;
-	font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
-	font-size: 16px;
-	font-weight: 600;
-	margin-bottom: 10px;
-	margin-right: 15px;
-	padding: 6px 15px 0;
+  background: #808080;
+  border-radius: 3px;
+  color: $white-color;
+  font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  padding: 6px 15px 0;
 }
 .entry-tag-head::before {
-	content: "\f02b";
-	font-family: "Font Awesome 5 Free", sans-serif;
-	font-weight: 900;
-	margin-right: 5px;
+  content: "\f02b";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  font-weight: 900;
+  margin-right: 5px;
 }
 
 .entry-tag-item {
-	margin-bottom: 10px;
-	margin-right: 15px;
+  margin-bottom: 10px;
+  margin-right: 15px;
 }
 .entry-tag-item:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 .entry-tag-item a {
-	border: 1px solid #e2e2e2;
-	border-radius: 3px;
-	color: #808080;
-	display: block;
-	font-size: 14px;
-	padding: 6px 18px 5px;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  color: #808080;
+  display: block;
+  font-size: 14px;
+  padding: 6px 18px 5px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 .entry-tag-item a:hover {
-	background: #808080;
-	border-color: #808080;
-	color: $white-color;
+  background: #808080;
+  border-color: #808080;
+  color: $white-color;
 }

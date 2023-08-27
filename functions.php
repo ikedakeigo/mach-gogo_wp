@@ -175,4 +175,11 @@ function my_page_templates($templates) {
 
     return $templates;
 }
+
+// デフォルトの投稿を非表示
+function remove_menus() {
+  remove_menu_page( 'edit.php' );
+}
+add_action( 'admin_menu', 'remove_menus' );
+
 ?>

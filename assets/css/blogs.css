@@ -264,19 +264,18 @@ p {
 }
 
 .container-blog {
-  max-width: 1000px;
-  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
   .container-blog {
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
 .blog-contents {
   display: flex;
-  width: 1000px;
 }
 @media screen and (max-width: 767px) {
   .blog-contents {
@@ -523,6 +522,11 @@ p {
 .archive-head {
   padding: 28px 0 0;
   margin-top: 120px;
+}
+@media screen and (max-width: 767px) {
+  .archive-head {
+    margin-top: 0;
+  }
 }
 
 .archive-lead {
