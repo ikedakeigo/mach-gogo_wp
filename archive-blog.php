@@ -19,18 +19,19 @@
       <header class="blog_hed"
       style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"
       >
-      <a href="<?php echo get_the_permalink(); ?>" class=""
-        >
-        <?php if(have_posts())  :?>
-          <?php the_post(); ?>
+      <?php if(have_posts())  :?>
+        <?php the_post(); ?>
         <div class="blog_hed__text">
           <h1 class="blog_hed__title">
             <?php the_title(); ?>
           </h1>
         </div>
-          <!-- <div class="arrow">
+        <a href="<?php echo get_the_permalink(); ?>" class="btn2"
+          >
+          記事を読む
+        <div class="arrow">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow.svg" />
-          </div> -->
+          </div>
         </a>
         <?php endif; ?>
       </header>

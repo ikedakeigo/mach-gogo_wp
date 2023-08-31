@@ -258,6 +258,12 @@ p {
   background-image: url(/assets/img/blogs/blog_top.png);
   background-size: cover;
   border-radius: 20px;
+  height: 270px;
+}
+@media screen and (min-width: 768px) {
+  .blog_hed {
+    height: 464px;
+  }
 }
 @media screen and (max-width: 767px) {
   .blog_hed {
@@ -277,6 +283,11 @@ p {
     width: 650px;
   }
 }
+@media screen and (min-width: 768px) {
+  .blog_hed__text {
+    width: 70%;
+  }
+}
 .blog_hed__title {
   font-size: 40px;
   letter-spacing: 0.06em;
@@ -286,8 +297,8 @@ p {
 }
 @media screen and (max-width: 767px) {
   .blog_hed__title {
-    width: 290px;
-    padding-top: 120px;
+    padding-left: 0;
+    padding-top: 70px;
     font-size: 21px;
   }
 }
@@ -299,7 +310,7 @@ p {
   font-size: 13px;
   line-height: 130%;
   text-align: center;
-  width: 167px;
+  width: 30%;
   height: 44px;
   border-radius: 60px;
   line-height: 45px;
@@ -309,9 +320,19 @@ p {
   color: white;
   margin-top: 300px;
 }
+@media screen and (min-width: 768px) {
+  .blog_hed .btn2 {
+    width: 20%;
+  }
+}
 @media screen and (max-width: 767px) {
   .blog_hed .btn2 {
     margin-top: 13px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .blog_hed .btn2 {
+    width: 50%;
   }
 }
 .blog_hed .btn2 .arrow img {
