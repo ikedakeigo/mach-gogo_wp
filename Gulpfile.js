@@ -10,11 +10,11 @@ gulp.task('scss', function () {
 });
 
 gulp.task('serve', function () {
-  // browserSync.init({
-  //   server: {
-  //     baseDir: './'
-  //   }
-  // });
+  browserSync.init({
+    server: {
+      baseDir: './'
+    }
+  });
 
   gulp.watch('./**/*.html').on('change', browserSync.reload);
   gulp.watch('./**/*.css').on('change', browserSync.reload);

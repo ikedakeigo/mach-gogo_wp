@@ -1,7 +1,7 @@
 //マップ型変数breakpointsを定義
 $breakpoints: (
   //キー 値
-  // 'xxs': 'screen and (max-width: 328px)',
+  'xxs': 'screen and (max-width: 399px)',
   "xs": "screen and (max-width: 599px)",
   "sm": "screen and (max-width: 767px)",
   //767px以下（スマホ）用の表示
@@ -210,59 +210,60 @@ p {
 }
 
 .pagination {
-	margin-top: 12px;
-	text-align: center;
+  margin-top: 12px;
+  text-align: center;
 }
 
 .pagination a {
-	transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .pagination a:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 .pagination a.next,
 .pagination a.prev {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 .pagination a.next:hover,
 .pagination a.prev:hover {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 .page-numbers {
-	background: #fff;
-	border: 1px solid #e2e2e2;
-	color: #808080;
-	display: inline-block;
-	font-family: "Lato", sans-serif;
-	font-size: 20px;
-	height: 40px;
-	line-height: 38px;
-	margin-right: 14px;
-	min-width: 40px;
-	text-align: center;
-	text-decoration: none;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  color: #808080;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 14px;
+  min-width: 40px;
+  text-align: center;
+  text-decoration: none;
+
 }
 
 .page-numbers:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .page-numbers.current {
-	background: #d81f32;
-	border: 1px solid #d81f32;
-	color: #fff;
-	font-weight: 700;
+  background: #d81f32;
+  border: 1px solid #d81f32;
+  color: #fff;
+  font-weight: 700;
 }
 
 .page-numbers.dots,
 .page-numbers.next,
 .page-numbers.prev {
-	border: none;
-	line-height: 40px;
-	min-width: initial;
-	width: auto;
+  border: none;
+  line-height: 40px;
+  min-width: initial;
+  width: auto;
 }

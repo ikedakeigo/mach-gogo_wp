@@ -1,0 +1,38 @@
+@use "sass:math";
+
+
+// 数値計算
+// rem
+@function remNunber($number) {
+  @return math.div($number, 16) * 1rem;
+}
+
+// rem
+@function per($number, $size) {
+  @return math.div($number, $size) * 100%;
+}
+
+// letter-space
+@function letter($number) {
+  @return math.div($number, 1000) * 2em;
+}
+
+// 数値のみを取り出す
+// 参照：https://css-tricks.com/snippets/sass/strip-unit-function/
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+  @return $number;
+}
+
+
+@function vw($window_width, $size) {
+	@return math.div($size, $window_width) * 100vw;
+}
+
+
+
+@function rem($pixels) {
+  @return math.div($pixels, 16) * 1rem;
+}

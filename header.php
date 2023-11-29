@@ -68,15 +68,16 @@
 
     <section id="top">
       <div class="container-header__nav">
+        <div class="header-logo">
+          <a href="/" class="header-logo__link">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
+          </a>
+          <h5 class="header__address">
+            JR神戸駅 プリコ神戸 大垣書店奥
+          </h5>
+        </div>
+
         <div class="header__flex">
-          <div class="header-logo">
-            <a href="/" class="header-logo__link">
-              <div class="top-logo__box">
-                <div><img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" /></div>
-              </div>
-            </a>
-            <h5 class="header__address">兵庫県西脇市黒田庄123-5 大国神社前</h5>
-          </div>
           <div class="header-navigation">
 
           <?php
@@ -90,7 +91,9 @@
             )
           )
         ?>
+
           </div>
         </div>
       </div>
     </section>
+

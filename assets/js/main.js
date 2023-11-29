@@ -18,7 +18,8 @@ $(document).ready(function () {
     // SPメニューを非表示にし、body要素から固定クラスを削除し、スクロール位置を復元します
     $(".sp-menu").removeClass("is_open");
     $("body").removeClass("fixed").css({ top: 0 });
-    window.scrollTo(0, scrollPosition);
+    // アニメーションなしでスクロール位置を復元します
+    window.scrollTo({ top: scrollPosition, behavior: 'instant' });
   });
 
   // アコーディオンのクリックイベント
@@ -33,6 +34,7 @@ $(document).ready(function () {
   const slider = $(".slick-slider");
   mySliderData.imageUrls.forEach(function (url) {
     slider.append('<div class="slick-slide mv_slideHight" style="background-image: url(' + url + ')"></div>');
+    slider.css("opacity", "0.5");
   });
   slider.slick({
     dots: true,
@@ -57,4 +59,17 @@ $(document).ready(function () {
     pauseOnFocus: false,
     pauseOnHover: false,
   });
+});
+
+window.addEventListener("scroll", () => {
+  const header = document.getElementById("top");
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 120 && window.innerWidth > 1000) {
+    header.classList.add("smaller");
+  } else if (scrollPosition <= 60) {
+    header.classList.remove("smaller");
+  } else if (window.innerWidth <= 1000) {
+    header.classList.remove("smaller");
+  }
 });

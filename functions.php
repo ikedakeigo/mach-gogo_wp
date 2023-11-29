@@ -182,4 +182,50 @@ function remove_menus() {
 }
 add_action( 'admin_menu', 'remove_menus' );
 
+// faqのカスタム投稿タイプ
+function create_faq_post_type() {
+  register_post_type('faq',
+      array(
+          'labels' => array(
+              'name' => __('FAQs'),
+              'singular_name' => __('FAQ')
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'supports' => array('title', 'editor', 'custom-fields'),
+          'rewrite' => array('slug' => 'faqs'),
+      )
+  );
+}
+add_action('init', 'create_faq_post_type');
+
+
+// 診療状況のカスタム投稿タイプ
+function create_clinic_status_post_type() {
+  register_post_type('clinic_status',
+      array(
+          'labels' => array(
+              'name' => __('診療状況'),
+              'singular_name' => __('診療状況')
+          ),
+          'public' => true,
+          'has_archive' => true,
+          'supports' => array('title', 'editor', 'thumbnail'),
+          'rewrite' => array('slug' => 'clinic-status'),
+      )
+  );
+}
+add_action('init', 'create_clinic_status_post_type');
+
+
+// svgファイルをアップロードできるようにする
+function add_file_types_to_uploads($file_types){
+  $new_filetypes = array();
+  $new_filetypes['svg'] = 'image/svg+xml';
+  $file_types = array_merge($file_types, $new_filetypes );
+  return $file_types;
+}
+add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+
 ?>
