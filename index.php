@@ -66,18 +66,29 @@
           <div class="border"></div>
           <div class="reservation-box">
             <div class="background-image">
+              <!-- 外枠 -->
               <img src="<?php echo get_template_directory_uri() ?>/assets/img/svg_box.svg" alt="予約セル表" class="background-image-cell" />
-              <!-- ここの切り替え -->
-              <div class="status">
 
-                <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/status00.svg" alt="9:00-12:00" /> -->
+              <!-- 1 -->
+              <div class="status">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/status00.svg" alt="9:00-12:00" />
               </div>
-                    <!-- ここの切り替え -->
-              <div class="status"><img src="<?php echo get_template_directory_uri() ?>/assets/img/status01.svg" alt="12:00-14:00" /></div>
-                    <!-- ここの切り替え -->
-              <div class="status"><img src="<?php echo get_template_directory_uri() ?>/assets/img/status02.svg" alt="15:00-19:00" /></div>
-                    <!-- ここの切り替え -->
-              <div class="status"><img src="<?php echo get_template_directory_uri() ?>/assets/img/status03.svg" alt="19:00-20:00" /></div>
+
+              <!-- 2 -->
+              <div class="status">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/status01.svg" alt="12:00-14:00" />
+              </div>
+
+              <!-- 3 -->
+              <div class="status">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/status02.svg" alt="15:00-19:00" />
+              </div>
+
+              <!-- 4 -->
+              <div class="status">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/status03.svg" alt="19:00-20:00" />
+              </div>
+
             </div>
           </div>
         </div>
@@ -296,7 +307,7 @@
                   <div class="step-number__sp">2</div>
                   <div class="step-text">来院</div>
                 </div>
-                <p class="step-desc">診療の待ち時間をマッハでご案内</p>
+                <p class="step-desc">診療の待ち時間を<br class="is-sp">マッハでご案内</p>
               </div>
             </div>
 
@@ -327,7 +338,7 @@
                   <div class="step-text">会計・帰宅</div>
                 </div>
                 <p class="step-desc">
-                キャッシュレス決済・薬局との連携によりマッハで帰宅
+                キャッシュレス決済・薬局との連携により<br class="is-sp">マッハで帰宅
                 </p>
               </div>
             </div>

@@ -383,7 +383,12 @@ a {
   &.smaller {
     height: 60px;
     .header-logo {
-      width: rem(300);
+      margin-top: rem(10);
+      width: rem(250);
+    }
+
+    & h5 {
+      margin-top: rem(0);
     }
   }
 }
@@ -464,7 +469,6 @@ a {
 }
 
 .front-contents {
-  // margin-top: 30px;
 }
 
 .container-front2 {
@@ -569,6 +573,12 @@ a {
     align-items: center;
     letter-spacing: 0.11em;
     color: $white-color;
+
+    &:hover {
+      background-color: #ebf0f2;
+      color: #021f59;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.16);
+    }
   }
 
   &__link2 {
@@ -591,7 +601,7 @@ a {
     word-wrap: break-word;
     align-items: center;
     letter-spacing: 0.11em;
-    color: $white-color;
+    // color: $white-color;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -682,11 +692,35 @@ a {
       & a {
         font-style: normal;
         font-weight: bold;
-        font-size: 14px;
         line-height: 16px;
         text-align: center;
         letter-spacing: 0.06em;
         color: $main-color;
+        font-size: clamp(rem(12), 1.5vw, rem(16));
+
+        position: relative;
+        &::after {
+          content: "";
+          /*絶対配置で線の位置を決める*/
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          /*線の形状*/
+          width: 100%;
+          height: 2px;
+          background: #103460;
+          /*アニメーションの指定*/
+          transition: all 0.3s;
+          transform: scale(0, 1); /*X方向0、Y方向1*/
+          transform-origin: left top; /*左上基点*/
+        }
+        &:hover {
+          color: #103460;
+          opacity: 1;
+          &::after {
+            transform: scale(1, 1); /*X方向にスケール拡大*/
+          }
+        }
       }
     }
   }
@@ -857,7 +891,7 @@ a {
 .background-image {
   width: 100%;
   width: 660px;
-  height: 95px;
+  // height: 95px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -869,7 +903,7 @@ a {
   }
 
   @include mq(xs) {
-    width: 85vw;
+    width: 80vw;
   }
 
   & img {
@@ -880,18 +914,14 @@ a {
 .background-image-cell {
 }
 
-.status {
-  & img {
+.background-image {
+  .status {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 5%;
     width: 107px;
-    height: 98px;
     object-fit: cover;
-    height: auto;
-    // transform: translate(-50%, -50%);
     @include mq(sm) {
-      transform: translateY(-25%);
       left: 4%;
       width: 10.84vw;
     }
@@ -899,26 +929,25 @@ a {
       width: 13.84vw;
     }
     @include mq(xxs) {
-      transform: translateY(-50%);
     }
-  }
 
-  &:nth-child(2) img {
-    left: 30%;
-    @include mq(sm) {
-      left: 29%;
+    &:nth-of-type(2) {
+      left: 30%;
+      @include mq(sm) {
+        left: 29%;
+      }
     }
-  }
-  &:nth-child(3) img {
-    left: 55%;
-    @include mq(sm) {
-      left: 54%;
+    &:nth-of-type(3) {
+      left: 55%;
+      @include mq(sm) {
+        left: 54%;
+      }
     }
-  }
-  &:nth-child(4) img {
-    left: 80%;
-    @include mq(sm) {
-      left: 79%;
+    &:nth-of-type(4) {
+      left: 80%;
+      @include mq(sm) {
+        left: 79%;
+      }
     }
   }
 }
@@ -954,7 +983,7 @@ a {
   &__item {
     position: relative;
     // width: 210px;
-    width: 100%;
+    // width: 100%;
     height: 210px;
     margin: 17px;
     background: $main-color;
@@ -962,14 +991,14 @@ a {
     margin: 6px;
 
     @include mq(md) {
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: rem(30);
-      };
+      }
     }
     @include mq(sm) {
-      &:not(:last-child){
+      &:not(:last-child) {
         margin-bottom: rem(20);
-      };
+      }
     }
 
     &:hover {
@@ -1459,7 +1488,7 @@ a {
   display: block;
   position: relative;
   margin: 0;
-  padding: 0.625em 0.625em 0.625em 0em;
+  padding:  rem(10) rem(20)  rem(10) 0;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1468,6 +1497,7 @@ a {
   cursor: pointer;
   display: flex;
   line-height: 130%;
+  align-items: center;
 
   &:hover {
     color: $main-color;
@@ -1526,6 +1556,9 @@ a {
   margin-top: 3px;
   line-height: 160%;
   font-size: rem(22);
+  @include mq(sm){
+    font-size:  rem(16);
+  }
 }
 
 .answer-content {
