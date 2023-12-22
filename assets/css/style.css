@@ -119,6 +119,25 @@ ul {
 }
 
 /*===================================
+ * 画像
+===================================*/
+img {
+  width: 100%;
+  height: auto;
+}
+
+.imgbg img {
+  vertical-align: middle;
+}
+
+/*===================================
+ * リンク
+===================================*/
+a {
+  display: inline-block;
+}
+
+/*===================================
  * font
 ===================================*/
 h6 {
@@ -237,6 +256,13 @@ p {
   line-height: 40px;
   min-width: initial;
   width: auto;
+}
+
+/*===================================
+ * 公開まで非表示
+===================================*/
+.hidden {
+  display: none;
 }
 
 /*===================================
@@ -583,7 +609,7 @@ a {
   display: flex;
   height: clamp(80px, 10vw, 120px);
   position: sticky;
-  background-color: #ebf0f2;
+  background-color: #021f59;
   width: 100%;
   z-index: 999;
   left: 0;
@@ -596,7 +622,7 @@ a {
   font-size: 13px;
   line-height: 19px;
   letter-spacing: 0.1em;
-  color: #021f59;
+  color: #ebf0f2;
   margin-top: 0.625rem;
   font-weight: bold;
 }
@@ -865,7 +891,7 @@ a {
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #021f59;
+    color: #ebf0f2;
     font-size: clamp(0.75rem, 1.5vw, 1rem);
     position: relative;
   }
@@ -878,15 +904,15 @@ a {
     /*線の形状*/
     width: 100%;
     height: 2px;
-    background: #103460;
+    background: #ebf0f2;
     /*アニメーションの指定*/
     transition: all 0.3s;
     transform: scale(0, 1); /*X方向0、Y方向1*/
     transform-origin: left top; /*左上基点*/
   }
   .header-nav__item a:hover {
-    color: #103460;
-    opacity: 1;
+    color: #ebf0f2;
+    opacity: 0.8;
   }
   .header-nav__item a:hover::after {
     transform: scale(1, 1); /*X方向にスケール拡大*/
@@ -1918,7 +1944,6 @@ a {
 ===================================*/
 .footer {
   background-color: #021f59;
-  margin-top: 120px;
 }
 
 .footer-content h6 {

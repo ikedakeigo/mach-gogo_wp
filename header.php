@@ -19,7 +19,7 @@
 <!--
     <script defer src="/assets/js/main.js"></script> -->
 
-    <title>マッハGoGoクリニック</title>
+    <title>マッハスピードクリニック</title>
     <meta name="description" content="" />
 
     <!-- <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com" /> -->
@@ -30,38 +30,37 @@
     <?php wp_head(); ?>
   </head>
   <body>
-    <div class="sp-menu">
-      <div class="sp-menu__container">
-        <a href="index.html" class="sp-nav__logo-link">
-          <div class="sp-nav__logo">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
-          </div>
-        </a>
-
-        <?php
-          wp_nav_menu(
-            array(
-              'depth' => 1,
-              'theme_location' => 'drawer',
-              'container' => '',
-              'menu_class' => 'sp-nav__list',
-
+    <div class="hidden">
+      <div class="sp-menu">
+        <div class="sp-menu__container">
+          <a href="index.html" class="sp-nav__logo-link">
+            <div class="sp-nav__logo">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
+            </div>
+          </a>
+          <?php
+            wp_nav_menu(
+              array(
+                'depth' => 1,
+                'theme_location' => 'drawer',
+                'container' => '',
+                'menu_class' => 'sp-nav__list',
+              )
             )
-          )
-        ?>
-
-        <div class="close js-close">
-          <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
+          ?>
+          <div class="close js-close">
+            <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-box">
-      <div class="footer__flex">
-        <div class="menu-toggle js-spmenu"><img src="<?php echo get_template_directory_uri() ?>/assets/img/menu.png" /></div>
-        <div class="page-bottom">
-          <a href="/reserve-page/" class="page-bottom__link">
-            <div class="page-bottom__text">予約枠を確認・予約する</div>
-          </a>
+      <div class="footer-box">
+        <div class="footer__flex">
+          <div class="menu-toggle js-spmenu"><img src="<?php echo get_template_directory_uri() ?>/assets/img/menu.png" /></div>
+          <div class="page-bottom">
+            <a href="/reserve-page/" class="page-bottom__link">
+              <div class="page-bottom__text">予約枠を確認・予約する</div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -77,7 +76,7 @@
           </h5>
         </div>
 
-        <div class="header__flex">
+        <div class="header__flex hidden">
           <div class="header-navigation">
 
           <?php

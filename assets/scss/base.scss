@@ -1,7 +1,7 @@
 //マップ型変数breakpointsを定義
 $breakpoints: (
   //キー 値
-  'xxs': 'screen and (max-width: 399px)',
+  "xxs": "screen and (max-width: 399px)",
   "xs": "screen and (max-width: 599px)",
   "sm": "screen and (max-width: 767px)",
   //767px以下（スマホ）用の表示
@@ -145,6 +145,24 @@ $red-color: #e70012;
   color: $red-color;
 }
 /*===================================
+ * 画像
+===================================*/
+img {
+  width: 100%;
+  height: auto;
+}
+
+.imgbg img{
+  vertical-align: middle;
+}
+
+/*===================================
+ * リンク
+===================================*/
+a {
+  display: inline-block;
+}
+/*===================================
  * font
 ===================================*/
 
@@ -245,7 +263,6 @@ p {
   min-width: 40px;
   text-align: center;
   text-decoration: none;
-
 }
 
 .page-numbers:last-child {
@@ -266,4 +283,12 @@ p {
   line-height: 40px;
   min-width: initial;
   width: auto;
+}
+
+/*===================================
+ * 公開まで非表示
+===================================*/
+
+.hidden {
+  display: none;
 }

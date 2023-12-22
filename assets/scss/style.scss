@@ -360,7 +360,7 @@ a {
   display: flex;
   height: clamp(80px, 10vw, 120px);
   position: sticky;
-  background-color: $white-color;
+  background-color: $main-color;
   width: 100%;
   z-index: 999;
   left: 0;
@@ -375,7 +375,7 @@ a {
     font-size: 13px;
     line-height: 19px;
     letter-spacing: 0.1em;
-    color: $main-color;
+    color: $white-color;
     margin-top: rem(10);
     font-weight: bold;
   }
@@ -695,7 +695,7 @@ a {
         line-height: 16px;
         text-align: center;
         letter-spacing: 0.06em;
-        color: $main-color;
+        color: $white-color;
         font-size: clamp(rem(12), 1.5vw, rem(16));
 
         position: relative;
@@ -708,15 +708,15 @@ a {
           /*線の形状*/
           width: 100%;
           height: 2px;
-          background: #103460;
+          background: $white-color;
           /*アニメーションの指定*/
           transition: all 0.3s;
           transform: scale(0, 1); /*X方向0、Y方向1*/
           transform-origin: left top; /*左上基点*/
         }
         &:hover {
-          color: #103460;
-          opacity: 1;
+          color: $white-color;
+          opacity: .8;
           &::after {
             transform: scale(1, 1); /*X方向にスケール拡大*/
           }
@@ -1488,7 +1488,7 @@ a {
   display: block;
   position: relative;
   margin: 0;
-  padding:  rem(10) rem(20)  rem(10) 0;
+  padding: rem(10) rem(20) rem(10) 0;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -1556,8 +1556,8 @@ a {
   margin-top: 3px;
   line-height: 160%;
   font-size: rem(22);
-  @include mq(sm){
-    font-size:  rem(16);
+  @include mq(sm) {
+    font-size: rem(16);
   }
 }
 
@@ -1817,7 +1817,8 @@ a {
 
 .footer {
   background-color: $main-color;
-  margin-top: 120px;
+  // 一旦消す
+  // margin-top: 120px;
 }
 
 .footer-content {
