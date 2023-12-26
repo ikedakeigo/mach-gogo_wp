@@ -9,7 +9,7 @@ Template Name: 内科 - 蕁麻疹
 <div class="container">
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
-          <span class="im-titleIcon">かぜ（風邪、感冒）</span>
+          <span class="im-titleIcon">じんましん</span>
         </h1>
         <div class="border"></div>
       </div>
@@ -43,7 +43,7 @@ Template Name: 内科 - 蕁麻疹
         <p><a href="#">資料3</a></p> -->
       </div>
 
-      <?php get_template_part('acordion_item'); ?>
+      <?php get_template_part('component/accordion-item'); ?>
     </div>
 
     <?php get_footer(); ?>

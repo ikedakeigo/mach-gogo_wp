@@ -9,7 +9,7 @@ Template Name: 内科 - かぜ・熱が出る
 <div class="container">
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
-          <span class="im-titleIcon">かぜ（風邪、感冒）</span>
+          <span class="im-titleIcon">かぜ・熱が出る</span>
         </h1>
         <div class="border"></div>
       </div>

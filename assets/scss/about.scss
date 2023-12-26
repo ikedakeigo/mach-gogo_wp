@@ -71,7 +71,7 @@
       margin-top: 35px;
 
       & a{
-        max-width: 93px;
+        max-width: 250px;
         width: 33%;
         height: 93px;
         background: #EFF4F3;
@@ -83,7 +83,7 @@
         text-align: center;
 
         &:hover{
-          transform: scale(1.3);
+          transform: scale(.9);
         }
 
         & .im-icon {

@@ -9,7 +9,7 @@ Template Name: 内科 - 貧血・ヘモグロビン値が低い
 <div class="container">
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
-          <span class="im-titleIcon">かぜ（風邪、感冒）</span>
+          <span class="im-titleIcon">貧血・ヘモグロビン値が低い</span>
         </h1>
         <div class="border"></div>
       </div>
