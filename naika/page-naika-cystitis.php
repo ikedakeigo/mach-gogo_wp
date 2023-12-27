@@ -9,7 +9,9 @@ Template Name: 内科 - 膀胱炎・尿をすると痛い
 <div class="container">
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
-          <span class="im-titleIcon">かぜ（風邪、感冒）</span>
+          <span class="im-titleIcon">
+          <ruby>膀胱炎<rt>ぼうこうえん</rt></ruby>・<ruby>尿<rt>にょう</rt></ruby>をすると<ruby>痛い<rt>いたい</rt></ruby>
+          </span>
         </h1>
         <div class="border"></div>
       </div>
@@ -34,16 +36,9 @@ Template Name: 内科 - 膀胱炎・尿をすると痛い
 
         <p>主な感染経路は飛沫感染や手指を介した接触感染であるため、手洗いうがいを徹底したり、マスクを付けるなどして、ウイルスを体内に取り込まないことが重要です。</p>
 
-        <!-- <h2>参考・引用</h2>
-
-        <p><a href="#">資料１</a></p>
-
-        <p><a href="#">資料2</a></p>
-
-        <p><a href="#">資料3</a></p> -->
       </div>
 
-      <?php get_template_part('acordion_item'); ?>
+      <?php get_template_part('component/accordion-item'); ?>
     </div>
 
     <?php get_footer(); ?>
