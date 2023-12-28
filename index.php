@@ -1,8 +1,9 @@
 <?php get_header() ?>
 
-  <main class="imgbg">
+  <!-- <main class="imgbg">
     <img src="<?php echo get_template_directory_uri()  ?>/assets/img/machspeedBg.png" alt="">
-  </main>
+  </main> -->
+  
   <main class="main hidden">
     <section class="main_mv">
       <div class="container-front2">
