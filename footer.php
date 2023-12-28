@@ -9,7 +9,7 @@
             <div class="footer-address">
               <p>〒650-0025</p>
               <p>兵庫県神戸市中央区相生3-1-1<br />大垣書店奥</p>
-              <div class="footer-map-link"><a href="#" target="_blank">Googleマップでみる</a></div>
+              <div class="footer-map-link"><a href="https://maps.app.goo.gl/DeykzBq2xtfsTMo87" target="_blank">Googleマップでみる</a></div>
             </div>
             <div class="footer-schedule">
               <table class="footer-schedule__table">
