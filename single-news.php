@@ -1,13 +1,5 @@
 <?php get_header(); ?>
-    <div class="container">
-      <div class="blogTop-img">
-        <?php if(has_post_thumbnail()) : ?>
-          <?php the_post_thumbnail(); ?>
-          <?php else: ?>
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="no-img"> -->
-            <!-- 何も表示なし -->
-        <?php endif ; ?>
-      </div>
+    <div class="container layout">
 
       <?php if(have_posts()) : ?>
         <?php while(have_posts()) : ?>
@@ -32,6 +24,14 @@
           <h1 class="s-blog__title">
             <?php the_title(); ?>
           </h1>
+          <div class="blogTop-img">
+        <?php if(has_post_thumbnail()) : ?>
+          <?php the_post_thumbnail(); ?>
+          <?php else: ?>
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="no-img"> -->
+            <!-- 何も表示なし -->
+        <?php endif ; ?>
+      </div>
         </div>
         <?php endwhile ; ?>
       <?php endif; ?>

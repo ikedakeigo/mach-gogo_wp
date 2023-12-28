@@ -1,3 +1,5 @@
+@use "global" as *;
+
 //マップ型変数breakpointsを定義
 $breakpoints: (
   //キー 値
@@ -152,7 +154,7 @@ img {
   height: auto;
 }
 
-.imgbg img{
+.imgbg img {
   vertical-align: middle;
 }
 
@@ -285,11 +287,16 @@ p {
   width: auto;
 }
 
-
-.sub-text-center{
+.sub-text-center {
   text-align: center;
 }
 
+/*===================================
+ * layout 外枠
+===================================*/
+.layout {
+  margin-top: rem(100);
+}
 /*===================================
  * 公開まで非表示
 ===================================*/

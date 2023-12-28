@@ -1850,7 +1850,7 @@ a {
 .footer {
   background-color: $main-color;
   // 一旦消す
-  // margin-top: 120px;
+  margin-top:  rem(120);
 }
 
 .footer-content {
