@@ -1,46 +1,42 @@
-@use 'base' as *;
+@use "base" as *;
+@use "global" as *;
 
-
-.medicalContentAll{
-
+.medicalContentAll {
 }
 
-.inner_links{
-    max-width: 400px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.inner_links {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    & a{
-      display: block;
-      width: 40%;
-      margin: 0;
-      text-align: center;
-      padding: 13px 0;
-      border: 1px solid #B9D8CF;
-      border-radius: 50px;
-      margin-bottom: 20px;
-    }
+  & a {
+    display: block;
+    width: 40%;
+    margin: 0;
+    text-align: center;
+    padding: 13px 0;
+    border: 1px solid #b9d8cf;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
 
-    & a:nth-child(odd){
-      margin-right: 20px;
-    }
+  & a:nth-child(odd) {
+    margin-right: 20px;
+  }
 }
-
 
 /*===================================
  * internalMedicine
 ===================================*/
 
-.internalMedicine{
-
+.internalMedicine {
 }
 
-
 .im {
-  &__title{
+  &__title {
     margin-top: 75px;
     margin-bottom: 16px;
     text-align: center;
@@ -50,40 +46,43 @@
     line-height: 160%;
     letter-spacing: 0.06em;
     color: $main-color;
-    @include mq(sm){
+    @include mq(sm) {
       font-size: 20px;
     }
   }
 
-  &__sub{
-
-    &--text{
+  &__sub {
+    &--text {
       margin: 0 10px;
     }
   }
 
   &__icon {
-
-    &--container{
+    &--container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 35px;
 
-      & a{
+      & a {
         max-width: 250px;
         width: 33%;
         height: 93px;
-        background: #EFF4F3;
+        background: #eff4f3;
         border-radius: 20px;
         margin: 8px 4.5px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         text-align: center;
+        align-items: center;
+        @include mq(sm) {
+          width: 45%;
+          max-width: 100%;
+        }
 
-        &:hover{
-          transform: scale(.9);
+        &:hover {
+          transform: scale(0.9);
         }
 
         & .im-icon {
@@ -101,18 +100,16 @@
           }
         }
 
-        & .im-ttl{
+        & .im-ttl {
           text-align: center;
           font-size: 12px;
           font-weight: bold;
           line-height: 1.2;
         }
       }
-
     }
   }
 }
-
 
 /*===================================
  * blog
@@ -126,13 +123,13 @@
   margin-bottom: 16px;
   font-style: normal;
   font-weight: bold;
-  color: #021F59;
+  color: #021f59;
 }
 .blog_body h2::after {
   content: "";
   flex-grow: 1;
   height: 2px;
-  background: #5F7092;
+  background: #5f7092;
   display: block;
   margin-left: 8px;
 }
@@ -140,9 +137,11 @@
  * im cold
 ===================================*/
 .attachment-post-thumbnail {
-  width: 61px;
+  width: rem(300);
   height: auto;
-  margin-right: 10px;
+  @include mq(sm) {
+    width: 100%;
+  }
 }
 .im-titleIcon {
   position: relative;
@@ -174,7 +173,7 @@
   margin: 0;
   text-align: center;
   padding: 13px 0;
-  border: 1px solid #5F7092;
+  border: 1px solid #5f7092;
   border-radius: 50px;
   margin-bottom: 20px;
 }

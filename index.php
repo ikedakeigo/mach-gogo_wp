@@ -3,7 +3,7 @@
   <!-- <main class="imgbg">
     <img src="<?php echo get_template_directory_uri()  ?>/assets/img/machspeedBg.png" alt="">
   </main> -->
-  
+
   <main class="main hidden">
     <section class="main_mv">
       <div class="container-front2">
@@ -126,7 +126,7 @@
             </div>
 
             <div class="medical-content__item">
-              <a href="/about/gynecology/">
+              <a href="/about#anchor03">
                 <div class="item-content">
                   <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_03.png" width="72" height="72" alt="" /></div>
                   <div class="item-content__text">
@@ -342,7 +342,7 @@
                   <div class="step-text">会計・帰宅</div>
                 </div>
                 <p class="step-desc">
-                キャッシュレス決済・薬局との連携により<br class="is-sp">マッハで帰宅
+                キャッシュレス決済・薬局との<br class="is-sp">連携によりマッハで帰宅
                 </p>
               </div>
             </div>

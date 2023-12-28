@@ -10,7 +10,7 @@ Template Name: 内科 - 機能性ディスペプシア
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
           <span class="im-titleIcon">
-          <ruby>機能性ディスペプシア<rt>きのうせいディスペプシア</rt></ruby>
+          <ruby>機能性<rt>きのうせい</rt></ruby>ディスペプシア
           </span>
         </h1>
         <div class="border"></div>

@@ -258,6 +258,10 @@ p {
   width: auto;
 }
 
+.sub-text-center {
+  text-align: center;
+}
+
 /*===================================
  * 公開まで非表示
 ===================================*/
@@ -371,6 +375,23 @@ p {
   margin-bottom: 3.125rem;
 }
 
+.under_border {
+  width: 100%;
+  height: 2px;
+  background: #021f59;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .under_border {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+  }
+}
+
 .section {
   max-width: 100%;
   margin: 0 auto;
@@ -474,7 +495,6 @@ a {
   position: fixed;
   top: 215vh;
   width: 100%;
-  background: #fff;
   height: 120vh;
   transition: 0.2s all ease-in;
   z-index: 20;
@@ -489,17 +509,24 @@ a {
   top: 0;
   height: 1000vh;
   padding-top: 50px;
-  background: #fff;
+  background: #021f59;
   z-index: 1000;
 }
 
 .sp-nav__logo {
-  margin-bottom: 55px;
+  margin-right: 3.125rem;
+  margin-left: 3.125rem;
+  margin-top: 1.875rem;
+  margin-bottom: 3.4375rem;
 }
 .sp-nav__item {
   margin-bottom: 22px;
   font-weight: bold;
   font-size: 1.25rem;
+}
+.sp-nav__item a {
+  display: block;
+  color: #ebf0f2;
 }
 .sp-nav__link {
   font-style: normal;
@@ -515,18 +542,21 @@ a {
 
 .js-close {
   position: absolute;
-  left: 20px;
-  bottom: 200px;
-  width: 43px;
-  height: 43px;
+  left: 1.25rem;
+  bottom: 12.5rem;
+  width: 2.6875rem;
+  height: 2.6875rem;
   border-radius: 50%;
   background-color: #021f59;
+  cursor: pointer;
 }
 
 .close__icon img {
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 0.8125rem;
+  left: 0.8125rem;
+  width: 1.0625rem;
+  height: 1.0625rem;
 }
 
 /*===================================
@@ -553,16 +583,16 @@ a {
 
 .menu-toggle {
   position: relative;
-  height: 84px;
-  width: 70px;
+  height: 5.3125rem;
+  width: 4.375rem;
   background-color: white;
   display: table;
 }
 .menu-toggle img {
   position: absolute;
   display: table-cell;
-  width: 33px;
-  height: 30.8px;
+  width: 2.0625rem;
+  height: 2.0625rem;
   top: 0;
   left: 0;
   right: 0;
@@ -1348,11 +1378,18 @@ a {
 @media screen and (min-width: 768px) {
   .medical-step {
     display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .medical-step {
+    display: block;
     justify-content: center;
-    width: 215px;
+    width: 100%;
     text-align: center;
-    margin: 9px;
     object-fit: cover;
+  }
+  .medical-step:not(:last-child) {
+    margin-right: 0rem;
   }
 }
 
@@ -1411,18 +1448,17 @@ a {
 }
 
 .step-content {
-  margin-left: 17px;
+  margin-left: 1.25rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .step-content {
     margin-left: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .step-title {
-    display: flex;
-  }
+.step-title {
+  display: flex;
+  justify-content: center;
 }
 
 .step-text {
@@ -1445,6 +1481,11 @@ a {
 
 .step-desc {
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .step-desc {
+    text-align: center;
+  }
 }
 
 /*===================================

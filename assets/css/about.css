@@ -258,6 +258,10 @@ p {
   width: auto;
 }
 
+.sub-text-center {
+  text-align: center;
+}
+
 /*===================================
  * 公開まで非表示
 ===================================*/
@@ -275,7 +279,7 @@ p {
   margin: 0;
   text-align: center;
   padding: 13px 0;
-  border: 1px solid #B9D8CF;
+  border: 1px solid #b9d8cf;
   border-radius: 50px;
   margin-bottom: 20px;
 }
@@ -315,13 +319,20 @@ p {
   max-width: 250px;
   width: 33%;
   height: 93px;
-  background: #EFF4F3;
+  background: #eff4f3;
   border-radius: 20px;
   margin: 8px 4.5px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .im__icon--container a {
+    width: 45%;
+    max-width: 100%;
+  }
 }
 .im__icon--container a:hover {
   transform: scale(0.9);
@@ -358,14 +369,14 @@ p {
   margin-bottom: 16px;
   font-style: normal;
   font-weight: bold;
-  color: #021F59;
+  color: #021f59;
 }
 
 .blog_body h2::after {
   content: "";
   flex-grow: 1;
   height: 2px;
-  background: #5F7092;
+  background: #5f7092;
   display: block;
   margin-left: 8px;
 }
@@ -374,9 +385,13 @@ p {
  * im cold
 ===================================*/
 .attachment-post-thumbnail {
-  width: 61px;
+  width: 18.75rem;
   height: auto;
-  margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .attachment-post-thumbnail {
+    width: 100%;
+  }
 }
 
 .im-titleIcon {
@@ -412,7 +427,7 @@ p {
   margin: 0;
   text-align: center;
   padding: 13px 0;
-  border: 1px solid #5F7092;
+  border: 1px solid #5f7092;
   border-radius: 50px;
   margin-bottom: 20px;
 }

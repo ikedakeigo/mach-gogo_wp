@@ -10,7 +10,7 @@ Template Name: 内科 - 性病・クラミジア感染症・淋病・梅毒
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
           <span class="im-titleIcon">
-          <ruby>性病<rt>せいびょう</rt></ruby><br>（<ruby>クラミジア感染症<rt>クラミジアかんせんしょう</rt></ruby>、<ruby>淋病<rt>りんびょう</rt></ruby>、<ruby>梅毒<rt>ばいどく</rt></ruby>）
+          <ruby>性病<rt>せいびょう</rt></ruby><br>（クラミジア<ruby>感染症<rt>かんせんしょう</rt></ruby>、<ruby>淋病<rt>りんびょう</rt></ruby>、<ruby>梅毒<rt>ばいどく</rt></ruby>）
           </span>
         </h1>
         <div class="border"></div>

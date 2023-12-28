@@ -258,6 +258,10 @@ p {
   width: auto;
 }
 
+.sub-text-center {
+  text-align: center;
+}
+
 /*===================================
  * 公開まで非表示
 ===================================*/
@@ -529,9 +533,9 @@ p {
 ===================================*/
 .blogTop-img {
   margin-top: 100px;
+  text-align: center;
 }
 .blogTop-img img {
-  width: 100%;
   object-fit: cover;
 }
 

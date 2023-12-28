@@ -4,7 +4,8 @@
         <?php if(has_post_thumbnail()) : ?>
           <?php the_post_thumbnail(); ?>
           <?php else: ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="no-img">
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="no-img"> -->
+            <!-- 何も表示なし -->
         <?php endif ; ?>
       </div>
 
@@ -14,15 +15,20 @@
         <div class="s-blog__date" datetime="<?php the_time('c') ?>">
           <?php the_time('Y.m.d'); ?>
           <?php
+          /*
+            カテゴリーのリンクを表示（一旦非表示）
             $category = get_the_category();
             if ( $category[0]) :
+          */
           ?>
-          <span class="s-blog__category">
+
+          <!-- <span class="s-blog__category">
             <a href="<?php echo get_category_link($category[0]->term_id); ?>" title="Uncategorized">
               <?php echo $category[0]->cat_name; ?>
             </a>
-          </span>
-          <?php endif; ?>
+          </span> -->
+          <?php // endif; ?>
+
           <h1 class="s-blog__title">
             <?php the_title(); ?>
           </h1>
@@ -39,7 +45,7 @@
 
       <?php $post_tags = get_the_tags(); ?>
       <div class="entry-tag-items">
-        <div class="entry-tag-head">タグ</div>
+        <!-- <div class="entry-tag-head">タグ</div> -->
         <?php if($post_tags) :?>
           <?php foreach($post_tags as $tag) : ?>
             <div class="entry-tag-item"><a href="<?php echo get_tag_link($tag->term_id) ?>"><?php echo $tag->name; ?></a></div>
@@ -49,8 +55,18 @@
 
       <section id="articles">
         <div class="container inner">
+        <?php if(have_posts() && is_single()):
+          $post_count = wp_count_posts('news')->publish;
+          if($post_count >= 2):
+          ?>
           <h2 class="main_title">最新のお知らせ</h2>
           <div class="border"></div>
+        <?php else: ?>
+          <!-- 何も表示しない -->
+        <?php
+          endif;
+        endif;
+        ?>
           <div class="articles-grid">
           <?php
             if(have_posts()) {

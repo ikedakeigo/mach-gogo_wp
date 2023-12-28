@@ -1,3 +1,4 @@
+<div class="under_border"></div>
 <div class="medical-treatment-all">
         <div class="im">
           <div class="im__icon--container show-more">
@@ -5,14 +6,14 @@
               <div class="im-icon large-icon">
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/cold.png" /> -->
                 <p class="im-ttl">
-                <ruby>風邪<rt>かぜ</rt></ruby>・<ruby>熱が出る<rt>ねつがでる</rt></ruby>
+                <ruby>風邪<rt>かぜ</rt></ruby>・<ruby>熱<rt>ねつ</rt></ruby>が出る
                 </p>
               </div>
             </a>
             <a href="/naika/hentouen-nodokaze/">
               <div class="im-icon large-icon">
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/cold.png" /> -->
-                <p class="im-ttl">扁桃炎・のどが痛い</p>
+                <p class="im-ttl"><ruby>扁桃炎<rt>へんとうえん</rt></ruby>・のどが痛い</p>
               </div>
             </a>
             <a href="/naika/haien-kikanshien-seki/">
@@ -41,7 +42,7 @@
               <div class="im-icon large-icon">
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/cold.png" /> -->
                 <p class="im-ttl">
-                <ruby>ヘリコバクター・ピロリ感染症<rt>ヘリコバクター・ピロリかんせんしょう</rt></ruby>
+                ヘリコバクター・ピロリ<ruby>感染症<rt>かんせんしょう</rt></ruby>
                 </p>
               </div>
             </a>
@@ -81,7 +82,7 @@
               <div class="im-icon large-icon">
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/cold.png" /> -->
                 <p class="im-ttl">
-                <ruby>性病<rt>せいびょう</rt></ruby><br>（<ruby>クラミジア感染症<rt>クラミジアかんせんしょう</rt></ruby>、<ruby>淋病<rt>りんびょう</rt></ruby>、<ruby>梅毒<rt>ばいどく</rt></ruby>）
+                <ruby>性病<rt>せいびょう</rt></ruby><br>（クラミジア<ruby>感染症<rt>かんせんしょう</rt></ruby>、<ruby>淋病<rt>りんびょう</rt></ruby>、<ruby>梅毒<rt>ばいどく</rt></ruby>）
                 </p>
               </div>
             </a>
@@ -105,7 +106,7 @@
               <div class="im-icon large-icon">
                 <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/cold.png" /> -->
                 <p class="im-ttl">
-                <ruby>機能性ディスペプシア<rt>きのうせいディスペプシア</rt></ruby>
+                <ruby>機能性<rt>きのうせい</rt></ruby>ディスペプシア
                 </p>
               </div>
             </a>

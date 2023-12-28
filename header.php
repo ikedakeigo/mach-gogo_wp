@@ -31,7 +31,7 @@
   </head>
   <body>
     <div class="hidden">
-      <div class="sp-menu">
+      <div class="sp-menu" id="js-close">
         <div class="sp-menu__container">
           <a href="index.html" class="sp-nav__logo-link">
             <div class="sp-nav__logo">

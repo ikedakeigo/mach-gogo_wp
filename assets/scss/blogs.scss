@@ -1,4 +1,5 @@
 @use "base" as *;
+@use "global" as *;
 
 .blog-header {
   max-width: 1000px;
@@ -265,8 +266,9 @@
 
 .blogTop-img {
   margin-top: 100px;
+  text-align: center;
   & img {
-    width: 100%;
+    // width: 100%;
     object-fit: cover;
   }
 }

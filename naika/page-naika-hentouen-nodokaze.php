@@ -11,7 +11,7 @@ Template Name: 内科 - 扁桃炎・のどが痛い
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
           <span class="im-titleIcon">
-          <ruby>扁桃炎<rt>へんとうえん</rt></ruby>
+          <ruby>扁桃炎<rt>へんとうえん</rt></ruby>・のどが痛い
           </span>
         </h1>
         <div class="border"></div>

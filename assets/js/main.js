@@ -14,7 +14,7 @@ $(document).ready(function () {
   });
 
   // SPメニューまたは閉じるボタンがクリックされたときのイベント
-  $(".js-close").on("click", function () {
+  $("#js-close").on("click", function () {
     // SPメニューを非表示にし、body要素から固定クラスを削除し、スクロール位置を復元します
     $(".sp-menu").removeClass("is_open");
     $("body").removeClass("fixed").css({ top: 0 });
@@ -73,6 +73,3 @@ window.addEventListener("scroll", () => {
     header.classList.remove("smaller");
   }
 });
-
-
-

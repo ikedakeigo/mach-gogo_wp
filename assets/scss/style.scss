@@ -98,6 +98,21 @@
   margin-bottom: rem(50);
 }
 
+.under_border {
+  width: 100%;
+  height: 2px;
+  background: $main-color;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: rem(80);
+  margin-bottom: rem(80);
+  @include mq(sm) {
+    margin-top: rem(50);
+    margin-bottom: rem(50);
+  }
+}
+
 .section {
   max-width: 100%;
   margin: 0 auto;
@@ -208,7 +223,6 @@ a {
   position: fixed;
   top: 215vh;
   width: 100%;
-  background: #fff;
   height: 120vh;
   transition: 0.2s all ease-in;
   z-index: 20;
@@ -223,14 +237,17 @@ a {
     top: 0;
     height: 1000vh;
     padding-top: 50px;
-    background: #fff;
+    background: $main-color;
     z-index: 1000;
   }
 }
 
 .sp-nav {
   &__logo {
-    margin-bottom: 55px;
+    margin-right: rem(50);
+    margin-left: rem(50);
+    margin-top: rem(30);
+    margin-bottom: rem(55);
     &__link {
     }
   }
@@ -242,6 +259,10 @@ a {
     margin-bottom: 22px;
     font-weight: bold;
     font-size: rem(20);
+    a{
+      display: block;
+      color: $white-color;
+    }
   }
 
   &__link {
@@ -260,19 +281,22 @@ a {
 
 .js-close {
   position: absolute;
-  left: 20px;
-  bottom: 200px;
-  width: 43px;
-  height: 43px;
+  left: rem(20);
+  bottom: rem(200);
+  width: rem(43);
+  height: rem(43);
   border-radius: 50%;
   background-color: $main-color;
+  cursor: pointer;
 }
 
 .close__icon {
   & img {
     position: absolute;
-    top: 13px;
-    left: 13px;
+    top: rem(13);
+    left: rem(13);
+    width: rem(17);
+    height: rem(17);
   }
 }
 
@@ -300,16 +324,16 @@ a {
 
 .menu-toggle {
   position: relative;
-  height: 84px;
-  width: 70px;
+  height:  rem(85);
+  width:  rem(70);
   background-color: white;
   display: table;
 
   & img {
     position: absolute;
     display: table-cell;
-    width: 33px;
-    height: 30.8px;
+    width:  rem(33);
+    height:  rem(33);
     top: 0;
     left: 0;
     right: 0;
@@ -716,7 +740,7 @@ a {
         }
         &:hover {
           color: $white-color;
-          opacity: .8;
+          opacity: 0.8;
           &::after {
             transform: scale(1, 1); /*X方向にスケール拡大*/
           }
@@ -1195,11 +1219,17 @@ a {
 
   @include mq(md) {
     display: block;
+  }
+
+  @include mq(sm) {
+    display: block;
     justify-content: center;
-    width: 215px;
+    width: 100%;
     text-align: center;
-    margin: 9px;
     object-fit: cover;
+    &:not(:last-child) {
+      margin-right: rem(0);
+    }
   }
 }
 
@@ -1260,16 +1290,15 @@ a {
 }
 
 .step-content {
-  margin-left: 17px;
-  @include mq(md) {
+  margin-left: rem(20);
+  @include mq(sm) {
     margin-left: 0;
   }
 }
 
 .step-title {
-  @include mq(sm) {
     display: flex;
-  }
+    justify-content: center;
 }
 
 .step-text {
@@ -1291,6 +1320,9 @@ a {
 
 .step-desc {
   text-align: left;
+  @include mq(sm) {
+    text-align: center;
+  }
 }
 
 /*===================================

@@ -10,7 +10,7 @@ Template Name: 内科 - ヘリコバクター・ピロリ感染症・ピロリ�
       <div class="notice_pc treatmentpage-head">
         <h1 class="main_title">
           <span class="im-titleIcon">
-          <ruby>ヘリコバクター・ピロリ感染症<rt>ヘリコバクター・ピロリかんせんしょう</rt></ruby>
+          ヘリコバクター・ピロリ<ruby>感染症<rt>かんせんしょう</rt></ruby>
           </span>
         </h1>
         <div class="border"></div>
