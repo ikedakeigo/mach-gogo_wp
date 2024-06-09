@@ -673,7 +673,7 @@ a {
 .container-header__nav {
   display: flex;
   justify-content: space-between;
-  width: 95vw;
+  width: 85vw;
   height: clamp(40px, 5vw, 60px);
   margin: auto;
 }
@@ -726,11 +726,22 @@ a {
   transform: translate(-50%, -50%);
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .container-front2 {
+    max-width: 1000px;
+  }
+}
 @media screen and (max-width: 767px) {
   .container-front2 {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .front-contents {
+    margin-left: 1.875rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .container-front2 {
     width: 100%;
@@ -742,26 +753,38 @@ a {
   }
 }
 
+.front-text2__main2-2 img {
+  object-fit: cover;
+  height: auto;
+}
+
+.front-text2__main2-2 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
 .front-text2 {
   text-shadow: 0 0 8px rgb(255, 255, 255);
 }
 .front-text2__main2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
-  line-height: 158%;
-  letter-spacing: 0.02em;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  text-align: center;
   color: #021f59;
+  margin-top: 0rem;
 }
 @media screen and (max-width: 767px) {
   .front-text2__main2 {
-    margin: 4em auto 4em;
+    font-size: 0.875rem;
     width: clamp(100vw - 60px, 90vw, 100vw - 24px);
   }
 }
 @media screen and (min-width: 768px) {
   .front-text2__main2 {
-    font-size: 42px;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
@@ -849,15 +872,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
-  }
-  .reservation-text2::after {
-    content: "";
-    display: inline-block;
-    background-image: url("/assets/img/arrow.svg");
-    background-size: contain;
-    width: 18px;
-    height: 18px;
-    margin-left: 10px;
   }
 }
 
@@ -1069,9 +1083,8 @@ a {
 ===================================*/
 .covid19-attention {
   font-weight: bold;
-  border: 5px #021f59 solid;
-  padding: 20px 40px;
-  padding: 20px 40px;
+  background-color: #021f59;
+  border-radius: 10px;
   margin: 40px 0;
   height: auto;
 }
@@ -1082,18 +1095,56 @@ a {
   line-height: 1.7;
   word-wrap: break-word;
   font-weight: bold;
+  color: #ebf0f2;
+  cursor: pointer;
+  padding: 20px 40px;
+  position: relative;
+}
+.attention-title::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon_hand.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+}
+@media screen and (max-width: 767px) {
+  .attention-title::before {
+    right: 0;
+  }
 }
 
 .attention-text {
+  display: none;
+  padding: 10px 40px;
+}
+
+.attention-text p {
   text-align: center;
   font-size: 16px;
   margin-top: 24px;
   line-height: 1.7;
   word-wrap: break-word;
+  color: #ebf0f2;
+}
+
+.attention-text__border {
+  border: 1px solid #ebf0f2;
+  padding: 20px 0;
 }
 
 .covid19-reservation-link {
-  text-decoration: underline;
+  font-weight: bold;
+  background-color: #00b900;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: #ebf0f2;
 }
 .covid19-reservation-link:hover {
   opacity: 0.5;
@@ -1960,21 +2011,28 @@ a {
 /*===================================
  * move_section
 ===================================*/
-.video-section {
-  margin-top: 41px;
+@media screen and (max-width: 767px) {
+  #move_section.container {
+    width: 100%;
+  }
+}
+
+.p-youtube {
+  margin-top: 3.125rem;
   position: relative;
-  padding-bottom: 20vh;
+  padding-top: 56.25%;
+  height: 0;
   overflow: hidden;
 }
-.video-section iframe {
+.p-youtube iframe {
   position: absolute;
-  top: -0.5%;
-  right: -0.4%;
-  width: 101%;
-  height: 101%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 599px) {
-  .video-section {
+  .p-youtube {
     padding-bottom: 10vh;
   }
 }
@@ -2198,3 +2256,7 @@ a {
     font-size: 1rem;
   }
 }
+
+/*===================================
+ * 0309 topアコーディオン追加
+===================================*/

@@ -22,7 +22,7 @@
         background: $main-color;
         color: $white-color;
       }
-      @include mq(sm){
+      @include mq(sm) {
         width: 100%;
       }
     }
@@ -32,7 +32,7 @@
     }
   }
 
-  img{
+  img {
     width: 100%;
   }
 }
@@ -68,7 +68,7 @@ table.access-train {
     color: $main-color;
 
     & li:before {
-      content: url("/wp-content/themes/mach-gogo/assets/img/access/triangle-right.svg");
+      content: url("/wp-content/themes/machspeed/assets/img/access/triangle-right.svg");
       margin-right: 4px;
     }
   }
@@ -93,7 +93,7 @@ table.access-train {
       display: flex;
 
       &::before {
-        content: url("/wp-content/themes/mach-gogo/assets/img/access/callout-info.svg");
+        content: url("/wp-content/themes/machspeed/assets/img/access/callout-info.svg");
         margin-right: 10px;
       }
     }
@@ -113,7 +113,7 @@ table.access-train {
   align-items: center;
   &::before {
     display: flex;
-    content: url("/wp-content/themes/mach-gogo/assets/img/access/train.svg");
+    content: url("/wp-content/themes/machspeed/assets/img/access/train.svg");
     height: 28px;
     margin-right: 8px;
   }
@@ -123,7 +123,7 @@ table.access-train {
     content: "";
     height: 1px;
     margin-left: 8px;
-    background: url("/wp-content/themes/mach-gogo/assets/img/access/h3-line.svg") repeat-x;
+    background: url("/wp-content/themes/machspeed/assets/img/access/h3-line.svg") repeat-x;
   }
 }
 

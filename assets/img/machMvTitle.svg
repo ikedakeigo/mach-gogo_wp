@@ -1,0 +1,52 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="651px" height="154.5px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="6px" y="0px" width="545px" height="85px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="3" />
+    <feGaussianBlur result="blurOut" stdDeviation="2.828" />
+    <feFlood flood-color="rgb(255, 255, 255)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<filter filterUnits="userSpaceOnUse" id="Filter_1" x="110px" y="80px" width="532px" height="67px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="3" />
+    <feGaussianBlur result="blurOut" stdDeviation="2.828" />
+    <feFlood flood-color="rgb(255, 255, 255)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<filter filterUnits="userSpaceOnUse" id="Filter_2" x="0px" y="93px" width="113px" height="49px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="3" />
+    <feGaussianBlur result="blurOut" stdDeviation="2.828" />
+    <feFlood flood-color="rgb(255, 255, 255)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="1"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+<path fill-rule="evenodd"  stroke="rgb(216, 31, 50)" stroke-width="15px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(216, 31, 50)"
+ d="M122.649,129.537 L122.641,128.522 L627.937,124.463 L627.945,125.478 L122.649,129.537 Z"/>
+<g filter="url(#Filter_0)">
+<text kerning="auto" font-family="Kozuka Gothic Pr6N" fill="rgb(0, 0, 0)" font-size="75px" x="13px" y="68.075px"><tspan font-size="75px" font-family="Hiragino Kaku Gothic Pro" fill="#021F59">&#12399;&#12383;&#12425;&#12367;&#20154;</tspan><tspan font-size="58.333px" font-family="Hiragino Kaku Gothic Pro" fill="#021F59">&#12398;&#12383;&#12417;&#12398;</tspan></text>
+</g>
+<g filter="url(#Filter_1)">
+<text kerning="auto" font-family="Kozuka Gothic Pr6N" fill="rgb(0, 0, 0)" transform="matrix( 1.63827386450954, 0, 0, 1.63827386450954,117.970720731491, 130.456306609198)" font-size="33px"><tspan font-size="33px" font-family="Hiragino Kaku Gothic Pro" fill="#021F59">&#12456;&#12461;&#12490;&#12459;&#20869;&#31185;&#12463;&#12522;&#12491;&#12483;&#12463;</tspan></text>
+</g>
+<g filter="url(#Filter_2)">
+<text kerning="auto" font-family="Kozuka Gothic Pr6N" fill="rgb(0, 0, 0)" transform="matrix( 1.06351534490505, 0, 0, 1.06351534490505,7.28567962662437, 127.443897474945)" font-size="33px"><tspan font-size="33px" font-family="Hiragino Kaku Gothic Pro" fill="#021F59">&#20415;&#21033;&#12394;</tspan></text>
+</g>
+</svg>

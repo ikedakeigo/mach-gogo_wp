@@ -259,7 +259,7 @@ a {
     margin-bottom: 22px;
     font-weight: bold;
     font-size: rem(20);
-    a{
+    a {
       display: block;
       color: $white-color;
     }
@@ -324,16 +324,16 @@ a {
 
 .menu-toggle {
   position: relative;
-  height:  rem(85);
-  width:  rem(70);
+  height: rem(85);
+  width: rem(70);
   background-color: white;
   display: table;
 
   & img {
     position: absolute;
     display: table-cell;
-    width:  rem(33);
-    height:  rem(33);
+    width: rem(33);
+    height: rem(33);
     top: 0;
     left: 0;
     right: 0;
@@ -421,7 +421,7 @@ a {
   display: flex;
   justify-content: space-between;
   // margin-left: 50px;
-  width: 95vw;
+  width: 85vw;
   height: clamp(40px, 5vw, 60px);
   margin: auto;
   @include mq(sm) {
@@ -481,7 +481,7 @@ a {
   transform: translate(-50%, -50%);
   width: 100%;
   @include mq(md) {
-    // max-width: 800px;
+    max-width: 1000px;
   }
   @include mq(sm) {
     // transform: translate(-50%, -100%);
@@ -493,6 +493,9 @@ a {
 }
 
 .front-contents {
+  @include mq(md) {
+    margin-left: rem(30);
+  }
 }
 
 .container-front2 {
@@ -512,6 +515,17 @@ a {
   }
 }
 
+.front-text2__main2-2 img {
+  // aspect-ratio: 288/20;
+  object-fit: cover;
+  height: auto;
+}
+.front-text2__main2-2 {
+  width: 30%;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
 .front-text2 {
   // background-color: #ffff;
   text-shadow: 0 0 8px rgb(255, 255, 255);
@@ -520,21 +534,24 @@ a {
     // width: 100%;
     font-style: normal;
     font-weight: bold;
-    font-size: rem(32);
+    font-size: rem(20);
     // font-size: clamp(rem(26), 2vw ,  rem(31));
-    line-height: 158%;
-    letter-spacing: 0.02em;
+    // line-height: 158%;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    text-align: center;
     color: $main-color;
+    margin-top: rem(0);
     // padding-top: 43px;
 
     @include mq(sm) {
-      margin: 4em auto 4em;
+      font-size: rem(14);
       width: clamp(100vw - 60px, 90vw, 100vw - 24px);
     }
 
     @include mq(md) {
       // width: 390px;
-      font-size: 42px;
+      // font-size: 42px;
       padding-left: rem(20);
       padding-right: rem(20);
       // padding-top: 90px;
@@ -630,15 +647,15 @@ a {
     margin-right: auto;
     padding-top: 30px;
 
-    &::after {
-      content: "";
-      display: inline-block;
-      background-image: url("/assets/img/arrow.svg");
-      background-size: contain;
-      width: 18px;
-      height: 18px;
-      margin-left: 10px;
-    }
+    // &::after {
+    //   content: "";
+    //   display: inline-block;
+    //   background-image: url("../img/arrow.svg");
+    //   background-size: contain;
+    //   width: 18px;
+    //   height: 18px;
+    //   margin-left: 10px;
+    // }
   }
 }
 
@@ -874,9 +891,9 @@ a {
 
 .covid19-attention {
   font-weight: bold;
-  border: 5px $main-color solid;
-  padding: 20px 40px;
-  padding: 20px 40px;
+  // border: 5px $main-color solid;
+  background-color: $main-color;
+  border-radius: 10px;
   margin: 40px 0;
   height: auto;
 }
@@ -887,19 +904,59 @@ a {
   line-height: 1.7;
   word-wrap: break-word;
   font-weight: bold;
+  color: $white-color;
+  cursor: pointer;
+  padding: 20px 40px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_hand.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    @include mq(sm){
+      right: 0;
+    }
+  }
+}
+
+.attention-title.is-open {
 }
 
 .attention-text {
+  display: none;
+  padding: 10px 40px;
+}
+
+.attention-text p {
   text-align: center;
   font-size: 16px;
   margin-top: 24px;
   line-height: 1.7;
   word-wrap: break-word;
+  color: $white-color;
+}
+
+.attention-text__border {
+  border: 1px solid $white-color;
+  padding: 20px 0;
 }
 
 .covid19-reservation-link {
-  text-decoration: underline;
-
+  // text-decoration: underline;
+  font-weight: bold;
+  background-color: #00b900;
+  padding: 0 5px;
+  border-radius: 5px;
+  color: $white-color;
   &:hover {
     opacity: 0.5;
   }
@@ -1297,8 +1354,8 @@ a {
 }
 
 .step-title {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .step-text {
@@ -1818,20 +1875,26 @@ a {
 ===================================*/
 
 #move_section {
+  &.container {
+    @include mq(sm) {
+      width: 100%;
+    }
+  }
 }
 
-.video-section {
-  margin-top: 41px;
+.p-youtube {
+  margin-top: rem(50);
   position: relative;
-  padding-bottom: 20vh;
+  padding-top: 56.25%;
+  height: 0;
   overflow: hidden;
 
   & iframe {
     position: absolute;
-    top: -0.5%;
-    right: -0.4%;
-    width: 101%;
-    height: 101%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   @include mq(xs) {
@@ -1850,7 +1913,7 @@ a {
 .footer {
   background-color: $main-color;
   // 一旦消す
-  margin-top:  rem(120);
+  margin-top: rem(120);
 }
 
 .footer-content {
@@ -2061,3 +2124,7 @@ a {
     font-size: rem(16);
   }
 }
+
+/*===================================
+ * 0309 topアコーディオン追加
+===================================*/

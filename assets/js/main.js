@@ -31,6 +31,7 @@ $(document).ready(function () {
 
   // スライダーの設定
   // const imageUrls = ["/assets/img/mach_mv.png", "/assets/img/mach_mv_2.png", "/assets/img/mach_mv_3.png", "/assets/img/mach_mv_4.png", "/assets/img/mach_mv_2.png"];
+  
   const slider = $(".slick-slider");
   mySliderData.imageUrls.forEach(function (url) {
     slider.append('<div class="slick-slide mv_slideHight" style="background-image: url(' + url + ')"></div>');
