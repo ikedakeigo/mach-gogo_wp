@@ -10,7 +10,7 @@
             <div class="inner_links">
               <a href="#anchor01">内科</a>
               <a href="#anchor02">ワクチン</a>
-              <a href="#anchor03">自費<br>（美容・点滴）</a>
+              <!-- <a href="#anchor03">自費<br>（美容・点滴）</a> -->
             </div>
 
             <section class="internalMedicine">
@@ -307,7 +307,7 @@
               </div>
             </section>
 
-            <section class="im">
+            <!-- <section class="im">
               <div class="anchorarea">
                 <p class="lp_anchor" id="anchor03"></p>
                 <h2 class="p-sub__title">自費（美容・点滴）</h2>
@@ -317,14 +317,14 @@
                 </p>
               </div>
               <div class="im__icon--container">
-                <!-- <a class="page-disabled" href="../derm/acne/index.html">
+                <a class="page-disabled" href="../derm/acne/index.html">
                   <div class="im-icon large-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/acne.png" />
                     <p class="im-ttl">にきび</p>
                   </div>
-                </a> -->
+                </a>
               </div>
-            </section>
+            </section> -->
 
           </div>
         </section>

@@ -87,7 +87,7 @@
           お名前、性別、生年月日をご連絡のほどよろしくお願いいたします。
         </p>
         <p class="attention-text__border">
-        LINEの対応時間は<br>
+          LINEの対応時間は<br>
           水曜日〜金曜日<br class="is-sp">11：30〜20：00 <br>
           土曜・日曜・祝日<br class="is-sp">8：30〜17：00 <br>
           となります。
@@ -156,6 +156,41 @@
         </div>
 
         <div class="medical-content__item">
+          <a href="/fever-clinic">
+            <div class="item-content">
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/prevention@2x.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__text">発熱外来<br />その他感染症</div>
+            </div>
+          </a>
+        </div>
+
+
+
+        <div class="medical-content__item">
+          <a href="/pill-clinic">
+            <div class="item-content">
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/gynecology@2x.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__text">
+                ピル<br>
+                (2回目以降のみ)
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="medical-content__item">
+          <a href="/after-pill">
+            <div class="item-content">
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/ec.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__text">
+              アフターピル
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="medical-content__item">
           <a href="/about/#anchor02">
             <div class="item-content">
               <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_02.png" width="72" height="72" alt="" /></div>
@@ -167,42 +202,15 @@
         </div>
 
         <div class="medical-content__item">
-          <a href="/about#anchor03">
+          <a href="/self-pay-beauty">
             <div class="item-content">
               <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_03.png" width="72" height="72" alt="" /></div>
               <div class="item-content__text">
-                自費（美容・点滴）
+                自費<br>(美容・点滴)
               </div>
             </div>
           </a>
         </div>
-
-        <div class="medical-content__item">
-              <a href="#">
-                <div class="item-content">
-                  <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/prevention@2x.png" width="72" height="72" alt="" /></div>
-                  <div class="item-content__text">HPVワクチン<br />(子宮頸がんワクチン)</div>
-                </div>
-              </a>
-            </div>
-
-            <div class="medical-content__item">
-              <a href="#">
-                <div class="item-content">
-                  <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/gynecology@2x.png" width="72" height="72" alt="" /></div>
-                  <div class="item-content__text">ブライダルチェック</div>
-                </div>
-              </a>
-            </div>
-
-            <div class="medical-content__item">
-              <a href="/about/medicine">
-                <div class="item-content">
-                  <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/ec.png" width="72" height="72" alt="" /></div>
-                  <div class="item-content__text">処方薬</div>
-                </div>
-              </a>
-            </div>
 
       </div>
     </div>
