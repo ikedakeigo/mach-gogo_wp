@@ -14,7 +14,7 @@ $(document).ready(function () {
   });
 
   // SPメニューまたは閉じるボタンがクリックされたときのイベント
-  $("#js-close").on("click", function () {
+  $(".js-close").on("click", function () {
     // SPメニューを非表示にし、body要素から固定クラスを削除し、スクロール位置を復元します
     $(".sp-menu").removeClass("is_open");
     $("body").removeClass("fixed").css({ top: 0 });
@@ -31,7 +31,6 @@ $(document).ready(function () {
 
   // スライダーの設定
   // const imageUrls = ["/assets/img/mach_mv.png", "/assets/img/mach_mv_2.png", "/assets/img/mach_mv_3.png", "/assets/img/mach_mv_4.png", "/assets/img/mach_mv_2.png"];
-
   const slider = $(".slick-slider");
   mySliderData.imageUrls.forEach(function (url) {
     slider.append('<div class="slick-slide mv_slideHight" style="background-image: url(' + url + ')"></div>');
@@ -75,9 +74,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+
 jQuery(function($) {
   $('.js-faq-question').on('click', function() {
     $(this).next().slideToggle();
     $(this).toggleClass('is-open');
   });
 });
+
