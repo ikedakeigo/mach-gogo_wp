@@ -1,21 +1,25 @@
 <?php get_header() ?>
 
+<!-- 1/2非表示 -->
+<!-- <main class="imgbg">
+    <img src="<?php echo get_template_directory_uri()  ?>/assets/img/machspeedBg.png" alt="">
+  </main> -->
 
 <main class="main hidden">
   <section class="main_mv">
     <div class="container-front2">
       <div class="front-text2">
-        <h2>
-          <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/machMvTitle.png" class="" alt="はたらく人のためのエキナカ内科クリニック"> -->
-          JR神戸駅直結徒歩0分<br>
-          待ち時間<span class="underLine01 marker">最小の内科</span><br>
-        </h2>
         <h1>
-          <span class="underLine02">日曜・祝日も診療</span><br>
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/machMvTitle.png" class="" alt="はたらく人のためのエキナカ内科クリニック">
+          <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/machMvTitle_sp.png" class="is-sp" alt="はたらく人のためのエキナカ内科クリニック"> -->
         </h1>
-        <h2>
-          平日は20時まで診療
-        </h2>
+
+        <!-- <div class="front-text2__secondary2">
+            当院は熱がある、お腹が痛い、鼻水など体に不調のある方が、
+            <span class="highlight2">忙しい日常の合間</span>
+            に気軽に予約・受診できることを目指します。
+          </div> -->
+
       </div>
       <div class="front-contents">
         <a href="/reserve-page/" class="front-button2__link2">
@@ -25,10 +29,28 @@
         </a>
       </div>
     </div>
-    <div class="slick-slider3">
-      <div class="slick-slide3 mv_slideHight3" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/mach_mv02.jpg')"></div>
+    <div class="slick-slider">
+      <div class="slick-slide mv_slideHight" style="background-image: url('<?php echo get_template_directory_uri() ?>/assets/img/mach_mv.png')"></div>
     </div>
   </section>
+
+  <!-- <header class="header">
+      <div class="container-front">
+        <div class="front-text">
+          <p class="front-text__main">駅なかクリニックで<br class="is-sp" />音速で帰ろう</p>
+          <div class="front-text__secondary">
+            当院は熱がある、お腹が痛い、鼻水など体に不調のある方が、
+            <span class="highlight">忙しい日常の合間</span>
+            に気軽に予約・受診できることを目指します。
+          </div>
+        </div>
+        <a href="#" class="front-button__link">
+          <div class="front-button">
+            <div class="reservation-text">・予約する<br />・予約確認</div>
+          </div>
+        </a>
+      </div>
+    </header> -->
 
   <section class="container">
     <!-- wp側で管理 -->
@@ -38,7 +60,7 @@
         <p>
           予約システムで予約が困難<br class="is-sp">(うまく予約できない)場合、
           <br>
-          <a class="covid19-reservation-link" href="https://line.me/ti/p/mq1GuL9K2B" target="_blank">こちら</a>のLINEで<br class="is-sp">連絡をお願いいたします。<br />
+          <a class="covid19-reservation-link" href="https://line.me/ti/p/OA4E-m18Au" target="_blank">こちら</a>のLINEで<br class="is-sp">連絡をお願いいたします。<br />
           <!-- <a class="covid19-reservation-link" href="https://line.me/ti/p/OA4E-m18Au" target="_blank">こちら</a>を参照ください。 -->
           <br>
           LINEからの予約希望時は<br class="is-sp">受診希望時間、
@@ -93,7 +115,7 @@
       <div class="medical-content__flex">
 
         <div class="medical-content__item">
-          <a href="/naika/">
+          <a href="/about/#anchor01">
             <div class="item-content">
               <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_01.png" width="72" height="72" alt="" /></div>
               <div class="item-content__text">
@@ -139,12 +161,11 @@
 
 
         <div class="medical-content__item">
-          <a href="/vaccine">
+          <a href="/about/#anchor02">
             <div class="item-content">
               <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_02.png" width="72" height="72" alt="" /></div>
-              <div class="item-content__text" style="display: block;">
-                ワクチン<br>
-                <span>※要問合せ</span>
+              <div class="item-content__text">
+                ワクチン
               </div>
             </div>
           </a>

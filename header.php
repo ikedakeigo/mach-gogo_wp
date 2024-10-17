@@ -33,7 +33,7 @@
     <div class="hidden">
       <div class="sp-menu" id="js-close">
         <div class="sp-menu__container">
-          <a href="index.html" class="sp-nav__logo-link">
+          <a href="/" class="sp-nav__logo-link">
             <div class="sp-nav__logo">
               <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
             </div>
@@ -72,7 +72,7 @@
               <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
           </a>
           <h5 class="header__address">
-            JR神戸駅 プリコ神戸 大垣書店奥
+            JR神戸駅直結 プリコ神戸 大垣書店奥
           </h5>
         </div>
 

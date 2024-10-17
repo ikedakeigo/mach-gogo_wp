@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<!-- <?php get_header(); ?>
 
     <div class="blog-header">
       <header class="blog_hed">
@@ -136,4 +136,4 @@
       </section>
     </div>
 
-    <?php get_footer(); ?>
+    <?php get_footer(); ?> -->

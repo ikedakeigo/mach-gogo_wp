@@ -686,34 +686,22 @@ a {
 /*===================================
  * slick-slider
 ===================================*/
-.slick-slider3 {
+.slick-slider {
   position: relative;
 }
-.slick-slide3 {
+.slick-slide {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.8;
 }
 
-.mv_slideHight3 {
+.mv_slideHight {
   height: 700px !important; /* 高さはお好みで設定してください */
-  position: relative;
 }
 @media screen and (max-width: 767px) {
-  .mv_slideHight3 {
+  .mv_slideHight {
     height: 400px !important;
   }
-}
-.mv_slideHight3::after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent 70%, #ebf0f2 100%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -765,88 +753,26 @@ a {
   }
 }
 
-.front-text2__main2-2 img {
-  object-fit: cover;
-  height: auto;
-}
-
-.front-text2__main2-2 {
-  width: 30%;
-  margin-left: auto;
-  margin-right: 20px;
-}
-
 .front-text2 {
-  background-color: rgba(2, 31, 89, 0.8);
-  color: #ebf0f2;
-  padding: 1.25rem;
-  border-radius: 10px;
-}
-@media screen and (max-width: 767px) {
-  .front-text2 {
-    border-radius: 0;
-  }
-}
-.front-text2 h1,
-.front-text2 h2 {
-  letter-spacing: 0.4em;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 1.8;
-}
-@media screen and (max-width: 767px) {
-  .front-text2 h1,
-  .front-text2 h2 {
-    font-size: 1.25rem;
-    text-align: center;
-  }
-}
-.front-text2 h1 {
-  margin: 0.625rem 0;
-}
-.front-text2 .underLine01 {
-  background: linear-gradient(transparent 50%, #d81f32 50%);
-  animation: fadeIn 1s ease;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.front-text2 .underLine02 {
-  padding: 0.625rem 1.25rem;
-  border-radius: 0.625rem;
-  font-size: 2.1875rem;
-  color: #d81f32;
-  background-color: #ebf0f2;
-  animation: fadeIn 1s ease-in-out;
-}
-@media screen and (max-width: 767px) {
-  .front-text2 .underLine02 {
-    font-size: 1.25rem;
-  }
+  text-shadow: 0 0 8px rgb(255, 255, 255);
 }
 .front-text2__main2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25rem;
-  line-height: 1.2;
-  letter-spacing: 0.2em;
-  text-align: center;
+  font-size: 2rem;
+  line-height: 158%;
+  letter-spacing: 0.02em;
   color: #021f59;
-  margin-top: 0rem;
 }
 @media screen and (max-width: 767px) {
   .front-text2__main2 {
-    font-size: 0.875rem;
+    margin: 4em auto 4em;
     width: clamp(100vw - 60px, 90vw, 100vw - 24px);
   }
 }
 @media screen and (min-width: 768px) {
   .front-text2__main2 {
+    font-size: 42px;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
@@ -935,6 +861,14 @@ a {
     margin-right: auto;
     padding-top: 30px;
   }
+  .reservation-text2::after {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+  }
 }
 
 /*===================================
@@ -967,11 +901,33 @@ a {
 }
 
 .header-logo {
-  width: clamp(300px, 30vw, 500px);
+  width: clamp(240px, 30vw, 500px);
   transition: width 0.5s ease;
 }
 .header-logo img {
   max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+/*===================================
+ *hedder-nav
+===================================*/
+@media screen and (min-width: 1024px) {
+  .header-nav__item.wpmem_loginout {
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    background-color: #ebf0f2;
+  }
+  .header-nav__item.wpmem_loginout:hover {
+    background-color: #011640;
+  }
+  .header-nav__item.wpmem_loginout:hover a {
+    color: #ebf0f2;
+  }
+}
+.header-nav__item.wpmem_loginout a {
+  color: #021f59;
   display: block;
   width: 100%;
 }
@@ -988,6 +944,7 @@ a {
 @media screen and (min-width: 1024px) {
   .header-nav__list {
     display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1558,6 +1515,9 @@ a {
   .step-number__pc-box .img {
     height: 173px;
     width: 215px;
+    aspect-ratio: 640/560;
+    object-fit: cover;
+    height: auto;
   }
 }
 .step-number__sp {
@@ -2088,7 +2048,7 @@ a {
 ===================================*/
 @media screen and (max-width: 767px) {
   #move_section.container {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -2331,7 +2291,3 @@ a {
     font-size: 1rem;
   }
 }
-
-/*===================================
- * 0309 topアコーディオン追加
-===================================*/
