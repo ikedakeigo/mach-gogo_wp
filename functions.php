@@ -244,3 +244,29 @@ function add_file_types_to_uploads($file_types)
   return $file_types;
 }
 add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+
+// ページごとに動的なタイトルを生成
+add_theme_support('title-tag');
+
+// ページごとにカスタムタイトルを設定
+function custom_wp_title($title)
+{
+  if (is_front_page()) {
+    $title = "神戸駅ナカの待たない土日祝日診察の内科｜マッハスピードクリニック";
+  } elseif (is_page('naika')) {
+    $title = "JR神戸駅直結の待たない内科｜マッハスピードクリニック";
+  } elseif (is_page('fever-clinic')) {
+    $title = "神戸駅直結の待たない・断らない・土日祝日診療の発熱外来滴｜マッハスピードクリニック";
+  } elseif (is_page('pill-clinic')) {
+    $title = "神戸駅ナカの待たないピル（２回目以降）処方｜マッハスピードクリニック";
+  } elseif (is_page('after-pill')) {
+    $title = "神戸駅ナカで土日祝・夜間・待たずにアフターピル処方｜マッハスピードクリニック";
+  } elseif (is_page('self-pay-beauty')) {
+    $title = "神戸駅ナカで土日祝・夜間・待たずに美白内服処方・美容点滴｜マッハスピードクリニック";
+  } elseif (is_page('vaccine')) {
+    $title = "神戸駅ナカで土日祝・夜間・待たずにインフルエンザの予防接種｜マッハスピードクリニック";
+  }
+  return $title;
+}
+add_filter('wp_title', 'custom_wp_title');
