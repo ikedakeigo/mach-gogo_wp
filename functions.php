@@ -95,10 +95,8 @@ function create_news_post_type()
 {
   $args = array(
     'labels' => array(
-      'name' => 'News',
+      'name' => 'お知らせ',
       'singular_name' => 'News',
-
-      // Other labels...
     ),
     'public' => true,
     'show_in_rest' => true, // これによりGutenbergのブロックエディターが有効化されます
@@ -106,7 +104,7 @@ function create_news_post_type()
     'rewrite' => array('slug' => 'news'), // アーカイブページと個別投稿のURLスラッグを設定します
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
     'taxonomies' => array('category', 'post_tag'),
-    // Other settings...
+    'menu_icon' => 'dashicons-megaphone',
   );
   register_post_type('news', $args);
 }
@@ -127,10 +125,8 @@ function create_blog_post_type()
 {
   $args = array(
     'labels' => array(
-      'name' => 'Blog',
+      'name' => 'お役立ち情報',
       'singular_name' => 'Blog',
-
-      // Other labels...
     ),
     'public' => true,
     'show_in_rest' => true, // これによりGutenbergのブロックエディターが有効化されます
@@ -138,6 +134,7 @@ function create_blog_post_type()
     'rewrite' => array('slug' => 'blog'), // アーカイブページと個別投稿のURLスラッグを設定します
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
     'taxonomies' => array('category', 'post_tag'),
+    'menu_icon' => 'dashicons-welcome-write-blog',
     // Other settings...
   );
   register_post_type('blog', $args);
@@ -244,3 +241,50 @@ function add_file_types_to_uploads($file_types)
   return $file_types;
 }
 add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+
+
+// 新規追加
+// 閲覧数をカウント
+function set_post_views($postID)
+{
+  $count_key = 'post_views_count';
+  $count = get_post_meta($postID, $count_key, true);
+  if ($count == '') {
+    $count = 0;
+    delete_post_meta($postID, $count_key);
+    add_post_meta($postID, $count_key, '1');
+  } else {
+    $count++;
+    update_post_meta($postID, $count_key, $count);
+  }
+}
+
+// 投稿が表示されるたびに閲覧数をカウント
+function track_post_views($postID)
+{
+  if (!is_single()) return;
+  if (empty($postID)) {
+    global $post;
+    $postID = $post->ID;
+  }
+  set_post_views($postID);
+}
+add_action('wp_head', 'track_post_views');
+
+// 管理画面に閲覧数を表示
+function add_post_views_column($columns)
+{
+  $columns['post_views'] = '閲覧数';
+  return $columns;
+}
+add_filter('manage_posts_columns', 'add_post_views_column');
+
+function show_post_views($column_name, $post_id)
+{
+  if ($column_name === 'post_views') {
+    $count = get_post_meta($post_id, 'post_views_count', true);
+    echo $count ? $count : '0';
+  }
+}
+add_action('manage_posts_custom_column', 'show_post_views', 10, 2);
