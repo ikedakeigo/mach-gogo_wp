@@ -143,7 +143,7 @@ Template Name: access
             <div class="border"></div>
           </div>
           <p class="text-center">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/floor_map.jpg" class="floor-map" alt="フロアマップ" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/access/floor_map.jpg" class="floor-map" alt="神戸駅直結徒歩ゼロ分の内科|フロアマップ" />
           </p>
           <div class="access-info">
             <ul class="access-info__text">

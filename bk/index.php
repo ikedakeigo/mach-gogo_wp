@@ -10,7 +10,7 @@
     <div class="container-front2">
       <div class="front-text2">
         <h1>
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/machMvTitle.png" class="" alt="はたらく人のためのエキナカ内科クリニック">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/machMvTitle.png" class="" alt="はたらく人のための駅中内科クリニック">
           <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/machMvTitle_sp.png" class="is-sp" alt="はたらく人のためのエキナカ内科クリニック"> -->
         </h1>
 

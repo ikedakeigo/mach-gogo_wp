@@ -93,7 +93,7 @@
         <div class="medical-content__item">
           <a href="/naika/">
             <div class="item-content">
-              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_01.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_01.png" width="72" height="72" alt="神戸駅直結徒歩ゼロ分の内科｜内科" /></div>
               <div class="item-content__text">
                 内科
               </div>
@@ -104,7 +104,7 @@
         <div class="medical-content__item">
           <a href="/fever-clinic">
             <div class="item-content">
-              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/prevention@2x.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/prevention@2x.png" width="72" height="72" alt="神戸駅直結徒歩ゼロ分の内科｜発熱外来" /></div>
               <div class="item-content__text">発熱外来<br />その他感染症</div>
             </div>
           </a>
@@ -115,7 +115,7 @@
         <div class="medical-content__item">
           <a href="/pill-clinic">
             <div class="item-content">
-              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/gynecology@2x.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/gynecology@2x.png" width="72" height="72" alt="神戸駅直結徒歩ゼロ分の内科｜ピル" /></div>
               <div class="item-content__text">
                 ピル<br>
                 (2回目以降のみ)
@@ -127,7 +127,7 @@
         <div class="medical-content__item">
           <a href="/after-pill">
             <div class="item-content">
-              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/ec.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/ec.png" width="72" height="72" alt="神戸駅直結徒歩ゼロ分の内科｜アフターピル" /></div>
               <div class="item-content__text">
                 アフターピル
               </div>
@@ -139,7 +139,7 @@
         <div class="medical-content__item">
           <a href="/vaccine">
             <div class="item-content">
-              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_02.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_02.png" width="72" height="72" alt="神戸駅直結徒歩ゼロ分の内科｜ワクチン" /></div>
               <div class="item-content__text" style="display: block;">
                 ワクチン<br>
                 <span>※要問合せ</span>
@@ -151,7 +151,7 @@
         <div class="medical-content__item">
           <a href="/self-pay-beauty">
             <div class="item-content">
-              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_03.png" width="72" height="72" alt="" /></div>
+              <div class="item-content__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/medical_03.png" width="72" height="72" alt="神戸駅直結徒歩ゼロ分の内科｜自費" /></div>
               <div class="item-content__text">
                 自費<br>(美容・点滴)
               </div>
@@ -173,7 +173,7 @@
 
         <div class="features-list__item">
           <div class="features-list__item-img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_01_01.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_01_01.png" alt="神戸駅直結徒歩ゼロ分の内科" />
           </div>
           <h3 class="sub_title">
             <span>①</span>完全WEB予約で受付から<br class="is-sp" /><span class="mh_tRed01">マッハ</span>で診察へ
@@ -182,7 +182,7 @@
 
         <div class="features-list__item">
           <div class="features-list__item-img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_02_02.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_02_02.png" alt="神戸駅直結徒歩ゼロ分の内科｜キャッシュレス" />
           </div>
           <h3 class="sub_title">
             <span>②</span></span>キャッシュレス決済
@@ -193,7 +193,7 @@
 
         <div class="features-list__item">
           <div class="features-list__item-img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_03_03.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_03_03.png" alt="神戸駅直結徒歩ゼロ分の内科｜待ち時間ゼロ" />
           </div>
           <h3 class="sub_title">
             <span>③</span>薬局と連携して医療の<br class="is-sp">待ち時間を<span class="mh_tRed01">マッハ</span>で解決
@@ -214,7 +214,7 @@
         <div class="medical-step">
           <div class="step-number__pc">1</div>
           <div class="step-number__pc-box">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_01.png" width="106" height="85" alt="" class="img" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_01.png" width="106" height="85" alt="神戸駅直結徒歩ゼロ分の内科｜スマホで予約" class="img" />
           </div>
           <div class="step-content">
             <div class="step-title">
@@ -228,7 +228,7 @@
         <div class="medical-step">
           <div class="step-number__pc">2</div>
           <div class="step-number__pc-box">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_02.png" width="106" height="85" alt="" class="img" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_02.png" width="106" height="85" alt="神戸駅直結徒歩ゼロ分の内科｜待ち時間ゼロ" class="img" />
           </div>
           <div class="step-content">
             <div class="step-title">
@@ -242,7 +242,7 @@
         <div class="medical-step">
           <div class="step-number__pc">3</div>
           <div class="step-number__pc-box">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_03.png" width="106" height="85" alt="" class="img" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_03.png" width="106" height="85" alt="神戸駅直結徒歩ゼロ分の内科｜親切・丁寧" class="img" />
           </div>
           <div class="step-content">
             <div class="step-title">
@@ -258,7 +258,7 @@
         <div class="medical-step">
           <div class="step-number__pc">4</div>
           <div class="step-number__pc-box">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_04.png" width="106" height="85" alt="" class="img" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/flow_04.png" width="106" height="85" alt="神戸駅直結徒歩ゼロ分の内科｜キャッシュレス決済" class="img" />
           </div>
           <div class="step-content">
             <div class="step-title">
@@ -302,19 +302,19 @@
       </div>
       <div class="features-list">
         <div class="feature-item">
-          <div class="feature-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon1_1.png" width="88" height="88" /></div>
+          <div class="feature-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon1_1.png" width="88" height="88" alt="神戸駅直結徒歩ゼロ分の内科|昼休憩" /></div>
           <div class="feature-text">
             <h5>お昼休みに<br />受診可能</h5>
           </div>
         </div>
         <div class="feature-item">
-          <div class="feature-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon2_2.png" width="88" height="88" /></div>
+          <div class="feature-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon2_2.png" width="88" height="88" alt="神戸駅直結徒歩ゼロ分の内科|土日・祝"/></div>
           <div class="feature-text">
             <h5>土日・祝日<br />受診可能</h5>
           </div>
         </div>
         <div class="feature-item">
-          <div class="feature-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon3_3.png" width="88" height="88" /></div>
+          <div class="feature-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon3_3.png" width="88" height="88" alt="神戸駅直結徒歩ゼロ分の内科|18時以降" /></div>
           <div class="feature-text">
             <h5>18時以降<br />受診可能</h5>
           </div>
@@ -405,7 +405,7 @@
 
   <section id="move_section" class="container inner">
     <div class="p-youtube">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/iCRcvoJ2uYg?si=7mmvVFeV13UgqiiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iCRcvoJ2uYg?si=7mmvVFeV13UgqiiE" title="神戸駅直結徒歩ゼロ分の内科｜マッハスピードクリニック" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen=""></iframe>
     </div>
   </section>
 </main>
