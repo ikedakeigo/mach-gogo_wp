@@ -1,6 +1,5 @@
 <?php get_header() ?>
 
-
 <main class="main hidden">
   <section class="main_mv">
     <div class="container-front2">
@@ -39,7 +38,6 @@
           予約システムで予約が困難<br class="is-sp">(うまく予約できない)場合、
           <br>
           <a class="covid19-reservation-link" href="https://line.me/ti/p/mq1GuL9K2B" target="_blank">こちら</a>のLINEで<br class="is-sp">連絡をお願いいたします。<br />
-          <!-- <a class="covid19-reservation-link" href="https://line.me/ti/p/OA4E-m18Au" target="_blank">こちら</a>を参照ください。 -->
           <br>
           LINEからの予約希望時は<br class="is-sp">受診希望時間、
           <br>
@@ -165,48 +163,6 @@
     </div>
   </section>
 
-  <!-- <section id="value">
-        <div class="container">
-          <h2 class="main_title">当院の提供価値</h2>
-          <h2 class="main_title">当院の特徴</h2>
-          <div class="border"></div>
-          <div class="value-container">
-            <div class="value-item">
-              <div class="value-item__img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_01_01.png" width="106" height="106" alt="" />
-              </div>
-              <div class="value-item__text">
-                <h3 class="sub_title">
-                  完全WEB予約で受付から<br class="is-sp" /><span class="mh_tRed01">マッハ</span>で診察へ
-              </h3>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-item__img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_02_02.png" width="106" height="106" alt="" />
-              </div>
-              <div class="value-item__text">
-                <h3 class="sub_title">
-                  キャッシュレス決済
-                  <br class="is-sp">
-                  各種対応
-                </h3>
-              </div>
-            </div>
-            <div class="value-item">
-              <div class="value-item__img">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_03_03.png" width="106" height="106" alt="" />
-              </div>
-              <div class="value-item__text">
-                <h3 class="sub_title">
-                  薬局と連携して医療の<br class="is-sp">待ち時間を<span class="mh_tRed01">マッハ</span>で解決
-                </h3>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section> -->
 
   <section id="features">
     <div class="inner">
@@ -245,36 +201,6 @@
         </div>
 
       </div>
-
-      <!-- <div class="section">
-
-            <div class="slider-area">
-              <div class="full-screen slider">
-                <div class="slide feature-slide">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_01_01.png" alt="125naroom" />
-                  <div class="slide-title">完全WEB予約</div>
-                  <div class="slide-description">受付から<span class="mh_tRed01">マッハ</span>で診察へ</div>
-                </div>
-
-                <div class="slide feature-slide">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_02_02.png" alt="125naroom" />
-                  <div class="slide-title">キャッシュレス決済</div>
-                  <div class="slide-description">各種対応</div>
-                </div>
-
-                <div class="slide feature-slide">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/features_03_03.png" alt="125naroom" />
-                  <div class="slide-title">待ち時間解消</div>
-                  <div class="slide-description">
-                  薬局と連携して医療の<br class="is-sp">待ち時間を<span class="mh_tRed01">マッハ</span>で解決
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-          </div> -->
 
     </div>
   </section>
@@ -372,8 +298,6 @@
         <div class="schedule-row">
           <h6><span class="schedule-label">休診日</span></h6>
           <h6><span class="schedule-day">月・火</span></h6>
-          <!-- <h6><span class="schedule-label">休憩</span></h6>
-              <h6><span class="schedule-time__holiday">14:00〜15:00</span></h6> -->
         </div>
       </div>
       <div class="features-list">
@@ -478,58 +402,6 @@
       </div>
     </div>
   </section>
-
-
-  <!-- <section id="articles">
-        <div class="container inner">
-          <h2 class="main_title">お役立ち記事</h2>
-          <div class="border"></div>
-          <div class="articles-grid">
-            <?php
-            $args = array(
-              'post_type' => 'blog',  // Change this to any custom post type
-              'posts_per_page' => 4
-            );
-            $the_query = new WP_Query($args);
-            ?>
-
-            <?php if ($the_query->have_posts()) : ?>
-              <?php while ($the_query->have_posts()) : ?>
-                <?php $the_query->the_post(); ?>
-                <div class="article-item">
-                  <a href="<?php the_permalink(); ?>">
-                    <div class="article-image">
-                      <?php if (has_post_thumbnail()) : ?>
-                        <?php the_post_thumbnail(); ?>
-                      <?php else : ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.jpg" alt="no-img">
-                      <?php endif; ?>
-                    </div>
-                    <div class="article-details">
-                      <h6>
-                        <?php the_time('Y.m.d'); ?>
-                        <?php
-                        $category = get_the_category();
-                        if ($category[0]) :
-                        ?>
-                        <span class="category">
-                          <?php echo $category[0]->cat_name ?>
-                        </span>
-                        <?php endif; ?>
-                      </h6>
-                      <h4><?php the_title(); ?></h4>
-                    </div>
-                  </a>
-                </div>
-              <?php endwhile; ?>
-            <?php endif; ?>
-            <?php wp_reset_postdata(); ?>
-          </div>
-          <div class="button-wrapper">
-            <a href="/blogs/" class="button">すべてみる</a>
-          </div>
-        </div>
-      </section> -->
 
   <section id="move_section" class="container inner">
     <div class="p-youtube">

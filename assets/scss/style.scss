@@ -2195,5 +2195,186 @@ a {
 }
 
 /*===================================
- * 0309 topアコーディオン追加
+ * アンカーリンク追加
 ===================================*/
+.p-anckerLink {
+  margin-top:  rem(50);
+}
+
+.p-anckerLink__inner {
+  background-color: $main-color;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.45);
+  border-radius: rem(18);
+  padding: rem(20);
+  @include mq(md) {
+    padding: rem(30) rem(20);
+  }
+}
+
+.p-anckerLink__title-wrap {
+  // margin-bottom: rem(10);
+  @include mq(md) {
+    width: rem(100);
+    margin: 0 auto;
+    margin-bottom: rem(20);
+  }
+}
+
+.p-anckerLink__sub-title {
+  width: 100%;
+  font-size: rem(18);
+  color: $white-color;
+  font-weight: 700;
+  position: relative;
+  padding-left: 20px;
+  @include mq(md) {
+    padding-left: rem(0);
+    text-align: center;
+    font-size: rem(20);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/img/icon/icon_mokuzi.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(11);
+    height: rem(10);
+    top: 35%;
+    left: 0;
+    @include mq(md) {
+      top: 40%;
+      left: 10%;
+    }
+  }
+}
+
+.p-anckerLink__wrap {
+}
+
+.p-anckerLink__items {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.p-anckerLink__items-sp {
+  display: flex;
+  @include mq(md) {
+    display: none;
+  }
+
+  .p-anckerLink__item {
+    &:not(:last-child) {
+      margin-right: rem(50);
+    }
+  }
+}
+
+.p-anckerLink__item {
+  text-decoration: underline;
+  position: relative;
+  a {
+    color: $white-color;
+    font-weight: 700;
+    line-height: 2;
+    border-bottom: 1px solid $white-color;
+    font-size:  rem(14);
+    @include mq(md){
+      font-size:  rem(16);
+    }
+  }
+  margin-bottom:  rem(10);
+  @include mq(md) {
+    display: inline-block;
+    margin-right: rem(60);
+    margin-bottom: rem(30);
+    &:nth-of-type(odd) {
+      margin-right: 0;
+    }
+    &:nth-of-type(n + 11) {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/img/icon/icon_maruarrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: rem(10);
+      height: rem(10);
+      top: 30%;
+      right: rem(-20);
+    }
+  }
+}
+
+.p-anckerLink__link {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/img/icon/icon_maruarrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(10);
+    height: rem(10);
+    top: 30%;
+    right: rem(-20);
+    @include mq(md) {
+      display: none;
+    }
+  }
+}
+
+/*===================================
+ * 実費・美容
+===================================*/
+.body__bottom-wrap {
+  h3 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0.06em;
+    color: $main-color;
+    text-align: start;
+  }
+}
+
+.listMemo01 li {
+  position: relative;
+  color: $main-color;
+  &:first-child {
+    margin-top:  rem(20);
+  }
+  &:not(:last-child) {
+    margin-bottom:  rem(20);
+  }
+}
+
+.listMark01 {
+  display: block;
+  font-weight: 700;
+  @include mq(md) {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.listMemo01 li {
+  @include mq(md) {
+    padding-left: 9rem;
+  }
+}
