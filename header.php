@@ -41,40 +41,54 @@
     ?>
   </title>
 
-  <meta name="keywords" content="神戸駅,内科,診療,予約,診療時間,診療科目,アクセス,診療内容,医師紹介,診療案内 " />
-  <meta name="description" content="神戸駅直結徒歩0分｜平日20時・土日祝も診療の内科" />
+    <!-- favicon -->
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/machspeed_icon.png" type="image/png" />
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?ver=6.2" id="bootstrap-js-js"></script>
 
-  <!-- <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com" /> -->
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <?php wp_head(); ?>
+  </head>
+  <body>
+    <div class="hidden">
+      <div class="sp-menu" id="js-close">
+        <div class="sp-menu__container">
+          <a href="/" class="sp-nav__logo-link">
+            <div class="sp-nav__logo">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
+            </div>
+          </a>
+          <?php
 
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?ver=6.2" id="bootstrap-js-js"></script>
-
-  <?php wp_head(); ?>
-</head>
-
-<body>
-  <div class="hidden">
-    <div class="sp-menu" id="js-close">
-      <div class="sp-menu__container">
-        <a href="/" class="sp-nav__logo-link">
-          <div class="sp-nav__logo">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" width="300" height="50" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内 " />
+            wp_nav_menu(
+              array(
+                'depth' => 1,
+                'theme_location' => 'drawer',
+                'container' => '',
+                'menu_class' => 'sp-nav__list',
+              )
+            )
+          ?>
+          <div class="close js-close">
+            <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
           </div>
-        </a>
-        <?php
-        wp_nav_menu(
-          array(
-            'depth' => 1,
-            'theme_location' => 'drawer',
-            'container' => '',
-            'menu_class' => 'sp-nav__list',
-          )
-        )
-        ?>
-        <div class="close js-close">
-          <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
         </div>
       </div>
+
+      <?php
+          if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile','user-registration'))): ?>
+            <div class="footer-box">
+                <div class="footer__flex">
+                    <div class="menu-toggle js-spmenu">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/menu.png" />
+                    </div>
+                    <div class="page-bottom">
+                        <a href="/reserve-page/" class="page-bottom__link">
+                            <div class="page-bottom__text">予約枠を確認・予約する</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+      <?php endif; ?>
+
     </div>
     <div class="footer-box">
       <div class="footer__flex">

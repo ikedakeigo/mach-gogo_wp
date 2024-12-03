@@ -929,6 +929,14 @@ a {
     margin-right: auto;
     padding-top: 30px;
   }
+  .reservation-text2::after {
+    content: "";
+    display: inline-block;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+  }
 }
 
 /*===================================

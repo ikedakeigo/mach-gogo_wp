@@ -110,8 +110,6 @@
           </a>
         </div>
 
-
-
         <div class="medical-content__item">
           <a href="/pill-clinic">
             <div class="item-content">

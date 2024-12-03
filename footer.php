@@ -1,5 +1,5 @@
   <?php
-  if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile', 'user-registration'))): ?>
+    if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile','user-registration'))): ?>
     <footer class="footer">
       <div class="container inner">
         <div class="footer-content">
@@ -44,8 +44,8 @@
       </div>
     </footer>
 
-  <?php endif; ?>
-  <?php wp_footer(); ?>
+    <?php endif; ?>
+    <?php wp_footer(); ?>
   </body>
 
   </html>
