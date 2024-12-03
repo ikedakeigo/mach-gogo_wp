@@ -38,31 +38,19 @@
   <!-- ＝＝＝＝＝＝＝カルーセル＝＝＝＝＝＝ -->
   <!--
     <script defer src="/assets/js/main.js"></script> -->
-    <title><?php echo wp_title('|', true, 'right') . get_bloginfo('name'); ?></title>
-    <meta name="description" content="" />
 
+    <!-- <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com" /> -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
   <title>
     <?php
-    if (is_front_page()) {
-      // echo '神戸駅ナカの待たない土日祝日診察の内科｜神戸駅ナカ内科マッハスピードクリニック';
-      echo '神戸駅ナカ内科マッハスピードクリニック';
-    } elseif (is_page('naika')) {
-      echo 'JR神戸駅直結の待たない内科｜神戸駅ナカ内科マッハスピードクリニック';
-    } elseif (is_page('fever-clinic')) {
-      echo '神戸駅直結の待たない・断らない・土日祝日診療の発熱外来滴｜神戸駅ナカ内科マッハスピードクリニック';
-    } elseif (is_page('pill-clinic')) {
-      echo '神戸駅ナカの待たないピル（２回目以降）処方｜神戸駅ナカ内科マッハスピードクリニック';
-    } elseif (is_page('after-pill')) {
-      echo '神戸駅ナカで土日祝・夜間・待たずにアフターピル処方｜神戸駅ナカ内科マッハスピードクリニック';
-    } elseif (is_page('self-pay-beauty')) {
-      echo '神戸駅ナカで土日祝・夜間・待たずに美白内服処方・美容点滴｜神戸駅ナカ内科マッハスピードクリニック';
-    } elseif (is_page('vaccine')) {
-      echo '神戸駅ナカで土日祝・夜間・待たずにインフルエンザの予防接種｜神戸駅ナカ内科マッハスピードクリニック';
+    if (is_front_page() || is_home()) {
+      echo 'マッハスピードクリニック｜神戸駅ナカ内科のクリニック'; // トップページはサイト名だけ
     } else {
-      echo get_the_title() . '｜神戸駅ナカ内科マッハスピードクリニック';
+      echo wp_title('|', false, 'right') . get_bloginfo('name'); // その他のページ
     }
     ?>
   </title>
+  <meta name="description" content="神戸駅ナカ内科のクリニック『マッハスピードクリニック』" />
 
     <!-- favicon -->
     <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/machspeed_icon.png" type="image/png" />
