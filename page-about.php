@@ -317,7 +317,7 @@
                 </p>
               </div>
               <div class="im__icon--container">
-                <!-- <a class="page-disabled" href="../derm/acne/index.html">
+                <a class="page-disabled" href="../derm/acne/index.html">
                   <div class="im-icon large-icon">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/acne.png" />
                     <p class="im-ttl">にきび</p>
