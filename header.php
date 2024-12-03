@@ -2,6 +2,25 @@
 <html lang="ja">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16454043464"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'AW-16454043464');
+  </script>
+  <?php if (is_page('reserve-complete-page')) : ?>
+    <!-- Event snippet for 予約ページ到達 conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16454043464/kIkUCMyktJQZEMiO86U9'
+      });
+    </script>
+  <?php endif; ?>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -17,6 +36,10 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- ＝＝＝＝＝＝＝カルーセル＝＝＝＝＝＝ -->
+  <!--
+    <script defer src="/assets/js/main.js"></script> -->
+    <title><?php echo wp_title('|', true, 'right') . get_bloginfo('name'); ?></title>
+    <meta name="description" content="" />
 
   <title>
     <?php
@@ -46,89 +69,89 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?ver=6.2" id="bootstrap-js-js"></script>
 
     <?php wp_head(); ?>
-  </head>
-  <body>
-    <div class="hidden">
-      <div class="sp-menu" id="js-close">
-        <div class="sp-menu__container">
-          <a href="/" class="sp-nav__logo-link">
-            <div class="sp-nav__logo">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
-            </div>
-          </a>
-          <?php
+</head>
 
-            wp_nav_menu(
-              array(
-                'depth' => 1,
-                'theme_location' => 'drawer',
-                'container' => '',
-                'menu_class' => 'sp-nav__list',
-              )
-            )
-          ?>
-          <div class="close js-close">
-            <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
+<body>
+  <div class="hidden">
+    <div class="sp-menu" id="js-close">
+      <div class="sp-menu__container">
+        <a href="/" class="sp-nav__logo-link">
+          <div class="sp-nav__logo">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
+          </div>
+        </a>
+        <?php
+
+        wp_nav_menu(
+          array(
+            'depth' => 1,
+            'theme_location' => 'drawer',
+            'container' => '',
+            'menu_class' => 'sp-nav__list',
+          )
+        )
+        ?>
+        <div class="close js-close">
+          <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
+        </div>
+      </div>
+    </div>
+
+    <?php
+    if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile', 'user-registration'))) : ?>
+      <div class="footer-box">
+        <div class="footer__flex">
+          <div class="menu-toggle js-spmenu">
+            <img src="<?= get_template_directory_uri() ?>/assets/img/menu.png" />
+          </div>
+          <div class="page-bottom">
+            <a href="/reserve-page/" class="page-bottom__link">
+              <div class="page-bottom__text">予約枠を確認・予約する</div>
+            </a>
           </div>
         </div>
       </div>
+    <?php endif; ?>
 
-      <?php
-          if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile','user-registration'))): ?>
-            <div class="footer-box">
-                <div class="footer__flex">
-                    <div class="menu-toggle js-spmenu">
-                        <img src="<?= get_template_directory_uri() ?>/assets/img/menu.png" />
-                    </div>
-                    <div class="page-bottom">
-                        <a href="/reserve-page/" class="page-bottom__link">
-                            <div class="page-bottom__text">予約枠を確認・予約する</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-      <?php endif; ?>
-
-    </div>
-    <div class="footer-box">
-      <div class="footer__flex">
-        <div class="menu-toggle js-spmenu"><img src="<?php echo get_template_directory_uri() ?>/assets/img/menu.png" /></div>
-        <div class="page-bottom">
-          <a href="/reserve-page/" class="page-bottom__link">
-            <div class="page-bottom__text">予約枠を確認・予約する</div>
-          </a>
-        </div>
-      </div>
-    </div>
   </div>
 
   <section id="top">
     <div class="container-header__nav">
       <div class="header-logo">
         <a href="/" class="header-logo__link">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
         </a>
         <h5 class="header__address">
-          JR神戸駅直結 プリコ神戸 大垣書店奥
+          JR神戸駅 プリコ神戸 大垣書店奥
         </h5>
       </div>
+      <section id="top">
+        <div class="container-header__nav">
+          <div class="header-logo">
+            <a href="/" class="header-logo__link">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
+            </a>
+            <h5 class="header__address">
+              JR神戸駅直結 プリコ神戸 大垣書店奥
+            </h5>
+          </div>
 
-      <div class="header__flex hidden">
-        <div class="header-navigation">
+          <div class="header__flex hidden">
+            <div class="header-navigation">
 
-          <?php
-          wp_nav_menu(
-            array(
-              'depth' => 1,
-              'theme_location' => 'global',
-              'container' => '',
-              'menu_class' => 'header-nav__list',
+              <?php
+              wp_nav_menu(
+                array(
+                  'depth' => 1,
+                  'theme_location' => 'global',
+                  'container' => '',
+                  'menu_class' => 'header-nav__list',
 
-            )
-          )
-          ?>
+                )
+              )
+              ?>
 
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
