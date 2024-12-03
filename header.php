@@ -24,6 +24,8 @@
     <!-- <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com" /> -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
+    <!-- favicon -->
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/machspeed_icon.png" type="image/png" />
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?ver=6.2" id="bootstrap-js-js"></script>
 
     <?php wp_head(); ?>
@@ -38,6 +40,7 @@
             </div>
           </a>
           <?php
+
             wp_nav_menu(
               array(
                 'depth' => 1,
@@ -52,16 +55,23 @@
           </div>
         </div>
       </div>
-      <div class="footer-box">
-        <div class="footer__flex">
-          <div class="menu-toggle js-spmenu"><img src="<?php echo get_template_directory_uri() ?>/assets/img/menu.png" /></div>
-          <div class="page-bottom">
-            <a href="/reserve-page/" class="page-bottom__link">
-              <div class="page-bottom__text">予約枠を確認・予約する</div>
-            </a>
-          </div>
-        </div>
-      </div>
+
+      <?php
+          if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile','user-registration'))): ?>
+            <div class="footer-box">
+                <div class="footer__flex">
+                    <div class="menu-toggle js-spmenu">
+                        <img src="<?= get_template_directory_uri() ?>/assets/img/menu.png" />
+                    </div>
+                    <div class="page-bottom">
+                        <a href="/reserve-page/" class="page-bottom__link">
+                            <div class="page-bottom__text">予約枠を確認・予約する</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+      <?php endif; ?>
+
     </div>
 
     <section id="top">

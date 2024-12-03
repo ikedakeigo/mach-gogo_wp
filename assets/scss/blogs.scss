@@ -352,6 +352,68 @@
         content: counter(li);
       }
     }
+
+    h2 {
+      margin-top: rem(64);
+      padding-bottom: rem(24);
+      font-size: rem(20);
+      line-height: 1.5;
+      border-bottom: rem(2) solid #73b2c8;
+      @include mq(md) {
+        margin-top: rem(80);
+        padding-bottom: rem(30);
+        font-size: rem(28);
+      }
+    }
+
+    h3 {
+      margin-top: rem(64);
+      padding: rem(20) 0;
+      font-size: rem(18);
+      line-height: 1.5;
+      border-top: 1px solid #73b2c8;
+      border-bottom: 1px solid #73b2c8;
+      @include mq(md) {
+        margin-top: rem(80);
+        padding: rem(24) 0;
+        font-size: rem(24);
+      }
+    }
+
+    h4 {
+      margin-top: rem(48);
+      padding: rem(16);
+      font-size: rem(16);
+      line-height: 1.5;
+      background-color: #f3f5f5;
+      @include mq(md) {
+        margin-top: rem(64);
+        font-size: rem(20);
+      }
+    }
+
+    h5 {
+      margin-top: rem(40);
+      padding: rem(4) 0 rem(4) rem(16);
+      font-size: rem(15);
+      line-height: 1.5;
+      border-left: rem(4) solid #73b2c8;
+      @include mq(md) {
+        margin-top: rem(48);
+        padding: rem(8) 0 rem(8) rem(16);
+        font-size: rem(18);
+      }
+    }
+
+    h6 {
+      margin-top: rem(32);
+      font-size: rem(14);
+      line-height: 1.5;
+      @include mq(md) {
+        margin-top: rem(38);
+        font-size: rem(16);
+      }
+    }
   }
 
   &__boxTitle {
@@ -625,7 +687,7 @@
 .btnCenter {
   text-align: center;
   margin-top: 50px;
-  @include mq(sm){
+  @include mq(sm) {
     margin-top: 30px;
   }
 }
@@ -648,7 +710,6 @@
   text-decoration: none;
   transition: all 0.3s ease 0s;
   border-radius: 30px;
-  &:hover{
-
+  &:hover {
   }
 }

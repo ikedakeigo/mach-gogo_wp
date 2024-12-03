@@ -768,6 +768,32 @@ a {
   // }
 }
 
+/*===================================
+ *hedder-nav
+===================================*/
+.header-nav__item.wpmem_loginout {
+  @include mq(lg) {
+    padding: rem(10);
+    border-radius: rem(10);
+    background-color: $white-color;
+    &:hover {
+      background-color: $btn-color;
+      a{
+        color: $white-color;
+      }
+    }
+  }
+
+  a {
+    color: $main-color;
+    display: block;
+    width: 100%;
+    // &:hover {
+    //   color: $white-color;
+    // }
+  }
+}
+
 .header__address {
   @include mq(sm) {
     text-align: start;
@@ -782,6 +808,7 @@ a {
     display: none;
     @include mq(lg) {
       display: flex;
+      align-items: center;
     }
   }
 
@@ -1392,6 +1419,9 @@ a {
       &-box .img {
         height: 173px;
         width: 215px;
+        aspect-ratio: 640/560;
+        object-fit: cover;
+        height: auto;
       }
     }
   }
