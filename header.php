@@ -18,8 +18,7 @@
     <!-- ＝＝＝＝＝＝＝カルーセル＝＝＝＝＝＝ -->
 <!--
     <script defer src="/assets/js/main.js"></script> -->
-
-    <title>マッハスピードクリニック</title>
+    <title><?php echo wp_title('|', true, 'right') . get_bloginfo('name'); ?></title>
     <meta name="description" content="" />
 
     <!-- <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com" /> -->
