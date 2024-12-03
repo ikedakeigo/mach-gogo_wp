@@ -12,10 +12,11 @@
 }
 
 .blog_hed {
-  margin-top: 114px;
+  position: relative;
+  margin-top: 30px;
   display: flex;
   align-items: center;
-  background-image: url(/assets/img/blogs/blog_top.png);
+  // background-image: url(/assets/img/blogs/blog_top.png);
   background-size: cover;
   border-radius: 20px;
   height: 270px;
@@ -38,7 +39,7 @@
     @include mq(lg) {
       width: 650px;
     }
-    @include mq(md){
+    @include mq(md) {
       width: 70%;
     }
     @include mq(sm) {
@@ -62,7 +63,9 @@
 
   & .btn2 {
     display: block;
-    position: relative;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -77,20 +80,24 @@
     background: $main-color;
     color: #ffff;
     margin-top: 300px;
-    @include mq(md){
+    @include mq(md) {
       width: 20%;
     }
     @include mq(sm) {
       margin-top: 13px;
-    }
-    @include mq(xs){
       width: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    @include mq(xs) {
+      width: 80%;
     }
     & .arrow img {
       position: absolute;
       top: 50%;
       right: 10px;
       transform: translateY(-50%);
+      width: 20px;
     }
   }
 }
@@ -236,18 +243,19 @@
 }
 
 .category_tag {
-  width: 100%;
-  height: 62px;
+  // width: 30%;
   background: #f5f5f5;
   border-radius: 30px;
   margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 
   & a {
-    font-style: normal;
+    text-align: center;
     font-weight: bold;
-    line-height: 62px;
-    font-size: 15px;
-    padding-left: 21px;
+    font-size: 14px;
+    padding: 10px;
     letter-spacing: 0.06em;
     color: $main-color;
     display: block;
@@ -257,7 +265,7 @@
 .sidebar-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 /*===================================
@@ -265,8 +273,11 @@
 ===================================*/
 
 .blogTop-img {
-  // margin-top: 100px;
+  margin-top: 100px;
   text-align: center;
+  @include mq(sm) {
+    margin-top: 50px;
+  }
   & img {
     // width: 100%;
     object-fit: cover;
@@ -593,22 +604,34 @@
   width: 5px;
 }
 
-.entry-body h3 {
-  border-bottom: 3px solid #d81f32;
-  font-family: "HiraKakuPro-W6", "ヒラギノ角ゴ Pro W6", "Meiryo", "Meiryo", "Noto Sans Japanese", sans-serif;
-  font-size: 22px;
+.entry-body h2 {
+  // max-width: 300px;
+  background-color: rgb(2, 31, 89, 0.3);
+  color: $main-color;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 18px;
+  border-radius: 4px;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 24px;
-  margin-top: 84px;
-  padding-bottom: 14px;
+  margin-top: 40px;
+  padding: 4px 24px 4px 24px;
+  text-align: center;
 }
 
 /*===================================
  * ボタン
 ===================================*/
+.btnCenter {
+  text-align: center;
+  margin-top: 50px;
+  @include mq(sm){
+    margin-top: 30px;
+  }
+}
+
 .btn {
-  -webkit-appearance: none;
+  text-align: center;
   background-color: #01b3a7;
   background-image: none;
   border: none;
@@ -624,4 +647,8 @@
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease 0s;
+  border-radius: 30px;
+  &:hover{
+
+  }
 }

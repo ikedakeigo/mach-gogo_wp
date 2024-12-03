@@ -95,10 +95,8 @@ function create_news_post_type()
 {
   $args = array(
     'labels' => array(
-      'name' => 'News',
+      'name' => 'お知らせ',
       'singular_name' => 'News',
-
-      // Other labels...
     ),
     'public' => true,
     'show_in_rest' => true, // これによりGutenbergのブロックエディターが有効化されます
@@ -106,7 +104,7 @@ function create_news_post_type()
     'rewrite' => array('slug' => 'news'), // アーカイブページと個別投稿のURLスラッグを設定します
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
     'taxonomies' => array('category', 'post_tag'),
-    // Other settings...
+    'menu_icon' => 'dashicons-megaphone',
   );
   register_post_type('news', $args);
 }
@@ -127,10 +125,8 @@ function create_blog_post_type()
 {
   $args = array(
     'labels' => array(
-      'name' => 'Blog',
+      'name' => 'お役立ち情報',
       'singular_name' => 'Blog',
-
-      // Other labels...
     ),
     'public' => true,
     'show_in_rest' => true, // これによりGutenbergのブロックエディターが有効化されます
@@ -138,6 +134,7 @@ function create_blog_post_type()
     'rewrite' => array('slug' => 'blog'), // アーカイブページと個別投稿のURLスラッグを設定します
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
     'taxonomies' => array('category', 'post_tag'),
+    'menu_icon' => 'dashicons-welcome-write-blog',
     // Other settings...
   );
   register_post_type('blog', $args);
@@ -246,27 +243,48 @@ function add_file_types_to_uploads($file_types)
 add_filter('upload_mimes', 'add_file_types_to_uploads');
 
 
-// ページごとに動的なタイトルを生成
-add_theme_support('title-tag');
 
-// ページごとにカスタムタイトルを設定
-function custom_wp_title($title)
+// 新規追加
+// 閲覧数をカウント
+function set_post_views($postID)
 {
-  if (is_front_page()) {
-    $title = "神戸駅ナカの待たない土日祝日診察の内科｜マッハスピードクリニック";
-  } elseif (is_page('naika')) {
-    $title = "JR神戸駅直結の待たない内科｜マッハスピードクリニック";
-  } elseif (is_page('fever-clinic')) {
-    $title = "神戸駅直結の待たない・断らない・土日祝日診療の発熱外来滴｜マッハスピードクリニック";
-  } elseif (is_page('pill-clinic')) {
-    $title = "神戸駅ナカの待たないピル（２回目以降）処方｜マッハスピードクリニック";
-  } elseif (is_page('after-pill')) {
-    $title = "神戸駅ナカで土日祝・夜間・待たずにアフターピル処方｜マッハスピードクリニック";
-  } elseif (is_page('self-pay-beauty')) {
-    $title = "神戸駅ナカで土日祝・夜間・待たずに美白内服処方・美容点滴｜マッハスピードクリニック";
-  } elseif (is_page('vaccine')) {
-    $title = "神戸駅ナカで土日祝・夜間・待たずにインフルエンザの予防接種｜マッハスピードクリニック";
+  $count_key = 'post_views_count';
+  $count = get_post_meta($postID, $count_key, true);
+  if ($count == '') {
+    $count = 0;
+    delete_post_meta($postID, $count_key);
+    add_post_meta($postID, $count_key, '1');
+  } else {
+    $count++;
+    update_post_meta($postID, $count_key, $count);
   }
-  return $title;
 }
-add_filter('wp_title', 'custom_wp_title');
+
+// 投稿が表示されるたびに閲覧数をカウント
+function track_post_views($postID)
+{
+  if (!is_single()) return;
+  if (empty($postID)) {
+    global $post;
+    $postID = $post->ID;
+  }
+  set_post_views($postID);
+}
+add_action('wp_head', 'track_post_views');
+
+// 管理画面に閲覧数を表示
+function add_post_views_column($columns)
+{
+  $columns['post_views'] = '閲覧数';
+  return $columns;
+}
+add_filter('manage_posts_columns', 'add_post_views_column');
+
+function show_post_views($column_name, $post_id)
+{
+  if ($column_name === 'post_views') {
+    $count = get_post_meta($post_id, 'post_views_count', true);
+    echo $count ? $count : '0';
+  }
+}
+add_action('manage_posts_custom_column', 'show_post_views', 10, 2);
