@@ -192,9 +192,9 @@ Template Name: 内科
                 <p class="im-ttl">性病・クラミジア感染症<br>・淋病・梅毒</p>
               </div>
             </a>
+
             <a href="/naika/smoking-cessation/">
               <div class="im-icon large-icon">
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/cold.png" /> -->
                 <p class="im-ttl">禁煙治療・禁煙外来</p>
               </div>
             </a>
