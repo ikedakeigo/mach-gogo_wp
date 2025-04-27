@@ -137,7 +137,7 @@
  * im cold
 ===================================*/
 .attachment-post-thumbnail {
-  width: rem(300);
+  // width: rem(300);
   height: auto;
   @include mq(sm) {
     width: 100%;
