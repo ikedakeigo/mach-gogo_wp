@@ -334,7 +334,6 @@
           'posts_per_page' => 5
         );
         $faq_query = new WP_Query($args);
-
         if ($faq_query->have_posts()) :
           while ($faq_query->have_posts()) :
             $faq_query->the_post();

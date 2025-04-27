@@ -976,6 +976,28 @@ a {
   width: 100%;
 }
 
+/*===================================
+ *hedder-nav
+===================================*/
+@media screen and (min-width: 1024px) {
+  .header-nav__item.wpmem_loginout {
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+    background-color: #ebf0f2;
+  }
+  .header-nav__item.wpmem_loginout:hover {
+    background-color: #011640;
+  }
+  .header-nav__item.wpmem_loginout:hover a {
+    color: #ebf0f2;
+  }
+}
+.header-nav__item.wpmem_loginout a {
+  color: #021f59;
+  display: block;
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .header__address {
     text-align: start;
@@ -988,6 +1010,7 @@ a {
 @media screen and (min-width: 1024px) {
   .header-nav__list {
     display: flex;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1558,6 +1581,9 @@ a {
   .step-number__pc-box .img {
     height: 173px;
     width: 215px;
+    aspect-ratio: 640/560;
+    object-fit: cover;
+    height: auto;
   }
 }
 .step-number__sp {
