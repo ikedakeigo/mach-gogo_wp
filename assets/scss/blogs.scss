@@ -121,7 +121,7 @@
 }
 
 .blog-content {
-  width: 60%;
+  width: 100%;
   @include mq(sm) {
     width: 100%;
   }
@@ -237,8 +237,10 @@
 .sidebar-main {
   margin-left: 105px;
   margin-bottom: 0;
+  width: 50%;
   @include mq(sm) {
     margin-left: 0;
+    width: 100%;
   }
 }
 
