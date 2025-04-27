@@ -193,11 +193,11 @@ Template Name: 内科
               </div>
             </a>
 
-            <a href="/naika/smoking-cessation/">
+            <!-- <a href="/naika/smoking-cessation/">
               <div class="im-icon large-icon">
                 <p class="im-ttl">禁煙治療・禁煙外来</p>
               </div>
-            </a>
+            </a> -->
           </div>
 
           <div class="list_toggle">
