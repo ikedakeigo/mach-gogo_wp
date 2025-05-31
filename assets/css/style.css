@@ -2173,6 +2173,15 @@ a {
   margin-bottom: 8px;
 }
 
+.footer-img-box {
+  width: 200px;
+}
+
+.footer-img-logo {
+  width: 100%;
+  max-width: 200px;
+}
+
 .footer-info {
   display: flex;
 }
