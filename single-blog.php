@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 <div class="container">
-  <div class="blogTop-img">
-    <?php if (has_post_thumbnail()) : ?>
+  <?php if (has_post_thumbnail()) : ?>
+    <div class="blogTop-img">
       <?php the_post_thumbnail(); ?>
-    <?php else: ?>
+    </div>
+  <?php else: ?>
+    <div class="blogTop-img">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumbnail.jpeg" alt="神戸駅近クリニック">
-    <?php endif; ?>
-  </div>
+    </div>
+  <?php endif; ?>
 
   <?php if (have_posts()) : ?>
     <?php while (have_posts()) : ?>
@@ -87,13 +89,13 @@
                       <?php endif; ?>
                     </h6>
                     <h4>
-                    <?php
-                    if (mb_strlen($post->post_title) > 20) {
-                      echo mb_substr($post->post_title, 0, 8) . '...';
-                    } else {
-                      echo $post->post_title;
-                    }
-                    ?>
+                      <?php
+                      if (mb_strlen($post->post_title) > 20) {
+                        echo mb_substr($post->post_title, 0, 8) . '...';
+                      } else {
+                        echo $post->post_title;
+                      }
+                      ?>
                     </h4>
                   </div>
                 </a>
