@@ -26,7 +26,7 @@ Template Name: 自費（美容・点滴）
     <div class="blog__top">
       <p>
         当院では自費診療（保険適応外）として美容内服ならびに自費の点滴を行っております。<br>
-        自費内服・点滴ご希望の方はこちらの<a style="color: #00b900; font-weight: bold; text-decoration: underline;" href="https://line.me/ti/p/OA4E-m18Au" data-type="link" data-id="https://line.me/ti/p/OA4E-m18Au" target="_blank"><strong>LINE</strong></a>からご連絡くださいませ。
+        自費内服・点滴ご希望の方はこちらの<a style="color: #00b900; font-weight: bold; text-decoration: underline;" href="https://line.me/ti/p/mq1GuL9K2B" data-type="link" data-id="https://line.me/ti/p/mq1GuL9K2B" target="_blank"><strong>LINE</strong></a>からご連絡くださいませ。
       </p>
     </div>
     <!-- anckerLink -->
