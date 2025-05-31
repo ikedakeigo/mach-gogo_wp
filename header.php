@@ -34,7 +34,7 @@
         <div class="sp-menu__container">
           <a href="/" class="sp-nav__logo-link">
             <div class="sp-nav__logo">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="神戸駅直結徒歩ゼロ分の内科" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" width="300" height="50" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内 " />
             </div>
           </a>
           <?php
@@ -68,7 +68,7 @@
       <div class="container-header__nav">
         <div class="header-logo">
           <a href="/" class="header-logo__link">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="神戸駅直結徒歩ゼロ分の内科" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科" />
           </a>
           <h5 class="header__address">
             JR神戸駅直結 プリコ神戸 大垣書店奥
