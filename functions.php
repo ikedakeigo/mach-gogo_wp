@@ -31,9 +31,7 @@ function my_script_init()
   wp_enqueue_style('blogs-style', get_template_directory_uri() . '/assets/css/blogs.css', array(), filemtime(get_theme_file_path('/assets/css/blogs.css')));
   wp_enqueue_style('404-style', get_template_directory_uri() . '/assets/css/404.css', array(), filemtime(get_theme_file_path('/assets/css/404.css')));
 
-
-
-  // 画像urlをmain.jsに渡す
+  // Enqueue other scripts
   wp_enqueue_script("my_script", get_template_directory_uri() . "/assets/js/main.js", array("jquery"), filemtime(get_theme_file_path("/assets/js/main.js")), true);
   $image_urls = array(
     get_template_directory_uri() . '/assets/img/mach_mv_2.png',
@@ -95,8 +93,10 @@ function create_news_post_type()
 {
   $args = array(
     'labels' => array(
-      'name' => 'お知らせ',
+      'name' => 'News',
       'singular_name' => 'News',
+
+      // Other labels...
     ),
     'public' => true,
     'show_in_rest' => true, // これによりGutenbergのブロックエディターが有効化されます
@@ -104,7 +104,7 @@ function create_news_post_type()
     'rewrite' => array('slug' => 'news'), // アーカイブページと個別投稿のURLスラッグを設定します
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
     'taxonomies' => array('category', 'post_tag'),
-    'menu_icon' => 'dashicons-megaphone',
+    // Other settings...
   );
   register_post_type('news', $args);
 }
@@ -141,6 +141,7 @@ function create_blog_post_type()
 }
 add_action('init', 'create_blog_post_type');
 
+
 function blogs_has_archive($args, $post_type)
 {
   if ('blog'  == $post_type) {
@@ -154,7 +155,7 @@ add_filter('register_post_type_args', 'blogs_has_archive', 10, 2);
 // カスタム投稿のアーカイブページ表示件数
 function change_posts_per_page($query)
 {
-  if (is_admin() || !$query->is_main_query())
+  if (is_admin() || ! $query->is_main_query())
     return;
   if ($query->is_post_type_archive('blog')) { //カスタム投稿タイプを指定
     $query->set('posts_per_page', '3'); //表示件数を指定
@@ -173,7 +174,7 @@ function my_page_templates($templates)
   $template = get_page_template_slug();
   $pagename = $wp_query->query['pagename'];
 
-  if ($pagename && !$template) {
+  if ($pagename && ! $template) {
     $pagename = str_replace('/', '__', $pagename);
     $decoded = urldecode($pagename);
 
@@ -242,10 +243,37 @@ function add_file_types_to_uploads($file_types)
 }
 add_filter('upload_mimes', 'add_file_types_to_uploads');
 
+// ページごとに動的なタイトルを生成
+add_theme_support('title-tag');
+
+// ページごとにカスタムタイトルを設定
+function custom_wp_title($title)
+{
+  if (is_front_page()) {
+    $title = "神戸駅ナカの待たない土日祝日診察の内科｜マッハスピードクリニック";
+  } elseif (is_page('naika')) {
+    $title = "JR神戸駅直結の待たない内科｜マッハスピードクリニック";
+  } elseif (is_page('fever-clinic')) {
+    $title = "神戸駅直結の待たない・断らない・土日祝日診療の発熱外来滴｜マッハスピードクリニック";
+  } elseif (is_page('pill-clinic')) {
+    $title = "神戸駅ナカの待たないピル（２回目以降）処方｜マッハスピードクリニック";
+  } elseif (is_page('after-pill')) {
+    $title = "神戸駅ナカで土日祝・夜間・待たずにアフターピル処方｜マッハスピードクリニック";
+  } elseif (is_page('self-pay-beauty')) {
+    $title = "神戸駅ナカで土日祝・夜間・待たずに美白内服処方・美容点滴｜マッハスピードクリニック";
+  } elseif (is_page('vaccine')) {
+    $title = "神戸駅ナカで土日祝・夜間・待たずにインフルエンザの予防接種｜マッハスピードクリニック";
+  }
+  return $title;
+}
+add_filter('wp_title', 'custom_wp_title');
 
 
-// 新規追加
-// 閲覧数をカウント
+// wp_head() による <title> タグの自動生成を無効化
+remove_action('wp_head', '_wp_render_title_tag');
+
+
+// 追加 25/01/18
 function set_post_views($postID)
 {
   $count_key = 'post_views_count';
@@ -259,7 +287,6 @@ function set_post_views($postID)
     update_post_meta($postID, $count_key, $count);
   }
 }
-
 // 投稿が表示されるたびに閲覧数をカウント
 function track_post_views($postID)
 {
