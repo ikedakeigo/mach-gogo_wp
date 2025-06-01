@@ -17,9 +17,17 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- ＝＝＝＝＝＝＝カルーセル＝＝＝＝＝＝ -->
-  <!--
-    <script defer src="/assets/js/main.js"></script> -->
-  <title><?php echo wp_title('|', true, 'right') . get_bloginfo('name'); ?></title>
+
+  <title>
+    <?php
+    if (is_front_page() || is_home()) {
+      echo '神戸駅ナカ内科マッハスピードクリニック';
+    } else {
+      echo wp_title('|', false, 'right') . get_bloginfo('name');
+    }
+    ?>
+  </title>
+  <meta name="keywords" content="神戸駅,内科,診療,予約,診療時間,診療科目,アクセス,診療内容,医師紹介,診療案内 " />
   <meta name="description" content="神戸駅直結徒歩0分｜平日20時・土日祝も診療の内科" />
 
   <!-- <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com" /> -->
@@ -36,7 +44,7 @@
       <div class="sp-menu__container">
         <a href="/" class="sp-nav__logo-link">
           <div class="sp-nav__logo">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" width="300" height="50" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科 マッハクリニック " />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" width="300" height="50" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内 " />
           </div>
         </a>
         <?php
@@ -70,7 +78,7 @@
     <div class="container-header__nav">
       <div class="header-logo">
         <a href="/" class="header-logo__link">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科 マッハクリニック" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科" />
         </a>
         <h5 class="header__address">
           JR神戸駅直結 プリコ神戸 大垣書店奥
