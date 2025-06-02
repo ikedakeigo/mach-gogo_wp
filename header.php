@@ -20,13 +20,26 @@
 
   <title>
     <?php
-    if (is_front_page() || is_home()) {
-      echo '神戸駅ナカ内科マッハスピードクリニック';
+    if (is_front_page()) {
+      echo '神戸駅ナカの待たない土日祝日診察の内科｜神戸駅ナカ内科マッハスピードクリニック';
+    } elseif (is_page('naika')) {
+      echo 'JR神戸駅直結の待たない内科｜神戸駅ナカ内科マッハスピードクリニック';
+    } elseif (is_page('fever-clinic')) {
+      echo '神戸駅直結の待たない・断らない・土日祝日診療の発熱外来滴｜神戸駅ナカ内科マッハスピードクリニック';
+    } elseif (is_page('pill-clinic')) {
+      echo '神戸駅ナカの待たないピル（２回目以降）処方｜神戸駅ナカ内科マッハスピードクリニック';
+    } elseif (is_page('after-pill')) {
+      echo '神戸駅ナカで土日祝・夜間・待たずにアフターピル処方｜神戸駅ナカ内科マッハスピードクリニック';
+    } elseif (is_page('self-pay-beauty')) {
+      echo '神戸駅ナカで土日祝・夜間・待たずに美白内服処方・美容点滴｜神戸駅ナカ内科マッハスピードクリニック';
+    } elseif (is_page('vaccine')) {
+      echo '神戸駅ナカで土日祝・夜間・待たずにインフルエンザの予防接種｜神戸駅ナカ内科マッハスピードクリニック';
     } else {
-      echo wp_title('|', false, 'right') . get_bloginfo('name');
+      echo get_the_title() . '｜神戸駅ナカ内科マッハスピードクリニック';
     }
     ?>
   </title>
+
   <meta name="keywords" content="神戸駅,内科,診療,予約,診療時間,診療科目,アクセス,診療内容,医師紹介,診療案内 " />
   <meta name="description" content="神戸駅直結徒歩0分｜平日20時・土日祝も診療の内科" />
 
