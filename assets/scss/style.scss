@@ -778,7 +778,7 @@ a {
     background-color: $white-color;
     &:hover {
       background-color: $btn-color;
-      a{
+      a {
         color: $white-color;
       }
     }
@@ -801,6 +801,10 @@ a {
 }
 
 .header-navigation {
+  ul li::marker,
+  ol li::marker {
+    content: ""; /* 中身を空にして非表示 */
+  }
 }
 
 .header-nav {
@@ -2235,7 +2239,7 @@ a {
  * アンカーリンク追加
 ===================================*/
 .p-anckerLink {
-  margin-top:  rem(50);
+  margin-top: rem(50);
 }
 
 .p-anckerLink__inner {
@@ -2321,12 +2325,12 @@ a {
     font-weight: 700;
     line-height: 2;
     border-bottom: 1px solid $white-color;
-    font-size:  rem(14);
-    @include mq(md){
-      font-size:  rem(16);
+    font-size: rem(14);
+    @include mq(md) {
+      font-size: rem(16);
     }
   }
-  margin-bottom:  rem(10);
+  margin-bottom: rem(10);
   @include mq(md) {
     display: inline-block;
     margin-right: rem(60);
@@ -2393,10 +2397,10 @@ a {
   position: relative;
   color: $main-color;
   &:first-child {
-    margin-top:  rem(20);
+    margin-top: rem(20);
   }
   &:not(:last-child) {
-    margin-bottom:  rem(20);
+    margin-bottom: rem(20);
   }
 }
 

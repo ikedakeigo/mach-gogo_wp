@@ -998,6 +998,11 @@ a {
   }
 }
 
+.header-navigation ul li::marker,
+.header-navigation ol li::marker {
+  content: ""; /* 中身を空にして非表示 */
+}
+
 .header-nav__list {
   display: none;
 }
