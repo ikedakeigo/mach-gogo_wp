@@ -6,7 +6,7 @@
     </div>
   <?php else: ?>
     <div class="blogTop-img">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumbnail.jpeg" alt="神戸駅近クリニック">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="神戸駅近クリニック">
     </div>
   <?php endif; ?>
 
@@ -72,7 +72,7 @@
                     if (has_post_thumbnail()) {
                       the_post_thumbnail('medium');
                     } else {
-                      echo '<img src="' . esc_url(get_template_directory_uri()) . '/assets/img/common/default-thumbnail.jpeg" alt="神戸駅近クリニック">';
+                      echo '<img src="' . esc_url(get_template_directory_uri()) . '/assets/img/no-image.png" alt="神戸駅近クリニック">';
                     }
                     ?>
                   </div>

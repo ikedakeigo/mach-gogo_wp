@@ -17,7 +17,7 @@
       <div class="blog-header">
         <header class="blog_hed"
           style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/assets/img/common/default-thumbnail.jpeg'; ?>');">
+      url('<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/assets/img/no-image.png'; ?>');">
           <?php if (have_posts()) : ?>
             <?php the_post(); ?>
             <div class="blog_hed__text">
@@ -67,7 +67,7 @@
                       <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
                       <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumbnail.jpeg" alt="神戸駅近クリニック">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="神戸駅近クリニック">
                       <?php endif; ?>
                     </div>
                     <div class="blog-item__info">
@@ -145,7 +145,7 @@
                       <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
                       <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumbnail.jpeg" alt="神戸駅近クリニック">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="神戸駅近クリニック">
                       <?php endif; ?>
                     </div>
                     <div class="blog-item__info">
@@ -174,7 +174,7 @@
                       <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
                       <?php else: ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumbnail.jpeg" alt="神戸駅近クリニック">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="神戸駅近クリニック">
                       <?php endif; ?>
                     </div>
                     <div class="blog-item__info">
@@ -218,7 +218,7 @@
                         <?php if (has_post_thumbnail()) : ?>
                           <?php the_post_thumbnail(); ?>
                         <?php else: ?>
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/default-thumbnail.jpeg" alt="神戸駅近クリニック">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/no-image.png" alt="神戸駅近クリニック">
                         <?php endif; ?>
                       </div>
                       <div class="blog-articles__info">
