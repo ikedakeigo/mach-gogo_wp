@@ -14,7 +14,7 @@
               <div class="footer-img-box">
                 <img class="footer-img-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科 マッハクリニック" />
               </div>
-              <div class="footer-map-link"><a href="https://maps.app.goo.gl/DeykzBq2xtfsTMo87" target="_blank">Googleマップでみる</a></div>
+              <div class="footer-map-link"><a href="https://maps.app.goo.gl/t19xv4cicyeZYmjU8" target="_blank">Googleマップでみる</a></div>
             </div>
             <div class="footer-schedule">
               <table class="footer-schedule__table">
