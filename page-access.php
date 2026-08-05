@@ -35,9 +35,12 @@ Template Name: access
             <div class="border"></div>
           </div>
           <div class="google-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0160892362337!2d135.1782579!3d34.6795434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008f063dede2bf%3A0x35d67778d8e02f0d!2z44CSNjUwLTAwMjUg5YW15bqr55yM56We5oi45biC5Lit5aSu5Yy655u455Sf55S677yT5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1704067190900!5m2!1sja!2sjp" width="100%" height="323" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.975976436393!2d135.1759873758765!3d34.68055578429329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008fc821af3a8b%3A0xdc49bdd58550df64!2z56We5oi46aeF44OK44Kr5YaF56eR44Oe44OD44OP44K544OU44O844OJ44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1774074014555!5m2!1sja!2sjp" width="100%" height="323" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <p class="text-center">〒650-0025<br class="is-sp"> 兵庫県神戸市中央区相生3-1-1<br class="is-sp"> 大垣書店奥</p>
+          <div class="google-map-link">
+            <a href="https://maps.app.goo.gl/t19xv4cicyeZYmjU8" target="_blank" rel="noopener noreferrer">Google Mapで表示する</a>
+          </div>
           <h3 class="access-subTitle">電車でお越しの方</h3>
           <table class="access-train is-pc">
             <tr>
