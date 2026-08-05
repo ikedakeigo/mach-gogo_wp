@@ -13,8 +13,7 @@ Template Name: 内科
       <h1 class="main_title">内科</h1>
       <div class="border"></div>
       <div class="medicalContentAll">
-
-
+        
         <section class="internalMedicine">
 
           <div class="im__icon--container show-more">

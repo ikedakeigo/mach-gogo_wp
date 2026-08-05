@@ -6,3 +6,7 @@
 .DS_Store
 sftp.json
 .env
+
+.github/
+.vscode/
+machspeed.key

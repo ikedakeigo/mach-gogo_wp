@@ -19,7 +19,7 @@ $(document).ready(function () {
     $(".sp-menu").removeClass("is_open");
     $("body").removeClass("fixed").css({ top: 0 });
     // アニメーションなしでスクロール位置を復元します
-    window.scrollTo({ top: scrollPosition, behavior: 'instant' });
+    window.scrollTo({ top: scrollPosition, behavior: "instant" });
   });
 
   // アコーディオンのクリックイベント
@@ -75,10 +75,10 @@ window.addEventListener("scroll", () => {
   }
 });
 
-jQuery(function($) {
-  $('.js-faq-question').on('click', function() {
+jQuery(function ($) {
+  $(".js-faq-question").on("click", function () {
     $(this).next().slideToggle();
-    $(this).toggleClass('is-open');
+    $(this).toggleClass("is-open");
   });
 
   // スクロールイベント
