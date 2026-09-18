@@ -110,36 +110,26 @@
           <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
         </a>
         <h5 class="header__address">
-          JR神戸駅 プリコ神戸 大垣書店奥
+          JR神戸駅直結 プリコ神戸 大垣書店奥
         </h5>
       </div>
-      <section id="top">
-        <div class="container-header__nav">
-          <div class="header-logo">
-            <a href="/" class="header-logo__link">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
-            </a>
-            <h5 class="header__address">
-              JR神戸駅直結 プリコ神戸 大垣書店奥
-            </h5>
-          </div>
 
-          <div class="header__flex hidden">
-            <div class="header-navigation">
+      <div class="header__flex hidden">
+        <div class="header-navigation">
 
-              <?php
-              wp_nav_menu(
-                array(
-                  'depth' => 1,
-                  'theme_location' => 'global',
-                  'container' => '',
-                  'menu_class' => 'header-nav__list',
+          <?php
+          wp_nav_menu(
+            array(
+              'depth' => 1,
+              'theme_location' => 'global',
+              'container' => '',
+              'menu_class' => 'header-nav__list',
 
-                )
-              )
-              ?>
+            )
+          )
+          ?>
 
-            </div>
-          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
