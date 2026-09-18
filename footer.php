@@ -10,7 +10,7 @@
           <div class="footer-info">
             <div class="footer-address">
               <p>〒650-0025</p>
-              <p>兵庫県神戸市中央区相生3-1-1<br />大垣書店奥</p>
+              <p>兵庫県神戸市中央区相生3-1-1</p>
               <div class="footer-img-box">
                 <img class="footer-img-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科 マッハクリニック" />
               </div>
