@@ -84,7 +84,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   scroll-behavior: smooth;
 }
@@ -101,11 +100,6 @@ menu,
 nav,
 section {
   display: block;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 /*===================================
@@ -304,6 +298,24 @@ p {
 }
 #access img {
   width: 100%;
+}
+
+.google-map-link {
+  text-align: center;
+  margin-top: 15px;
+}
+.google-map-link a {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #021f59;
+  color: #ebf0f2;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  transition: opacity 0.3s;
+}
+.google-map-link a:hover {
+  opacity: 0.7;
 }
 
 table.access-train {

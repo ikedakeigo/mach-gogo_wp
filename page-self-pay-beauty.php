@@ -26,7 +26,7 @@ Template Name: 自費（美容・点滴）
     <div class="blog__top">
       <p>
         当院では自費診療（保険適応外）として美容内服ならびに自費の点滴を行っております。<br>
-        自費内服・点滴ご希望の方はこちらの<a style="color: #00b900; font-weight: bold; text-decoration: underline;" href="https://line.me/ti/p/OA4E-m18Au" data-type="link" data-id="https://line.me/ti/p/OA4E-m18Au" target="_blank"><strong>LINE</strong></a>からご連絡くださいませ。
+        自費内服・点滴ご希望の方はこちらの<a style="color: #00b900; font-weight: bold; text-decoration: underline;" href="https://line.me/ti/p/mq1GuL9K2B" data-type="link" data-id="https://line.me/ti/p/mq1GuL9K2B" target="_blank"><strong>LINE</strong></a>からご連絡くださいませ。
       </p>
     </div>
     <!-- anckerLink -->
@@ -64,23 +64,33 @@ Template Name: 自費（美容・点滴）
               </a>
             </li>
             <li class="p-anckerLink__item">
+              <a href="#item10" class="p-anckerLink__link">
+                白玉点滴 3,000円(税込)
+              </a>
+            </li>
+            <li class="p-anckerLink__item">
+              <a href="#item11" class="p-anckerLink__link">
+                高濃度ビタミンC点滴（12.5g）5,500円(税込)
+              </a>
+            </li>
+            <li class="p-anckerLink__item">
               <a href="#item06" class="p-anckerLink__link">
                 プラセンタ皮下注射 1,000円(税込)
               </a>
             </li>
             <li class="p-anckerLink__item">
               <a href="#item07" class="p-anckerLink__link">
-                にんにく注射 1本500円(税込)
+                にんにく注射 1本 1,000円(税込)
               </a>
             </li>
             <li class="p-anckerLink__item">
               <a href="#item08" class="p-anckerLink__link">
-                美肌プラス注射(ビタミンC注射) 1本500円(税込)
+                美肌プラス注射(ビタミンC注射) 1本 1,000円(税込)
               </a>
             </li>
             <li class="p-anckerLink__item">
               <a href="#item09" class="p-anckerLink__link">
-                シンデレラ注射(アンチエイジング注射) 1本500円(税込)
+                シンデレラ注射(アンチエイジング注射) 1本 1,000円(税込)
               </a>
             </li>
           </ul>
@@ -116,11 +126,13 @@ Template Name: 自費（美容・点滴）
           二日酔い点滴 2,500円(税込)<br>
           肌質改善点滴 3,000円(税込)<br>
           マイヤーズカクテル点滴 4,500円(税込)<br>
+          白玉点滴 3,000円(税込)<br>
+          高濃度ビタミンC点滴（12.5g）5,500円(税込)<br>
           プラセンタ皮下注射 1,000円(税込)<br>
           上記点滴に追加<br>
-          にんにく注射 1本500円(税込)<br>
-          美肌プラス注射（ビタミンC注射） 1本500円(税込)<br>
-          シンデレラ注射（アンチエイジング注射） 1本500円(税込)
+          にんにく注射 1本 1,000円(税込)<br>
+          美肌プラス注射（ビタミンC注射） 1本 1,000円(税込)<br>
+          シンデレラ注射（アンチエイジング注射） 1本 1,000円(税込)
         </p>
         <h3 id="item02">疲労回復点滴</h3>
         <p>
@@ -203,6 +215,23 @@ Template Name: 自費（美容・点滴）
         </ul>
         <p>
           副作用はほどんどないと言われていますが、ごくまれに低血圧・失神・不整脈・アナフィラキシーショックを起こす可能性があります。
+        </p>
+      </div>
+
+      <div class="body__bottom-wrap">
+        <h2 id="item10">白玉点滴</h2>
+        <p>
+          当院の白玉点滴はグルタチオンという成分を600㎎含んだものとなります。<br>
+          グルタチオンは強い抗酸化作用が特徴で、メラニンの生成を抑制することでシミやそばかすを抑制し、肌のくすみを改善して皮膚の色を明るくする効果（美白効果）が期待できます。
+        </p>
+      </div>
+
+      <div class="body__bottom-wrap">
+        <h2 id="item11">高濃度ビタミンC点滴</h2>
+        <p>
+          当院高濃度ビタミンC点滴はビタミンCを12.5g含んだものとなります。<br> 使用するビタミンCは日本で医薬品としての承認を受けたものを使用しております。高濃度ビタミンCはその抗酸化作用の強さから老化予防や疲労回復、免疫力の向上等の効果が期待できます。<br>
+          一般的にビタミンCは投与量が25gをこえると溶血のリスクがありますが当院ではそこまでの量を投与しませんので特別な採血等は行っておりません。<br>
+          この点滴は容量が大きいためほかの点滴と異なり少々お時間がかかります。大体40～60分ぐらいかかることをご了承くださいませ。
         </p>
       </div>
 

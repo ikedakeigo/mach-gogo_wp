@@ -1,4 +1,6 @@
-<footer class="footer">
+  <?php
+    if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile','user-registration'))): ?>
+    <footer class="footer">
       <div class="container inner">
         <div class="footer-content">
           <div class="footer-logo">
@@ -8,8 +10,11 @@
           <div class="footer-info">
             <div class="footer-address">
               <p>〒650-0025</p>
-              <p>兵庫県神戸市中央区相生3-1-1<br />大垣書店奥</p>
-              <div class="footer-map-link"><a href="https://maps.app.goo.gl/DeykzBq2xtfsTMo87" target="_blank">Googleマップでみる</a></div>
+              <p>兵庫県神戸市中央区相生3-1-1</p>
+              <div class="footer-img-box">
+                <img class="footer-img-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo02.png" alt="神戸駅直結徒歩ゼロ分の内科 神戸駅ナカ内科 マッハクリニック" />
+              </div>
+              <div class="footer-map-link"><a href="https://maps.app.goo.gl/hrirmGYYWS96Z8w69" target="_blank">Googleマップでみる</a></div>
             </div>
             <div class="footer-schedule">
               <table class="footer-schedule__table">
@@ -28,7 +33,7 @@
               </table>
               <p class="footer-closed-day">休診日: 月曜日、火曜日
                 <!-- <span class="footer-break">昼休み: 14:00-15:00</span> -->
-            </p>
+              </p>
               <!-- <div class="footer-remarks">最寄り調剤薬局の営業時間は20時まで</div> -->
             </div>
           </div>
@@ -39,6 +44,8 @@
       </div>
     </footer>
 
+    <?php endif; ?>
     <?php wp_footer(); ?>
   </body>
-</html>
+
+  </html>

@@ -507,7 +507,7 @@ a {
 }
 
 .front-contents {
-  @include mq(md) {
+  @include mq(md){
     margin-left: rem(30);
   }
 }
@@ -768,6 +768,32 @@ a {
   // }
 }
 
+/*===================================
+ *hedder-nav
+===================================*/
+.header-nav__item.wpmem_loginout {
+  @include mq(lg) {
+    padding: rem(10);
+    border-radius: rem(10);
+    background-color: $white-color;
+    &:hover {
+      background-color: $btn-color;
+      a{
+        color: $white-color;
+      }
+    }
+  }
+
+  a {
+    color: $main-color;
+    display: block;
+    width: 100%;
+    // &:hover {
+    //   color: $white-color;
+    // }
+  }
+}
+
 .header__address {
   @include mq(sm) {
     text-align: start;
@@ -775,6 +801,10 @@ a {
 }
 
 .header-navigation {
+  ul li::marker,
+  ol li::marker {
+    content: ""; /* 中身を空にして非表示 */
+  }
 }
 
 .header-nav {
@@ -782,6 +812,7 @@ a {
     display: none;
     @include mq(lg) {
       display: flex;
+      align-items: center;
     }
   }
 
@@ -1392,6 +1423,9 @@ a {
       &-box .img {
         height: 173px;
         width: 215px;
+        aspect-ratio: 640/560;
+        object-fit: cover;
+        height: auto;
       }
     }
   }
@@ -1937,7 +1971,6 @@ a {
   line-height: 160%;
   letter-spacing: 0.06em;
   color: $main-color;
-  margin-left: 10px;
 }
 
 /*===================================
@@ -2011,6 +2044,13 @@ a {
   display: flex;
   padding-top: 56px;
   margin-bottom: 8px;
+}
+.footer-img-box {
+  width: 200px;
+}
+.footer-img-logo {
+  width: 100%;
+  max-width: 200px;
 }
 
 .footer-department {
@@ -2199,7 +2239,7 @@ a {
  * アンカーリンク追加
 ===================================*/
 .p-anckerLink {
-  margin-top:  rem(50);
+  margin-top: rem(50);
 }
 
 .p-anckerLink__inner {
@@ -2285,12 +2325,12 @@ a {
     font-weight: 700;
     line-height: 2;
     border-bottom: 1px solid $white-color;
-    font-size:  rem(14);
-    @include mq(md){
-      font-size:  rem(16);
+    font-size: rem(14);
+    @include mq(md) {
+      font-size: rem(16);
     }
   }
-  margin-bottom:  rem(10);
+  margin-bottom: rem(10);
   @include mq(md) {
     display: inline-block;
     margin-right: rem(60);
@@ -2357,10 +2397,10 @@ a {
   position: relative;
   color: $main-color;
   &:first-child {
-    margin-top:  rem(20);
+    margin-top: rem(20);
   }
   &:not(:last-child) {
-    margin-bottom:  rem(20);
+    margin-bottom: rem(20);
   }
 }
 

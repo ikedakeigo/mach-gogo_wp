@@ -84,7 +84,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   scroll-behavior: smooth;
 }
@@ -101,11 +100,6 @@ menu,
 nav,
 section {
   display: block;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 /*===================================
@@ -980,6 +974,11 @@ a {
   .header__address {
     text-align: start;
   }
+}
+
+.header-navigation ul li::marker,
+.header-navigation ol li::marker {
+  content: ""; /* 中身を空にして非表示 */
 }
 
 .header-nav__list {
@@ -2080,7 +2079,6 @@ a {
   line-height: 160%;
   letter-spacing: 0.06em;
   color: #021f59;
-  margin-left: 10px;
 }
 
 /*===================================
@@ -2146,6 +2144,15 @@ a {
   display: flex;
   padding-top: 56px;
   margin-bottom: 8px;
+}
+
+.footer-img-box {
+  width: 200px;
+}
+
+.footer-img-logo {
+  width: 100%;
+  max-width: 200px;
 }
 
 .footer-info {

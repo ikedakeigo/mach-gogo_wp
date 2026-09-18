@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- フロートbtn フォント -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
-    <!-- <link rel="stylesheet" href="/assets/css/style.css" />
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16454043464"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'AW-16454043464');
+  </script>
+  <?php if (is_page('reserve-complete-page')) : ?>
+    <!-- Event snippet for 予約ページ到達 conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+        'send_to': 'AW-16454043464/kIkUCMyktJQZEMiO86U9'
+      });
+    </script>
+  <?php endif; ?>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- フロートbtn フォント -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css" />
+  <!-- <link rel="stylesheet" href="/assets/css/style.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
-    <!-- =========カルーセル＝＝＝＝＝＝＝＝ -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- ＝＝＝＝＝＝＝カルーセル＝＝＝＝＝＝ -->
-<!--
+  <!-- =========カルーセル＝＝＝＝＝＝＝＝ -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- ＝＝＝＝＝＝＝カルーセル＝＝＝＝＝＝ -->
+  <!--
     <script defer src="/assets/js/main.js"></script> -->
-    <title><?php echo wp_title('|', true, 'right') . get_bloginfo('name'); ?></title>
-    <meta name="description" content="" />
 
     <!-- <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com" /> -->
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  <title>
+    <?php
+    if (is_front_page() || is_home()) {
+      echo 'マッハスピードクリニック｜神戸駅ナカ内科のクリニック'; // トップページはサイト名だけ
+    } else {
+      echo wp_title('|', false, 'right') . get_bloginfo('name'); // その他のページ
+    }
+    ?>
+  </title>
+  <meta name="description" content="神戸駅ナカ内科のクリニック『マッハスピードクリニック』" />
 
+    <!-- favicon -->
+    <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/img/machspeed_icon.png" type="image/png" />
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js?ver=6.2" id="bootstrap-js-js"></script>
 
     <?php wp_head(); ?>
-  </head>
-  <body>
-    <div class="hidden">
-      <div class="sp-menu" id="js-close">
-        <div class="sp-menu__container">
-          <a href="/" class="sp-nav__logo-link">
-            <div class="sp-nav__logo">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
-            </div>
-          </a>
-          <?php
-            wp_nav_menu(
-              array(
-                'depth' => 1,
-                'theme_location' => 'drawer',
-                'container' => '',
-                'menu_class' => 'sp-nav__list',
-              )
-            )
-          ?>
-          <div class="close js-close">
-            <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
+</head>
+
+<body>
+  <div class="hidden">
+    <div class="sp-menu" id="js-close">
+      <div class="sp-menu__container">
+        <a href="/" class="sp-nav__logo-link">
+          <div class="sp-nav__logo">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" width="300" height="50" alt="ロゴの画像" />
           </div>
+        </a>
+        <?php
+
+        wp_nav_menu(
+          array(
+            'depth' => 1,
+            'theme_location' => 'drawer',
+            'container' => '',
+            'menu_class' => 'sp-nav__list',
+          )
+        )
+        ?>
+        <div class="close js-close">
+          <span class="close__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/img/batu.svg" /></span>
         </div>
       </div>
+    </div>
+
+    <?php
+    if (!is_page(array('reserve-page', 'reserve-complete-page', 'user-profile', 'user-registration'))) : ?>
       <div class="footer-box">
         <div class="footer__flex">
-          <div class="menu-toggle js-spmenu"><img src="<?php echo get_template_directory_uri() ?>/assets/img/menu.png" /></div>
+          <div class="menu-toggle js-spmenu">
+            <img src="<?= get_template_directory_uri() ?>/assets/img/menu.png" />
+          </div>
           <div class="page-bottom">
             <a href="/reserve-page/" class="page-bottom__link">
               <div class="page-bottom__text">予約枠を確認・予約する</div>
@@ -62,21 +99,23 @@
           </div>
         </div>
       </div>
-    </div>
+    <?php endif; ?>
 
-    <section id="top">
-      <div class="container-header__nav">
-        <div class="header-logo">
-          <a href="/" class="header-logo__link">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
-          </a>
-          <h5 class="header__address">
-            JR神戸駅直結 プリコ神戸 大垣書店奥
-          </h5>
-        </div>
+  </div>
 
-        <div class="header__flex hidden">
-          <div class="header-navigation">
+  <section id="top">
+    <div class="container-header__nav">
+      <div class="header-logo">
+        <a href="/" class="header-logo__link">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/mach-logo.png" alt="ロゴの画像" />
+        </a>
+        <h5 class="header__address">
+          JR神戸駅直結 プリコ神戸
+        </h5>
+      </div>
+
+      <div class="header__flex hidden">
+        <div class="header-navigation">
 
           <?php
           wp_nav_menu(
@@ -88,9 +127,9 @@
 
             )
           )
-        ?>
+          ?>
 
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
